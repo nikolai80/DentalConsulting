@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="a243d961-3783-4286-b74e-b468a3977552" name="Пользовать сайта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83d114c6-504d-418f-8ac4-802edd3e2fc1" />
+        <targetEnds>
+          <association Id="10b86c68-4e58-4f6c-b429-625f6f64a566" isDerived="false" sourceEndRoleName="Пользовать сайта" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="171ad4c6-dea5-447b-b1e9-df50a07a46e5" name="Пользовать сайта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4698027f-4a20-4a26-8058-9ec82073fae1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04e8c7a4-ae89-42b9-975d-6fc88e4c5589" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05094d16-ba9a-4719-b10c-883569b69bbc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e1ac072d-e80e-43da-8bb9-744f43103789" />
+          </association>
+          <association Id="53755e44-9142-409a-b270-372564ca9237" isDerived="false" sourceEndRoleName="Пользовать сайта" targetEndRoleName="Регистрация на сайте" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="60ba4367-0847-45a9-991d-5897fdc20ea2" LastKnownName="Регистрация на сайте" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7fdd7403-ba38-4794-aa5c-04c1f967874d" name="Пользовать сайта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8e7c3ed-6fa8-4a40-9b1a-8d7d24da06c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ff43144-abdf-4367-a953-92c58e9c3160" name="Регистрация на сайте" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5b208136-5e23-47b0-a989-a2f2d0438c3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dce8e7ca-9512-41ea-b1ae-8d712a8ca94e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" name="Просмотр статей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="60ba4367-0847-45a9-991d-5897fdc20ea2" name="Регистрация на сайте" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36668ae2-c1d4-4e1b-a87d-97690c4352e8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e76d4c21-a40a-40ab-8905-953f48765319" name="Вход в личный кабинет" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="513aac19-238e-4289-bb0d-2e6c4d358db1" />
+        <additions>
+          <include Id="3223e7b2-15a2-4deb-8d64-3683a73ab6cb">
+            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
+            <elementDefinition Id="f7a15fe3-4c53-4ed6-9c31-9b9c530a8f61" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="601a07e5-d851-4d46-988c-7cbc817d6519" name="Зарегистрированный пользователь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="700fc79c-37e6-47b2-8a26-2f7baff5b48c" />
+        <targetEnds>
+          <association Id="3aa95a05-f2fa-4c30-bb5b-ca1908a84c4d" isDerived="false" sourceEndRoleName="Зарегистрированный пользователь" targetEndRoleName="Вход в личный кабинет" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a870a61-d8fc-4c3d-b77e-20c1eff412d9" name="Зарегистрированный пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9e978246-f2c6-4c65-9903-1d7a3531404c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b1b4f61-7eae-4efa-a61e-d7279d1ed8de" name="Вход в личный кабинет" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3607e10-347a-411b-9e5e-bbacca86b823" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="801f983f-e50a-4db1-ae9f-352e2097b6a6" />
+          </association>
+          <association Id="c9efc39e-988c-47dd-90a2-f5249eed0baa" isDerived="false" sourceEndRoleName="Зарегистрированный пользователь" targetEndRoleName="Размещение статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" LastKnownName="Размещение статей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="adafa82d-ba92-4c17-b200-6c1c9fb10f35" name="Зарегистрированный пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="206c7a40-3236-4ca5-93d3-e3e0bbada740" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="990a6379-4818-4a57-a3c7-0d188c22deec" name="Размещение статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="73113245-ab66-451d-a5af-1686e0913edf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a7d18dad-60ab-4ce3-ac34-f4d2fd32485e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" name="Аутентификация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcea4c99-fbc7-477f-9c13-25feaf32a457" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" name="Размещение статей" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4" />
+        <additions>
+          <include Id="bf780608-a0bd-4e98-90cd-c221cf7bcccf">
+            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
+            <elementDefinition Id="c21d2842-c209-4182-8fc6-ba426e863308" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="17a995a1-fe07-4730-acc2-5e8d815bcd23" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb22efce-640a-45e6-822d-a8b777b2dd0a" />
+        <targetEnds>
+          <association Id="72d8edb5-8e45-4f8e-a661-78532c3301eb" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Размещение статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" LastKnownName="Размещение статей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3402e3ad-5789-4ec4-a020-e41575c243db" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d511c9d-7683-41cf-80c4-03578711888a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e31491a2-e46b-45ff-b6a8-c4e4e497a662" name="Размещение статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="197d9a67-a602-4452-b67a-5af3fee7b0f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3b2f543e-25ea-4edb-85a4-b1875df8a3ac" />
+          </association>
+          <association Id="f3356bd9-9b63-42f2-8314-8abdbbf7e5e9" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Управление пользователями" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="80dc4ea1-5384-4f84-8438-c5cb9289616f" LastKnownName="Управление пользователями" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5c170615-503a-44b5-aab7-83027accbeba" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7df0706-7434-416f-8b46-6e0b520810fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b2225e0-ce03-4dea-b87d-70324e761798" name="Управление пользователями" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2455ae00-e085-4671-bec2-2cb11d9c9fac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6638f648-df01-404c-a771-7c3fa2e4406b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="80dc4ea1-5384-4f84-8438-c5cb9289616f" name="Управление пользователями" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20b2cc2b-6a23-4000-9d40-7ad02922a162" />
+        <additions>
+          <include Id="fe154500-f671-4fe1-9093-92b54d3ae2df">
+            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
+            <elementDefinition Id="ebe49857-b6f3-4ec7-8375-5f289bb7c740" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" name="ModelingSiteProject">
+    <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3d310051-062a-40a1-8ba2-1f40d8be136d">
+        <profileInstance Id="920b063f-846f-4c08-ba0a-e23d0b67e391" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f111a4c4-15c3-4d06-8805-f9573c3ba767">
+        <profileInstance Id="a967728c-952a-4e46-8a74-4ef76c0dbfce" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

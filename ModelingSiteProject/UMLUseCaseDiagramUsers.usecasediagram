@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="01d647aa-4bf4-4bae-b836-729e38dca095" name="UMLUseCaseDiagramUsers" linkedPackageId="2411dfc0-b352-4731-9bc3-6bb5f4444fd4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2e0325d5-149d-4154-8685-b6e0524c0930">
+      <profileInstance Id="0213e177-b32d-4b08-8db1-db89207ad308" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="453f1538-3657-45bb-9a5b-581324888e53">
+      <profileInstance Id="7f96d789-fa54-4540-a6b3-79ab4fa817eb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="cb85777b-b15e-4ae1-bb50-45708d4eaf36" name="Пользователь сайта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e441ac73-fb25-4865-9024-c5f3c63a06e2" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c28595bb-f688-4ff9-bc5b-95c9ee16b4b5" name="Гость" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="948e6da9-88de-46de-a283-590904b4dfc0" />
+        <generalsInternal>
+          <generalization Id="590765b5-7f8e-4f1e-af85-1826ca1f790d" isSubstitutable="false">
+            <actorMoniker Id="cb85777b-b15e-4ae1-bb50-45708d4eaf36" LastKnownName="Пользователь сайта" />
+            <elementDefinition Id="38d37767-ac8d-4b12-ab47-4969aa239fb6" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="fc459fa1-cee1-4925-83c7-1917533010a8" name="Зарегистрированный пользователь" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0230f05a-2b15-4897-80d5-6d86241602a1" />
+        <generalsInternal>
+          <generalization Id="3bd70a04-765c-423b-a741-3093b378ce28" isSubstitutable="false">
+            <actorMoniker Id="cb85777b-b15e-4ae1-bb50-45708d4eaf36" LastKnownName="Пользователь сайта" />
+            <elementDefinition Id="acd5ea6f-c4e2-4a47-8d90-b59bbaab308a" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1a94ec6d-7a0b-4115-ac8e-9642c7bc7499" name="Администратор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e644916-6079-4720-b211-ce1932fe1f49" />
+        <generalsInternal>
+          <generalization Id="7f03b522-1a53-4316-aaca-8366721b67ed" isSubstitutable="false">
+            <actorMoniker Id="fc459fa1-cee1-4925-83c7-1917533010a8" LastKnownName="Зарегистрированный пользователь" />
+            <elementDefinition Id="38a7f7fe-5aae-402b-9768-af24430222d8" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="2411dfc0-b352-4731-9bc3-6bb5f4444fd4" name="ModelingSiteProject">
+    <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
+  </package>
+</useCaseModelRoot>

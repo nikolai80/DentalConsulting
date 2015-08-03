@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagramUsers">
+  <useCaseModelRootMoniker Id="01d647aa-4bf4-4bae-b836-729e38dca095" />
+  <nestedChildShapes>
+    <actorShape Id="7f15dab3-4176-4d42-ae49-d51afe1a1677" absoluteBounds="3.25, 1.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="cb85777b-b15e-4ae1-bb50-45708d4eaf36" LastKnownName="Пользователь сайта" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="74484877-0638-491d-ace6-42f2148b9d90" absoluteBounds="2.375, 2.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="c28595bb-f688-4ff9-bc5b-95c9ee16b4b5" LastKnownName="Гость" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(2.84375 : 2.125); (3.28125 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="590765b5-7f8e-4f1e-af85-1826ca1f790d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="74484877-0638-491d-ace6-42f2148b9d90" />
+        <actorShapeMoniker Id="7f15dab3-4176-4d42-ae49-d51afe1a1677" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" absoluteBounds="4.25, 2.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="fc459fa1-cee1-4925-83c7-1917533010a8" LastKnownName="Зарегистрированный пользователь" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(4.25 : 2.125); (3.75 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="3bd70a04-765c-423b-a741-3093b378ce28" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" />
+        <actorShapeMoniker Id="7f15dab3-4176-4d42-ae49-d51afe1a1677" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="e28446bd-9b0f-4eac-8313-bc61d4bf6715" absoluteBounds="4.25, 3.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="1a94ec6d-7a0b-4115-ac8e-9642c7bc7499" LastKnownName="Администратор" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(4.50037700333145 : 3.5); (4.50169651499152 : 2.625)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110">
+      <generalizationMoniker Id="7f03b522-1a53-4316-aaca-8366721b67ed" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="e28446bd-9b0f-4eac-8313-bc61d4bf6715" />
+        <actorShapeMoniker Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
