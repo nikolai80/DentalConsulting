@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="fd8cd130-e11d-493e-b7c5-4b6bbd1ea3a5" name="ActivityViewArticle" linkedPackageId="a03141e9-e155-4aa0-84f3-608752d9ca03" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="c5a3da04-836d-46d0-b7e4-4444ab9013e3">
-      <profileInstance Id="2a9673f7-dbcb-4eb3-bcad-ec5182e15434" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="6982e487-8aab-4b2b-b449-94957ac721fe">
-      <profileInstance Id="cf156281-0d47-4451-a56b-a41945e896ba" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="0f888fa6-4687-439f-9dbf-6c28906d46ff" name="ActivityViewArticle" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -21,18 +7,66 @@
         <nodes>
           <initialNode Id="329fad25-eed6-42a1-b0d2-61799f5d7977" name="Initial1" isLeaf="false">
             <elementDefinition Id="acaa572f-7759-4680-9dcc-afa6bf21bcd2" />
+            <flowNodeTargets>
+              <controlFlow Id="a21348d2-d401-4710-b981-a2401c1e5354" isLeaf="false">
+                <opaqueActionMoniker Id="989487d9-6dc9-4ed4-881b-6837bb4ba8aa" LastKnownName="Открыть главную страницу сайта" />
+                <elementDefinition Id="5af65248-f981-43fe-98c7-1cd2e7b840d0" />
+              </controlFlow>
+            </flowNodeTargets>
           </initialNode>
           <opaqueAction Id="989487d9-6dc9-4ed4-881b-6837bb4ba8aa" name="Открыть главную страницу сайта" isLeaf="false">
             <elementDefinition Id="08f3788a-f7c6-4673-b007-6a5bf15e8d97" />
+            <flowNodeTargets>
+              <controlFlow Id="84b2c221-72a3-4a97-9f88-dc5d931a3f58" isLeaf="false">
+                <decisionNodeMoniker Id="e9b82d05-cf8c-42f9-8385-d677d131a7ec" LastKnownName="Decision1" />
+                <elementDefinition Id="c45d6bb9-9bc1-402d-b95e-09b6c8544984" />
+              </controlFlow>
+            </flowNodeTargets>
           </opaqueAction>
           <decisionNode Id="e9b82d05-cf8c-42f9-8385-d677d131a7ec" name="Decision1" isLeaf="false">
             <elementDefinition Id="13418ae3-1677-45af-9a8e-023f8062ba92" />
+            <flowNodeTargets>
+              <controlFlow Id="f60bc229-df5f-4aec-9a9b-f04635dac8d0" guard="Список статей не пуст" isLeaf="false">
+                <opaqueActionMoniker Id="bd8ad3ca-0852-4c92-927e-3a220b04b4f3" LastKnownName="Выбрать статью" />
+                <elementDefinition Id="0b8dd463-5d94-4dab-9a0c-8add77e0dc46" />
+              </controlFlow>
+              <controlFlow Id="9028876c-7997-468f-ab74-bbe0e410ff0e" guard="Список статей пуст" name="Статьи отсутствуют" isLeaf="false">
+                <activityFinalNodeMoniker Id="76d9dbf2-8508-487d-a6bc-830431f5149f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="d6ac1b0e-441d-49a6-be62-fb23b3964683" />
+              </controlFlow>
+            </flowNodeTargets>
           </decisionNode>
+          <opaqueAction Id="bd8ad3ca-0852-4c92-927e-3a220b04b4f3" name="Выбрать статью" isLeaf="false">
+            <elementDefinition Id="8baaf127-06df-4fe2-aac3-03d2f04f0072" />
+            <flowNodeTargets>
+              <controlFlow Id="750c2332-c4ce-43fc-bed8-6ed6ec1472b7" isLeaf="false">
+                <activityFinalNodeMoniker Id="76d9dbf2-8508-487d-a6bc-830431f5149f" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="134ca0df-eb3e-4280-aedf-da5629eb2371" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="76d9dbf2-8508-487d-a6bc-830431f5149f" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="14b9e39c-0036-4413-8d98-d5ffe6cdc288" />
+          </activityFinalNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="a03141e9-e155-4aa0-84f3-608752d9ca03" name="ModelingSiteProject">
     <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c5a3da04-836d-46d0-b7e4-4444ab9013e3">
+        <profileInstance Id="2a9673f7-dbcb-4eb3-bcad-ec5182e15434" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6982e487-8aab-4b2b-b449-94957ac721fe">
+        <profileInstance Id="cf156281-0d47-4451-a56b-a41945e896ba" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

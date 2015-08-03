@@ -436,14 +436,77 @@
           <initialNode
             Id="acaa572f-7759-4680-9dcc-afa6bf21bcd2"
             name="Initial1"
-            isLeaf="false" />
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5af65248-f981-43fe-98c7-1cd2e7b840d0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="08f3788a-f7c6-4673-b007-6a5bf15e8d97"
+                  LastKnownName="Открыть главную страницу сайта"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
           <opaqueAction
             Id="08f3788a-f7c6-4673-b007-6a5bf15e8d97"
             name="Открыть главную страницу сайта"
-            isLeaf="false" />
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c45d6bb9-9bc1-402d-b95e-09b6c8544984"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="13418ae3-1677-45af-9a8e-023f8062ba92"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
           <decisionNode
             Id="13418ae3-1677-45af-9a8e-023f8062ba92"
             name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0b8dd463-5d94-4dab-9a0c-8add77e0dc46"
+                guard="Список статей не пуст"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8baaf127-06df-4fe2-aac3-03d2f04f0072"
+                  LastKnownName="Выбрать статью"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d6ac1b0e-441d-49a6-be62-fb23b3964683"
+                guard="Список статей пуст"
+                name="Статьи отсутствуют"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="14b9e39c-0036-4413-8d98-d5ffe6cdc288"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="8baaf127-06df-4fe2-aac3-03d2f04f0072"
+            name="Выбрать статью"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="134ca0df-eb3e-4280-aedf-da5629eb2371"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="14b9e39c-0036-4413-8d98-d5ffe6cdc288"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="14b9e39c-0036-4413-8d98-d5ffe6cdc288"
+            name="ActivityFinal1"
             isLeaf="false" />
         </nodes>
       </activity>
