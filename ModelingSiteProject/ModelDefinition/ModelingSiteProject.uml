@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -506,6 +506,456 @@
           </opaqueAction>
           <activityFinalNode
             Id="14b9e39c-0036-4413-8d98-d5ffe6cdc288"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="b23f7510-a825-466a-b298-894c5909711a"
+        name="ActivityRegisterUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="d818b5f1-a905-46da-971c-ff067edc7a5e"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="af37afa0-f077-4ba3-a070-701add484afe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7cab745b-308a-44b8-b51b-f758cce822ba"
+                  LastKnownName="Запрос на создание нового пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="7cab745b-308a-44b8-b51b-f758cce822ba"
+            name="Запрос на создание нового пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a3a8977-8865-4062-abe2-7725e40b1382"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0ac46a8b-4268-471f-a19d-104ca160362b"
+                  LastKnownName="Вывод формы регистрации"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0ac46a8b-4268-471f-a19d-104ca160362b"
+            name="Вывод формы регистрации"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="37d004e9-2704-49bb-bcce-247710da63d6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fad54f69-00e4-43cc-87cf-75e7b6929378"
+                  LastKnownName="Ввод данных о пользователе"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fad54f69-00e4-43cc-87cf-75e7b6929378"
+            name="Ввод данных о пользователе"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ad3f9dd8-f67c-48e2-93a0-75be7d124d27"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="d644124c-aeef-4921-8412-55e7374ea5bd"
+                  LastKnownName="Регистрация"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="d644124c-aeef-4921-8412-55e7374ea5bd"
+            name="Регистрация"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f510f0f2-1cca-435e-a443-01ba2587ea3f"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="b3bcff98-341b-4e29-a69d-f17a99d7a42f"
+                  LastKnownName="Проверка на существование такого пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="a1ee45b2-3b02-4749-b5ef-8dbd643b90ec"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="b3bcff98-341b-4e29-a69d-f17a99d7a42f"
+            name="Проверка на существование такого пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="50d55757-30d7-4a85-b34e-2ac47be2edbc"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f786fcc3-1691-4f03-b970-5bfa1bad58cf"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="f786fcc3-1691-4f03-b970-5bfa1bad58cf"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="84c2bbf7-7f71-4161-b52b-db7935239be0"
+                guard="Пользователь уже существует"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fad54f69-00e4-43cc-87cf-75e7b6929378"
+                  LastKnownName="Ввод данных о пользователе"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cedf2599-adda-49bb-b296-e27261091033"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="77a08f2b-75cc-4851-8204-5b9907b0a822"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="77a08f2b-75cc-4851-8204-5b9907b0a822"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="137a30e6-3192-4907-947c-8e2edb0ac8c1"
+        name="ActivityPersonalArea"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="a138f745-74b4-4d99-a4ce-6b05f427e2fc"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="00e20232-ae8c-4832-835a-e460856d1759"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2e4c2d02-f8f3-4ce6-830a-ca34978fe9a5"
+                  LastKnownName="Запрос на вход в личный кабинет"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="2e4c2d02-f8f3-4ce6-830a-ca34978fe9a5"
+            name="Запрос на вход в личный кабинет"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="03d63c8a-5da8-400f-bc6f-ed41ba877a54"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ae0c09e4-b108-4e4b-9916-352aaf3598f3"
+                  LastKnownName="Проверка пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ae0c09e4-b108-4e4b-9916-352aaf3598f3"
+            name="Проверка пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5911fbec-4113-432a-ba76-28fc95fbf594"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ceccd412-4e2d-4e49-96fe-39e15e2cb4e3"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ea86b2b5-85fb-485e-b875-58d737365890"
+            name="Проверка роли пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="acde7c6f-9daa-42d0-8034-002627fef09a"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="8ae91cf9-a333-4085-8848-063b4b462c6e"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ceccd412-4e2d-4e49-96fe-39e15e2cb4e3"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="04add9d8-8488-480d-a495-e4bdde618eb7"
+                guard="Пользователь не существует"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="cefbd229-f6bc-4294-96d4-95ce0aff800c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f0e5837a-72a2-4db9-b5cd-a7cd3d633127"
+                guard="Пользователь прошел проверку"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ea86b2b5-85fb-485e-b875-58d737365890"
+                  LastKnownName="Проверка роли пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="cefbd229-f6bc-4294-96d4-95ce0aff800c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="0832fe65-9833-4051-9d74-a5a072194c0a"
+            name="Личный кабинет доктора"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="61d8744a-8652-49b4-9eeb-ef5b8d476698"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="1bdf283c-dff3-4e6a-b851-9450f66d505c"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d745140f-8f6b-42e8-81e9-1993ab50fba6"
+            name="Личный кабинет посетителя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4f18e55f-e455-4e9a-b404-1dbbe1cf6419"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="1bdf283c-dff3-4e6a-b851-9450f66d505c"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="8ae91cf9-a333-4085-8848-063b4b462c6e"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c201512f-85b8-4fb4-ad23-f0b205ce834b"
+                guard="Роль &quot;врач&quot;"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0832fe65-9833-4051-9d74-a5a072194c0a"
+                  LastKnownName="Личный кабинет доктора"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="7816cbf1-a409-453d-a266-9d86bd76ed13"
+                guard="Роль &quot;посетитель&quot;"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d745140f-8f6b-42e8-81e9-1993ab50fba6"
+                  LastKnownName="Личный кабинет посетителя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode
+            Id="1bdf283c-dff3-4e6a-b851-9450f66d505c"
+            name="ActivityFinal2"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="d5c4444e-8793-45cc-8832-36a5264e9632"
+        name="ActivityArticles"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="dffde4f6-d7ed-4eee-a940-b6a1e8bcfc72"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d6ede3d0-10a7-4df0-8a82-8fa9c4e5349c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9064a592-bc74-42a0-84c2-dc2ed47ce38f"
+                  LastKnownName="Запрос на добавление статьи"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="9064a592-bc74-42a0-84c2-dc2ed47ce38f"
+            name="Запрос на добавление статьи"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="71fc7fad-117c-42d4-8865-b1b980bf181a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="380cf288-ab8b-48ac-92a1-15109bf3b84c"
+                  LastKnownName="Проверка роли  пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="380cf288-ab8b-48ac-92a1-15109bf3b84c"
+            name="Проверка роли  пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="54d17348-ec88-4aba-a60e-b74947a751ab"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="69fa0593-83c9-463a-bd55-545552e0869f"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="69fa0593-83c9-463a-bd55-545552e0869f"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ea8d54d7-9345-4816-bdb0-6a9d605d7310"
+                guard="Роль &quot;врач&quot;"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="98278790-2671-4c66-a830-0376532047f8"
+                  LastKnownName="Форма добавления статьи"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b9e79bfe-e8f3-4b34-bfa5-b8e0fc9a4f0e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5394b67f-b2a7-4692-aadc-ef2c00797cee"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="98278790-2671-4c66-a830-0376532047f8"
+            name="Форма добавления статьи"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="41c036c8-a08f-421d-850d-3eaebba789e1"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="1bdb82e4-82ea-4f55-a060-bb06dd433c92"
+                  LastKnownName="Добавление статьи"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="1bdb82e4-82ea-4f55-a060-bb06dd433c92"
+            name="Добавление статьи"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f4cfa133-84c3-4104-aad9-fcb997b2b66a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="a05ba19a-a349-4b5c-8294-49bb47898748"
+                  LastKnownName="Размещение статьи на сайте"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="c89430f5-61f5-4240-8a9e-884f60263767"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="a05ba19a-a349-4b5c-8294-49bb47898748"
+            name="Размещение статьи на сайте"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ebc636c3-7660-45c7-86bc-b158c501d6e9"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="5394b67f-b2a7-4692-aadc-ef2c00797cee"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="5394b67f-b2a7-4692-aadc-ef2c00797cee"
             name="ActivityFinal1"
             isLeaf="false" />
         </nodes>

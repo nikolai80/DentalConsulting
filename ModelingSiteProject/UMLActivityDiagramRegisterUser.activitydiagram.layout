@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagramRegisterUser">
+  <activityRootModelMoniker Id="2a61c6bc-c0e7-42e7-a3e7-1457cef1d18c" />
+  <nestedChildShapes>
+    <initialNodeShape Id="18cb7cc7-82f3-4adb-b6c3-f8f4889912aa" absoluteBounds="3.25, 0.75, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="b5abdca2-33b0-49d6-b791-afd5f03b9105" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="0a83fa2c-ef36-4125-b940-fb6e6c7b40bd" absoluteBounds="2.625, 1.25, 1.375, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="59c0ad7f-5d39-450c-8d33-8e9289cd2560" LastKnownName="Запрос на создание нового пользователя" />
+    </actionShape>
+    <actionShape Id="8db6bcb4-3ace-4456-8aa6-c2f496de22b8" absoluteBounds="2.625, 2.25, 1.375, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="3377659e-4045-43e0-bd0e-811c95610d34" LastKnownName="Вывод формы регистрации" />
+    </actionShape>
+    <actionShape Id="3a595901-5ab6-47af-ab57-f0f3a3b04dcf" absoluteBounds="2.625, 3.375, 1.375, 0.625" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="83b2c0c2-5819-437d-84fd-30b1649774f8" LastKnownName="Ввод данных о пользователе" />
+    </actionShape>
+    <objectNodeShape Id="025b652c-5f24-4fe5-8cea-334a1d689d9b" absoluteBounds="2.625, 4.5, 1.375, 0.375" customColor="White">
+      <objectNodeMoniker Id="7ea87b5e-29c3-4706-a571-e10377257a07" LastKnownName="Регистрация" />
+    </objectNodeShape>
+    <actionShape Id="3d4e0915-a236-4ac3-8f00-5f3da01f4f80" absoluteBounds="2.625, 5.25, 1.375, 0.75" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="9544d6c1-960c-4404-923f-36c81c44dfea" LastKnownName="Проверка на существование такого пользователя" />
+    </actionShape>
+    <decisionNodeShape Id="da9d2e89-5abc-46d0-9f24-839a7f51d29e" absoluteBounds="3.125, 6.375, 0.375, 0.375" customColor="185, 212, 238">
+      <decisionNodeMoniker Id="c57c2ae7-d540-4a67-af91-946e17ef56d9" LastKnownName="Decision1" />
+      <relativeChildShapes />
+    </decisionNodeShape>
+    <controlFlowConnector edgePoints="[(3.490625 : 6.571875); (4.71875 : 6.571875); (4.71875 : 3.6875); (4 : 3.6875)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="c7a86e45-ca35-47a5-bd8f-cae12d5873fa" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="4.8125, 5, 1.7236689329147339, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <decisionNodeShapeMoniker Id="da9d2e89-5abc-46d0-9f24-839a7f51d29e" />
+        <actionShapeMoniker Id="3a595901-5ab6-47af-ab57-f0f3a3b04dcf" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.3125 : 1.875); (3.3125 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="6aa5c956-ab7f-4859-b8ff-543de01592cc" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="0a83fa2c-ef36-4125-b940-fb6e6c7b40bd" />
+        <actionShapeMoniker Id="8db6bcb4-3ace-4456-8aa6-c2f496de22b8" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.3125 : 2.875); (3.3125 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="e16c9006-6930-4a3c-9b4e-4ca06a49c4a3" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="8db6bcb4-3ace-4456-8aa6-c2f496de22b8" />
+        <actionShapeMoniker Id="3a595901-5ab6-47af-ab57-f0f3a3b04dcf" />
+      </nodes>
+    </controlFlowConnector>
+    <objectFlowConnector edgePoints="[(3.3125 : 4); (3.3125 : 4.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="261f0a16-28d9-4074-88cf-74027ac4cec3" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="3a595901-5ab6-47af-ab57-f0f3a3b04dcf" />
+        <objectNodeShapeMoniker Id="025b652c-5f24-4fe5-8cea-334a1d689d9b" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(3.3125 : 4.875); (3.3125 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="fe549eab-7c9b-49c8-9755-9d68c6294c52" />
+      <relativeChildShapes />
+      <nodes>
+        <objectNodeShapeMoniker Id="025b652c-5f24-4fe5-8cea-334a1d689d9b" />
+        <actionShapeMoniker Id="3d4e0915-a236-4ac3-8f00-5f3da01f4f80" />
+      </nodes>
+    </objectFlowConnector>
+    <controlFlowConnector edgePoints="[(3.3125 : 6); (3.3125 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="93ab0f6a-15b7-4a85-903a-24e1133870ce" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="3d4e0915-a236-4ac3-8f00-5f3da01f4f80" />
+        <decisionNodeShapeMoniker Id="da9d2e89-5abc-46d0-9f24-839a7f51d29e" />
+      </nodes>
+    </controlFlowConnector>
+    <activityFinalNodeShape Id="e1229743-0283-4a88-9e90-3f6962ca2ee1" absoluteBounds="3.25, 7.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="ca05d360-f84d-41a2-8cea-038331db0e91" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(3.3125 : 6.75); (3.3125 : 7.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="fe19f456-6016-4a81-bb24-cd6ad4e9febd" />
+      <relativeChildShapes />
+      <nodes>
+        <decisionNodeShapeMoniker Id="da9d2e89-5abc-46d0-9f24-839a7f51d29e" />
+        <activityFinalNodeShapeMoniker Id="e1229743-0283-4a88-9e90-3f6962ca2ee1" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(3.3125 : 0.875); (3.3125 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="1552577a-d4e0-48e6-936f-abe435c8b295" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="18cb7cc7-82f3-4adb-b6c3-f8f4889912aa" />
+        <actionShapeMoniker Id="0a83fa2c-ef36-4125-b940-fb6e6c7b40bd" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

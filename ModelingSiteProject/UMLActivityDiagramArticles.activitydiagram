@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0cc36453-2984-4524-b274-705683327e3b" name="ActivityArticles" linkedPackageId="b8f97f02-21ef-4e6f-b398-a353ff98ddc6" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="875a3ed8-6a47-4020-a864-537ca40335e4">
+      <profileInstance Id="2b1fab63-4999-4696-b562-9a63fd168ed8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="53857cd7-6338-4f97-ad1a-91a7185aadff">
+      <profileInstance Id="635fbe1b-c077-4a22-b087-77af8b4d9491" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="9a66b130-c577-4c6f-815f-183aabd78b60" name="ActivityArticles" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="d5c4444e-8793-45cc-8832-36a5264e9632" />
+        <nodes>
+          <initialNode Id="28174e57-ee6a-4baf-a353-589a2739ec40" name="Initial1" isLeaf="false">
+            <elementDefinition Id="dffde4f6-d7ed-4eee-a940-b6a1e8bcfc72" />
+            <flowNodeTargets>
+              <controlFlow Id="d09f1e8e-6702-4078-bb88-341007a6db89" isLeaf="false">
+                <opaqueActionMoniker Id="adc63de4-f0fc-4ce6-ba7e-3ec7f33a9146" LastKnownName="Запрос на добавление статьи" />
+                <elementDefinition Id="d6ede3d0-10a7-4df0-8a82-8fa9c4e5349c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="adc63de4-f0fc-4ce6-ba7e-3ec7f33a9146" name="Запрос на добавление статьи" isLeaf="false">
+            <elementDefinition Id="9064a592-bc74-42a0-84c2-dc2ed47ce38f" />
+            <flowNodeTargets>
+              <controlFlow Id="4e6573b7-42c5-47c3-9e00-203e13ede788" isLeaf="false">
+                <opaqueActionMoniker Id="5924d8e7-fa3a-49e4-bbf7-8c75d62b6018" LastKnownName="Проверка роли  пользователя" />
+                <elementDefinition Id="71fc7fad-117c-42d4-8865-b1b980bf181a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5924d8e7-fa3a-49e4-bbf7-8c75d62b6018" name="Проверка роли  пользователя" isLeaf="false">
+            <elementDefinition Id="380cf288-ab8b-48ac-92a1-15109bf3b84c" />
+            <flowNodeTargets>
+              <controlFlow Id="75bf0aab-5d60-4c1e-9744-dcd0fb8fd028" isLeaf="false">
+                <decisionNodeMoniker Id="7749587e-1a46-4d4b-a56f-a4b96622db7d" LastKnownName="Decision1" />
+                <elementDefinition Id="54d17348-ec88-4aba-a60e-b74947a751ab" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="7749587e-1a46-4d4b-a56f-a4b96622db7d" name="Decision1" isLeaf="false">
+            <elementDefinition Id="69fa0593-83c9-463a-bd55-545552e0869f" />
+            <flowNodeTargets>
+              <controlFlow Id="0534095c-9068-494f-9688-40d73427a945" guard="Роль &quot;врач&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="122caded-e064-4786-9745-8ff91586ae0b" LastKnownName="Форма добавления статьи" />
+                <elementDefinition Id="ea8d54d7-9345-4816-bdb0-6a9d605d7310" />
+              </controlFlow>
+              <controlFlow Id="258e2e1b-289a-4d55-a67a-57d643bc85a9" isLeaf="false">
+                <activityFinalNodeMoniker Id="5d624c6c-6069-4640-8742-6544f0ddbc32" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b9e79bfe-e8f3-4b34-bfa5-b8e0fc9a4f0e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="122caded-e064-4786-9745-8ff91586ae0b" name="Форма добавления статьи" isLeaf="false">
+            <elementDefinition Id="98278790-2671-4c66-a830-0376532047f8" />
+            <objectFlowTargets>
+              <objectFlow Id="6419bf29-f13e-4098-8623-1567f3e1cb04" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="c246d551-a8e2-4f4a-a430-9f93d93a92de" LastKnownName="Добавление статьи" />
+                <elementDefinition Id="41c036c8-a08f-421d-850d-3eaebba789e1" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="c246d551-a8e2-4f4a-a430-9f93d93a92de" name="Добавление статьи" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="1bdb82e4-82ea-4f55-a060-bb06dd433c92" />
+            <objectFlowTargets>
+              <objectFlow Id="71ec837b-816b-45f1-88af-76ae21690aa0" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="4027ed9f-a17d-4f22-9b65-4be43a3db25f" LastKnownName="Размещение статьи на сайте" />
+                <elementDefinition Id="f4cfa133-84c3-4104-aad9-fcb997b2b66a" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="888ae79b-c645-4500-88d5-b90ac596d83a" name="2147483647" value="2147483647">
+                <elementDefinition Id="c89430f5-61f5-4240-8a9e-884f60263767" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="4027ed9f-a17d-4f22-9b65-4be43a3db25f" name="Размещение статьи на сайте" isLeaf="false">
+            <elementDefinition Id="a05ba19a-a349-4b5c-8294-49bb47898748" />
+            <flowNodeTargets>
+              <controlFlow Id="1006c73b-846f-4ea2-a1a5-657bd40d644f" isLeaf="false">
+                <activityFinalNodeMoniker Id="5d624c6c-6069-4640-8742-6544f0ddbc32" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ebc636c3-7660-45c7-86bc-b158c501d6e9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="5d624c6c-6069-4640-8742-6544f0ddbc32" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="5394b67f-b2a7-4692-aadc-ef2c00797cee" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b8f97f02-21ef-4e6f-b398-a353ff98ddc6" name="ModelingSiteProject">
+    <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
+  </package>
+</activityRootModel>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7b0b220c-dd95-4761-a1a0-db151e22ecdd" name="ActivityPersonalArea" linkedPackageId="e51b3c74-afd4-4316-83c2-0b7e1d612455" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="407b5cc1-5795-4660-b58f-332bc83d3e6b">
+      <profileInstance Id="68983865-8ad3-4e81-9681-ac7780ccede1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ef710c33-3cac-4302-887d-b6dbe393f920">
+      <profileInstance Id="8e82e991-e9a6-4afd-86a9-c38ac398170e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="3ba8fcd7-991c-48ef-bdfa-b04391d6fb0e" name="ActivityPersonalArea" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="137a30e6-3192-4907-947c-8e2edb0ac8c1" />
+        <nodes>
+          <initialNode Id="331b86dd-989b-40cc-971b-e46398f96157" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a138f745-74b4-4d99-a4ce-6b05f427e2fc" />
+            <flowNodeTargets>
+              <controlFlow Id="2394d118-3ef0-4af0-b2b6-d368ff740329" isLeaf="false">
+                <opaqueActionMoniker Id="5ad207f7-74a8-4aff-92fa-21e33543d84b" LastKnownName="Запрос на вход в личный кабинет" />
+                <elementDefinition Id="00e20232-ae8c-4832-835a-e460856d1759" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="5ad207f7-74a8-4aff-92fa-21e33543d84b" name="Запрос на вход в личный кабинет" isLeaf="false">
+            <elementDefinition Id="2e4c2d02-f8f3-4ce6-830a-ca34978fe9a5" />
+            <flowNodeTargets>
+              <controlFlow Id="61e865c7-f300-4558-a500-8352e544d070" isLeaf="false">
+                <opaqueActionMoniker Id="4db9f799-21ac-4fc5-9ec3-595497707fd8" LastKnownName="Проверка пользователя" />
+                <elementDefinition Id="03d63c8a-5da8-400f-bc6f-ed41ba877a54" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4db9f799-21ac-4fc5-9ec3-595497707fd8" name="Проверка пользователя" isLeaf="false">
+            <elementDefinition Id="ae0c09e4-b108-4e4b-9916-352aaf3598f3" />
+            <flowNodeTargets>
+              <controlFlow Id="ca9819f0-d94c-4acd-8d04-fb8efb3b19e1" isLeaf="false">
+                <decisionNodeMoniker Id="3bba2cef-b815-47b3-acf6-58bcaa7ecfa3" LastKnownName="Decision1" />
+                <elementDefinition Id="5911fbec-4113-432a-ba76-28fc95fbf594" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0f175a6f-15e0-4c73-ae5f-952f03e9ddde" name="Проверка роли пользователя" isLeaf="false">
+            <elementDefinition Id="ea86b2b5-85fb-485e-b875-58d737365890" />
+            <flowNodeTargets>
+              <controlFlow Id="f4ae2bca-fb4c-4009-a5c5-bcff85ef55a1" isLeaf="false">
+                <decisionNodeMoniker Id="86aaab2d-89b0-4393-9c91-2094227ec04b" LastKnownName="Decision2" />
+                <elementDefinition Id="acde7c6f-9daa-42d0-8034-002627fef09a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="3bba2cef-b815-47b3-acf6-58bcaa7ecfa3" name="Decision1" isLeaf="false">
+            <elementDefinition Id="ceccd412-4e2d-4e49-96fe-39e15e2cb4e3" />
+            <flowNodeTargets>
+              <controlFlow Id="67872553-dd9f-4078-b0b7-07b7c8c15c90" guard="Пользователь не существует" isLeaf="false">
+                <activityFinalNodeMoniker Id="8a91a5d9-c9b4-4e72-a8ff-a5c70cb5b955" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="04add9d8-8488-480d-a495-e4bdde618eb7" />
+              </controlFlow>
+              <controlFlow Id="711f895c-e7ff-4b9a-88cd-c693f6cfe8a2" guard="Пользователь прошел проверку" isLeaf="false">
+                <opaqueActionMoniker Id="0f175a6f-15e0-4c73-ae5f-952f03e9ddde" LastKnownName="Проверка роли пользователя" />
+                <elementDefinition Id="f0e5837a-72a2-4db9-b5cd-a7cd3d633127" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="8a91a5d9-c9b4-4e72-a8ff-a5c70cb5b955" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="cefbd229-f6bc-4294-96d4-95ce0aff800c" />
+          </activityFinalNode>
+          <opaqueAction Id="5c50ea0e-0907-4a40-999e-d3c35b098eeb" name="Личный кабинет доктора" isLeaf="false">
+            <elementDefinition Id="0832fe65-9833-4051-9d74-a5a072194c0a" />
+            <flowNodeTargets>
+              <controlFlow Id="97f15d67-4a5e-469b-818f-7ddaac22eab8" isLeaf="false">
+                <activityFinalNodeMoniker Id="a4aa29c1-dc78-4d7c-a209-04d4d539db0f" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="61d8744a-8652-49b4-9eeb-ef5b8d476698" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4565d2d9-7ef4-40ed-b8e8-cda2f8eba233" name="Личный кабинет посетителя" isLeaf="false">
+            <elementDefinition Id="d745140f-8f6b-42e8-81e9-1993ab50fba6" />
+            <flowNodeTargets>
+              <controlFlow Id="a8f399bb-17c7-4dd3-bcf5-843475263654" isLeaf="false">
+                <activityFinalNodeMoniker Id="a4aa29c1-dc78-4d7c-a209-04d4d539db0f" LastKnownName="ActivityFinal2" />
+                <elementDefinition Id="4f18e55f-e455-4e9a-b404-1dbbe1cf6419" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="86aaab2d-89b0-4393-9c91-2094227ec04b" name="Decision2" isLeaf="false">
+            <elementDefinition Id="8ae91cf9-a333-4085-8848-063b4b462c6e" />
+            <flowNodeTargets>
+              <controlFlow Id="1cd9cf82-8913-4992-b677-0946e20ce391" guard="Роль &quot;врач&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="5c50ea0e-0907-4a40-999e-d3c35b098eeb" LastKnownName="Личный кабинет доктора" />
+                <elementDefinition Id="c201512f-85b8-4fb4-ad23-f0b205ce834b" />
+              </controlFlow>
+              <controlFlow Id="f859717d-0240-4afa-b9ce-c0da8dae3ca0" guard="Роль &quot;посетитель&quot;" isLeaf="false">
+                <opaqueActionMoniker Id="4565d2d9-7ef4-40ed-b8e8-cda2f8eba233" LastKnownName="Личный кабинет посетителя" />
+                <elementDefinition Id="7816cbf1-a409-453d-a266-9d86bd76ed13" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="a4aa29c1-dc78-4d7c-a209-04d4d539db0f" name="ActivityFinal2" isLeaf="false">
+            <elementDefinition Id="1bdf283c-dff3-4e6a-b851-9450f66d505c" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e51b3c74-afd4-4316-83c2-0b7e1d612455" name="ModelingSiteProject">
+    <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
+  </package>
+</activityRootModel>
