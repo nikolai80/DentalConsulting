@@ -50,6 +50,13 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLActivityDiagramViewArticle.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="UMLClassDiagramEntity.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLClassDiagramEntity.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLClassDiagramEntity.classdiagram</DependentUpon>
+    </Content>
     <Content Include="UMLUseCaseDiagramSiteUser.usecasediagram">
       <SubType>Content</SubType>
     </Content>
