@@ -1,8 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="e3cdcd0d-01b7-4114-8b6a-737376706f3d">
+      <body>Зарегистрированный пользователь имеющий роль "Врач"</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="700fc79c-37e6-47b2-8a26-2f7baff5b48c"
+          LastKnownName="Врач"
+          LastKnownLocation="ModelingSiteProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="bd7ecf5e-bb16-4943-802a-90d054bbf983">
+      <body>Зарегистрированный пользователь имеющий роль "Пациент"</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="590eabb0-a46d-4411-bbed-ac1eb0f8896e"
+          LastKnownName="Пациент"
+          LastKnownLocation="ModelingSiteProject.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -122,6 +144,45 @@
                 <memberEnd
                   Id="1a1338ff-384e-4027-bade-586b9b7c6660"
                   name="Регистрация на сайте"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d650c266-9abe-481e-8e17-616976c834da"
+            isDerived="false"
+            sourceEndRoleName="Пациент"
+            targetEndRoleName="Просмотр статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
+              LastKnownName="Просмотр статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85b62938-3e63-4877-b720-f9e9caed4b5c"
+                  name="Пациент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd52559a-66c0-42e0-87f1-06e48f959633"
+                  name="Просмотр статей"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1850,47 +1911,6 @@
               LastKnownLocation="ModelingSiteProject.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="d650c266-9abe-481e-8e17-616976c834da"
-            isDerived="false"
-            sourceEndRoleName="Пациент"
-            targetEndRoleName="Просмотр статей"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
-              LastKnownName="Просмотр статей"
-              LastKnownLocation="ModelingSiteProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="85b62938-3e63-4877-b720-f9e9caed4b5c"
-                  name="Пациент"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="bd52559a-66c0-42e0-87f1-06e48f959633"
-                  name="Просмотр статей"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>

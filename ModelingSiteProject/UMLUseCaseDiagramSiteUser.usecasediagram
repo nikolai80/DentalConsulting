@@ -1,5 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="d908af7a-30f1-4c74-add3-a37ad6b7a243">
+      <elementDefinition Id="e3cdcd0d-01b7-4114-8b6a-737376706f3d" />
+      <body>Зарегистрированный пользователь имеющий роль "Врач"</body>
+      <annotatedElements>
+        <actorMoniker Id="601a07e5-d851-4d46-988c-7cbc817d6519" LastKnownName="Врач" />
+      </annotatedElements>
+    </comment>
+    <comment Id="a9748338-d270-4281-b53d-3ceed5833e19">
+      <elementDefinition Id="bd7ecf5e-bb16-4943-802a-90d054bbf983" />
+      <body>Зарегистрированный пользователь имеющий роль "Пациент"</body>
+      <annotatedElements>
+        <actorMoniker Id="230143b6-f78c-43ed-be71-666eaf3ac560" LastKnownName="Пациент" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="a243d961-3783-4286-b74e-b468a3977552" name="Пользовать сайта" isAbstract="false" isLeaf="false">
@@ -20,6 +36,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="1e899762-4294-4472-a952-6748d3f47603" />
+          </association>
+          <association Id="4530ed10-2b70-4385-b271-47475af6f4ac" isDerived="false" sourceEndRoleName="Пациент" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5378d8fc-0f92-4d55-ac74-2cbe2dd0ae44" name="Пациент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="85b62938-3e63-4877-b720-f9e9caed4b5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="540b7d6c-cefb-48a7-8c2b-1e19940319ac" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd52559a-66c0-42e0-87f1-06e48f959633" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d650c266-9abe-481e-8e17-616976c834da" />
           </association>
         </targetEnds>
       </actor>
@@ -240,24 +272,6 @@
             <elementDefinition Id="46448bba-dbe4-42c8-bdc1-b3ac024c2299" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association Id="4530ed10-2b70-4385-b271-47475af6f4ac" isDerived="false" sourceEndRoleName="Пациент" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="5378d8fc-0f92-4d55-ac74-2cbe2dd0ae44" name="Пациент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="85b62938-3e63-4877-b720-f9e9caed4b5c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="540b7d6c-cefb-48a7-8c2b-1e19940319ac" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="bd52559a-66c0-42e0-87f1-06e48f959633" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d650c266-9abe-481e-8e17-616976c834da" />
-          </association>
-        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
