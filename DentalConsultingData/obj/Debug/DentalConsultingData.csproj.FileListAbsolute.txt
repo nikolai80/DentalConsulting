@@ -1,0 +1,10 @@
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll.config
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.pdb
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.dll
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.SqlServer.dll
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.xml
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.SqlServer.xml
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
