@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll.config
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.pdb
@@ -8,3 +9,17 @@ D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFram
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
+=======
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll.config
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.pdb
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.dll
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.SqlServer.dll
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.xml
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.SqlServer.xml
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\ru\EntityFramework.resources.dll
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
+>>>>>>> 2823574b1c7ecb12561def00b323749f74c2c3d1
