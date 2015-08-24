@@ -1,25 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="a243d961-3783-4286-b74e-b468a3977552" name="Пользовать сайта" isAbstract="false" isLeaf="false">
         <elementDefinition Id="83d114c6-504d-418f-8ac4-802edd3e2fc1" />
         <targetEnds>
-          <association Id="a519a8bd-5c1f-4223-bc9f-bf9622562407" isDerived="false" sourceEndRoleName="Пользовать сайта" targetEndRoleName="Регистрация на сайте" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="60ba4367-0847-45a9-991d-5897fdc20ea2" LastKnownName="Регистрация на сайте" />
+          <association Id="10b86c68-4e58-4f6c-b429-625f6f64a566" isDerived="false" sourceEndRoleName="Пользовать сайта" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="d1687a9f-fd93-4d21-9112-77c8e11a3d51" name="Пользовать сайта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="f25a4cf8-976c-4773-ab73-1f0c34f9b148" />
+                <memberEnd Id="171ad4c6-dea5-447b-b1e9-df50a07a46e5" name="Пользовать сайта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4698027f-4a20-4a26-8058-9ec82073fae1" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="59a41105-bd2e-43dc-a1fe-41263a2ac8ac" name="Регистрация на сайте" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="1a1338ff-384e-4027-bade-586b9b7c6660" />
+                <memberEnd Id="04e8c7a4-ae89-42b9-975d-6fc88e4c5589" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05094d16-ba9a-4719-b10c-883569b69bbc" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="1e899762-4294-4472-a952-6748d3f47603" />
+            <elementDefinition Id="e1ac072d-e80e-43da-8bb9-744f43103789" />
+          </association>
+          <association Id="53755e44-9142-409a-b270-372564ca9237" isDerived="false" sourceEndRoleName="Пользовать сайта" targetEndRoleName="Регистрация на сайте" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="60ba4367-0847-45a9-991d-5897fdc20ea2" LastKnownName="Регистрация на сайте" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7fdd7403-ba38-4794-aa5c-04c1f967874d" name="Пользовать сайта" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8e7c3ed-6fa8-4a40-9b1a-8d7d24da06c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ff43144-abdf-4367-a953-92c58e9c3160" name="Регистрация на сайте" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5b208136-5e23-47b0-a989-a2f2d0438c3f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dce8e7ca-9512-41ea-b1ae-8d712a8ca94e" />
           </association>
         </targetEnds>
       </actor>
@@ -46,14 +62,8 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="601a07e5-d851-4d46-988c-7cbc817d6519" name="Врач" isAbstract="false" isLeaf="false">
+      <actor Id="601a07e5-d851-4d46-988c-7cbc817d6519" name="Зарегистрированный пользователь" isAbstract="false" isLeaf="false">
         <elementDefinition Id="700fc79c-37e6-47b2-8a26-2f7baff5b48c" />
-        <generalsInternal>
-          <generalization Id="1f21ba36-863b-4f05-9b03-f14521396d25" isSubstitutable="false">
-            <actorMoniker Id="a243d961-3783-4286-b74e-b468a3977552" LastKnownName="Пользовать сайта" />
-            <elementDefinition Id="82422c17-37de-4749-b2e7-b6611a2c163d" />
-          </generalization>
-        </generalsInternal>
         <targetEnds>
           <association Id="3aa95a05-f2fa-4c30-bb5b-ca1908a84c4d" isDerived="false" sourceEndRoleName="Зарегистрированный пользователь" targetEndRoleName="Вход в личный кабинет" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет" />
@@ -72,7 +82,7 @@
             <elementDefinition Id="801f983f-e50a-4db1-ae9f-352e2097b6a6" />
           </association>
           <association Id="c9efc39e-988c-47dd-90a2-f5249eed0baa" isDerived="false" sourceEndRoleName="Зарегистрированный пользователь" targetEndRoleName="Размещение статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" LastKnownName="Создание статей" />
+            <useCaseMoniker Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" LastKnownName="Размещение статей" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="adafa82d-ba92-4c17-b200-6c1c9fb10f35" name="Зарегистрированный пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -87,38 +97,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="a7d18dad-60ab-4ce3-ac34-f4d2fd32485e" />
           </association>
-          <association Id="85cb7b80-117e-4b44-9a71-3effec462f3e" isDerived="false" sourceEndRoleName="Врач" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="105a521f-3164-49fd-b295-8474a5f6d944" name="Врач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="188ad14b-4075-4366-a994-642ec7ca9edb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6481831c-1b42-4a88-833b-b97048cd26a3" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="e5f458d9-0bfc-47b0-b54f-b91abe80edde" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3f3c4f48-90e0-4c7c-982a-c5727e2227bc" />
-          </association>
-          <association Id="715f7961-5444-4eb8-97a1-258eddf9f0a9" isDerived="false" sourceEndRoleName="Врач" targetEndRoleName="Редактирование статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="3b6b9333-af9c-426b-8761-de7722c820cf" LastKnownName="Редактирование статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a42aeb2f-e1a0-4f83-9b19-b8a3c42563fb" name="Врач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="0b39c5a7-771e-4269-a66e-fa4a8861947e" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="508361d8-3653-4d50-a01e-a492ae007e03" name="Редактирование статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8239bf18-69d1-4f17-96b2-199777f2e0dc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="98438037-136b-445c-a4ff-a3078722433c" />
-          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -128,7 +106,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" name="Создание статей" isAbstract="false" isLeaf="false">
+      <useCase Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" name="Размещение статей" isAbstract="false" isLeaf="false">
         <elementDefinition Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4" />
         <additions>
           <include Id="bf780608-a0bd-4e98-90cd-c221cf7bcccf">
@@ -141,165 +119,49 @@
     <useCaseModelRootHasTypes>
       <actor Id="17a995a1-fe07-4730-acc2-5e8d815bcd23" name="Администратор" isAbstract="false" isLeaf="false">
         <elementDefinition Id="cb22efce-640a-45e6-822d-a8b777b2dd0a" />
-        <generalsInternal>
-          <generalization Id="b356f258-2f36-41d0-abcd-3d5cd01a9079" isSubstitutable="false">
-            <actorMoniker Id="a243d961-3783-4286-b74e-b468a3977552" LastKnownName="Пользовать сайта" />
-            <elementDefinition Id="e0b21956-bf90-4579-bbc1-3c6b350fe478" />
-          </generalization>
-        </generalsInternal>
         <targetEnds>
-          <association Id="b00e7121-6dc0-42c0-adbd-844c1e3d8bfd" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
+          <association Id="72d8edb5-8e45-4f8e-a661-78532c3301eb" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Размещение статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" LastKnownName="Размещение статей" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="5785db76-89b2-4418-b86d-cf3cb00c758d" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="2a668010-3b04-45d9-9254-27fd9c089f60" />
+                <memberEnd Id="3402e3ad-5789-4ec4-a020-e41575c243db" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1d511c9d-7683-41cf-80c4-03578711888a" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="7ad81cde-ca45-404b-ad6e-d70a32cf50ec" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d63c1a64-765f-479c-93bd-85131c1166ca" />
+                <memberEnd Id="e31491a2-e46b-45ff-b6a8-c4e4e497a662" name="Размещение статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="197d9a67-a602-4452-b67a-5af3fee7b0f5" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="8cf63d1c-a2ea-46fd-9dd5-2c859991cc06" />
+            <elementDefinition Id="3b2f543e-25ea-4edb-85a4-b1875df8a3ac" />
           </association>
-          <association Id="a5ba7006-c0eb-40a0-ac44-a90cd07f7a23" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Уудаление статьи" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="83ea78dc-db1b-41c2-985a-31aebc5dce3a" LastKnownName="Уудаление статьи" />
+          <association Id="f3356bd9-9b63-42f2-8314-8abdbbf7e5e9" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Управление пользователями" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="80dc4ea1-5384-4f84-8438-c5cb9289616f" LastKnownName="Управление пользователями" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="8690c46e-e470-40b8-9812-eaccce78cf19" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e7045564-a31d-42d7-87d8-92591f066dd6" />
+                <memberEnd Id="5c170615-503a-44b5-aab7-83027accbeba" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7df0706-7434-416f-8b46-6e0b520810fa" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="e9129a0f-c5bc-4fbf-b0b7-41d9095e9da2" name="Уудаление статьи" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8d1a8e61-2a0f-41c4-bec4-7769cfb4bce2" />
+                <memberEnd Id="9b2225e0-ce03-4dea-b87d-70324e761798" name="Управление пользователями" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2455ae00-e085-4671-bec2-2cb11d9c9fac" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="4a806b8d-f813-48fc-bc43-fc874eb5a0e6" />
-          </association>
-          <association Id="d6248d78-e77e-40c1-b6ef-7c2cf7e7d38a" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Удаление пользователя" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="733e0f6f-9cbf-4069-9821-a707dbdf1710" LastKnownName="Удаление пользователя" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="70bb6058-3599-4b51-b0b9-a701380ba6a0" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="53b21a44-c36c-45f1-9b3e-d53db4cbf9d7" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2d6edbee-00ae-4ff4-981f-528e8435526b" name="Удаление пользователя" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="b415fea2-4b40-4099-922f-ef3b8aeedb8a" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d11f1fb5-799a-4d0c-a813-08f3eb3e3a78" />
-          </association>
-          <association Id="ab848ee6-7e6e-42e1-ae3c-bb371a735511" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Создание пользователя" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="b64482fa-9cdb-4522-80b4-e88fc89b704b" LastKnownName="Создание пользователя" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2fa36998-5308-45d2-ad05-cd2df542e652" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="940531fd-8d9b-4f18-863e-f9256bce1831" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="08e0a185-b817-4502-a4d5-dcd43026db5e" name="Создание пользователя" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="04b7ebc3-178a-4c82-afcf-fa6823338137" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="9baa89d3-6e52-4812-b421-322fb30d69db" />
-          </association>
-          <association Id="6ff54f5b-f4d8-423a-9a1e-937141c8c6a4" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Редактирование статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="3b6b9333-af9c-426b-8761-de7722c820cf" LastKnownName="Редактирование статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="28b32a75-68a7-4a2b-b2b5-5843e84c33e0" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a8957038-920c-41be-a645-bbe05ca2ef05" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="106a83b9-720b-4682-8fe1-6ba360632bf6" name="Редактирование статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="be56670e-c04d-46bc-96f2-1278644b5876" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="e5996d9f-bfdc-4f0d-a596-4168ecbe5acc" />
+            <elementDefinition Id="6638f648-df01-404c-a771-7c3fa2e4406b" />
           </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="230143b6-f78c-43ed-be71-666eaf3ac560" name="Пациент" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="590eabb0-a46d-4411-bbed-ac1eb0f8896e" />
-        <generalsInternal>
-          <generalization Id="bae17697-fcc2-4c4c-ba97-37bc40900f0e" isSubstitutable="false">
-            <actorMoniker Id="a243d961-3783-4286-b74e-b468a3977552" LastKnownName="Пользовать сайта" />
-            <elementDefinition Id="46448bba-dbe4-42c8-bdc1-b3ac024c2299" />
-          </generalization>
-        </generalsInternal>
-        <targetEnds>
-          <association Id="4530ed10-2b70-4385-b271-47475af6f4ac" isDerived="false" sourceEndRoleName="Пациент" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="5378d8fc-0f92-4d55-ac74-2cbe2dd0ae44" name="Пациент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="85b62938-3e63-4877-b720-f9e9caed4b5c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="540b7d6c-cefb-48a7-8c2b-1e19940319ac" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="bd52559a-66c0-42e0-87f1-06e48f959633" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d650c266-9abe-481e-8e17-616976c834da" />
-          </association>
-        </targetEnds>
-      </actor>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="b64482fa-9cdb-4522-80b4-e88fc89b704b" name="Создание пользователя" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="a573eaca-3148-411b-8a58-71297652b5d3" />
+      <useCase Id="80dc4ea1-5384-4f84-8438-c5cb9289616f" name="Управление пользователями" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="20b2cc2b-6a23-4000-9d40-7ad02922a162" />
         <additions>
-          <include Id="e8a54132-5009-40c3-ba2c-3b539eda1984">
+          <include Id="fe154500-f671-4fe1-9093-92b54d3ae2df">
             <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
-            <elementDefinition Id="451aecd4-7002-432c-acd7-496ebce6ed46" />
-          </include>
-        </additions>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="733e0f6f-9cbf-4069-9821-a707dbdf1710" name="Удаление пользователя" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="f993a07f-c11a-4fc9-9c8c-0c5819b751b0" />
-        <additions>
-          <include Id="77578a6f-6767-41bb-a056-ce1e6d90ea99">
-            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
-            <elementDefinition Id="969980e3-5a02-45f6-a528-78de393eb2ea" />
-          </include>
-        </additions>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="83ea78dc-db1b-41c2-985a-31aebc5dce3a" name="Уудаление статьи" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="51c84893-18f3-4cf2-884f-ff99e5ca0a60" />
-        <additions>
-          <include Id="bd85bb78-4595-4928-8f65-125c47e9cba8">
-            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
-            <elementDefinition Id="358975e7-b1c5-4174-be99-afb17e143e3a" />
-          </include>
-        </additions>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="3b6b9333-af9c-426b-8761-de7722c820cf" name="Редактирование статей" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0" />
-        <additions>
-          <include Id="d140b133-9392-4395-8099-6b885327b576">
-            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
-            <elementDefinition Id="b1396a3f-f48c-4ef7-8100-d337613aa24d" />
+            <elementDefinition Id="ebe49857-b6f3-4ec7-8375-5f289bb7c740" />
           </include>
         </additions>
       </useCase>
