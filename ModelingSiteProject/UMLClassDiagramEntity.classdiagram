@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="f1052685-aa63-4fef-a828-15f5b88c7b48" name="UMLClassDiagramEntity" linkedPackageId="a1a8a4dc-50ae-47e9-a912-dfeddf496238" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="1605b7d8-f4a2-405c-9b0c-d4776971bcc5">
-      <profileInstance Id="94250456-53b2-430b-b3fc-a8473af99198" name="CSharpProfile">
-        <elementDefinition Id="9139089a-689b-460d-b588-da4ce34d2553" />
-      </profileInstance>
-      <elementDefinition Id="526ddcb7-ccbf-4e39-898e-71dc6cb9413c" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="2f6f717b-570f-49f5-8bc1-df583579ac5a" name="Article" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -421,13 +413,42 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="41642572-58fd-462c-a4c8-bb1226bed322" name="Reminder" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c935ed09-18ff-468d-b028-0f027f285e40" />
+        <ownedAttributesInternal>
+          <property Id="a9d2f34a-6691-4f13-b5c4-304ef8e44490" name="DateReminder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="920466a8-3260-4ef4-94b6-76ef9465d66b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="16f66849-3dfe-416d-9d6a-02912849b33d" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="6b2c2557-de56-4694-9b03-f8e9b3e8013e" name="ReminderText" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="619a23c7-a44d-4dca-a25d-3b2c210f689e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="80b1ee01-dac5-4e83-9f66-06347865457f" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="0294cd0e-1e8c-4425-8aaa-980b2985051a" name="Advice" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c9564996-bf27-4e38-b697-298f3b8ed9b8" />
+        <ownedAttributesInternal>
+          <property Id="2432872e-b5f5-49c2-8045-f73d898a7270" name="AdviceText" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a070decb-f1f0-4eb9-8d09-bff0f0212c81" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="16f66849-3dfe-416d-9d6a-02912849b33d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="80b1ee01-dac5-4e83-9f66-06347865457f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="a1a8a4dc-50ae-47e9-a912-dfeddf496238" name="ModelingSiteProject">
     <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
@@ -443,6 +464,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1605b7d8-f4a2-405c-9b0c-d4776971bcc5">
+        <profileInstance Id="94250456-53b2-430b-b3fc-a8473af99198" name="CSharpProfile">
+          <elementDefinition Id="9139089a-689b-460d-b588-da4ce34d2553" />
+        </profileInstance>
+        <elementDefinition Id="526ddcb7-ccbf-4e39-898e-71dc6cb9413c" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>
