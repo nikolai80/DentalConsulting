@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DentalConsultingData
 	{
 	// История болезни
-	class HospitalChart
+	public class HospitalChart
 		{
 		}
 	}

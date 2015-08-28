@@ -53,11 +53,9 @@
     <Compile Include="Article.cs" />
     <Compile Include="ArticleContent.cs" />
     <Compile Include="Chat.cs" />
+    <Compile Include="DataContext.cs" />
     <Compile Include="DentalCard.cs" />
-    <Compile Include="DentalConsultingDataModel.cs" />
-    <Compile Include="GenericRepository.cs" />
     <Compile Include="HospitalChart.cs" />
-    <Compile Include="Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reminder.cs" />
     <Compile Include="Role.cs" />
@@ -66,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="architecture\cd_dataAccess.cd" />
+    <None Include="architecture\cd_data.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

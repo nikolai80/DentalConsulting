@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DentalConsultingData
 	{
-	class ArticleContent
+	public class ArticleContent
 		{
 		public int ArticleContentId { get; set; }
 		public string ArticleText { get; set; }

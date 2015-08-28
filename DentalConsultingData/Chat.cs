@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DentalConsultingData
 	{
 	/*Класс для чата между доктором и пользователем*/
-	class Chat
+	public class Chat
 		{
 		}
 	}

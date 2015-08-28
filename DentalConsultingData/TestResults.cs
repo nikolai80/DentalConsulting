@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DentalConsultingData
 	{
 	/*Класс результатов медицинских анализов*/
-	class TestResults
+	public class TestResults
 		{
 		}
 	}

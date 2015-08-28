@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace DentalConsultingData
+namespace DentalConsultingDAL
 	{
-	public class Role
+
+	public interface IUser
 		{
 		}
-	}
+}

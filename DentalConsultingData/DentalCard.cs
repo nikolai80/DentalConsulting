@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DentalConsultingData
 	{
 	//Стоматологическая карта
-	class DentalCard
+	public class DentalCard
 		{
 		}
 	}
