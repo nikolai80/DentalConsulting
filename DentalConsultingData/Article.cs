@@ -9,7 +9,7 @@ namespace DentalConsultingData
 	{
 	public class Article
 		{
-		public int ArticleId { get; set; }
+		public int ArticleID { get; set; }
 		public string ArticleTitle { get; set; }
 		public ArticleContent ArticleContent { get; set; }
 		}
