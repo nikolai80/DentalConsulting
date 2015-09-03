@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -19,6 +20,6 @@ namespace DentalConsultingDAL
 
 		User GetUserById(string userId);
 
-		IEnumerale<User> GetUsers();
+		IEnumerable<User> GetUsers();
 	}
 }

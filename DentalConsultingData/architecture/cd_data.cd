@@ -42,10 +42,10 @@
       <FileName>Role.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.TestResults">
+  <Class Name="DentalConsultingData.TestResult">
     <Position X="2.5" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TestResults.cs</FileName>
     </TypeIdentifier>
   </Class>

@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,15 +48,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArticleRepository.cs" />
-    <Compile Include="IArticleRepository.cs" />
-    <Compile Include="IUser.cs" />
+    <Compile Include="DentalConsultingContext.cs" />
+    <Compile Include="repository\AdviceRepository.cs" />
+    <Compile Include="repository\ArticleContentRepository.cs" />
+    <Compile Include="repository\ArticleRepository.cs" />
+    <Compile Include="repository\ChatRepository.cs" />
+    <Compile Include="repository\DentalCardRepository.cs" />
+    <Compile Include="repository\HospitalChartRepository.cs" />
+    <Compile Include="Interfaces\IAdvice.cs" />
+    <Compile Include="Interfaces\IArticleContent.cs" />
+    <Compile Include="Interfaces\IArticleRepository.cs" />
+    <Compile Include="Interfaces\IChat.cs" />
+    <Compile Include="Interfaces\IDentalCard.cs" />
+    <Compile Include="Interfaces\IHospitalChart.cs" />
+    <Compile Include="Interfaces\IReminder.cs" />
+    <Compile Include="Interfaces\IRole.cs" />
+    <Compile Include="Interfaces\ITestResults.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserRepository.cs" />
+    <Compile Include="repository\ReminderRepository.cs" />
+    <Compile Include="repository\RoleRepository.cs" />
+    <Compile Include="repository\TestResultsRepository.cs" />
+    <Compile Include="repository\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cd_DAL.cd" />
+    <None Include="App.config" />
+    <None Include="architecture\cd_DAL.cd" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DentalConsultingData\DentalConsultingData.csproj">
+      <Project>{8edc206d-21b1-4702-8675-e3490e57c314}</Project>
+      <Name>DentalConsultingData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

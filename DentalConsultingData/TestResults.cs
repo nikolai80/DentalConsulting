@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace DentalConsultingData
 	{
 	/*Класс результатов медицинских анализов*/
-	public class TestResults
+	public class TestResult
 		{
 
-		public int TestResultsID
+		public int TestResultID
 			{
 			get
 				{
@@ -21,7 +21,7 @@ namespace DentalConsultingData
 				}
 			}
 
-		public string TestResultsText
+		public string TestResultText
 			{
 			get
 				{

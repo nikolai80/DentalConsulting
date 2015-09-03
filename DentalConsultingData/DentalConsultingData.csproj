@@ -53,7 +53,6 @@
     <Compile Include="Article.cs" />
     <Compile Include="ArticleContent.cs" />
     <Compile Include="Chat.cs" />
-    <Compile Include="DataContext.cs" />
     <Compile Include="DentalCard.cs" />
     <Compile Include="HospitalChart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
