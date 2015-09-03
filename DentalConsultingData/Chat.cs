@@ -10,37 +10,12 @@ namespace DentalConsultingData
 	public class Chat
 		{
 
-		public int ChatID
+		public int ChatID { get; set; }
+
+		public virtual ICollection<User> Doctor
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;set;
 			}
 
-		public User Doctor
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
-
-		public User Visitor
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
 	}
 	}

@@ -9,48 +9,14 @@ namespace DentalConsultingData
 	public class User
 		{
 
-		public int UserID
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		public int UserID { get; set; }
 
-		public string UserName
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		public string UserName { get; set; }
 
-		public string UserSurname
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		public string UserSurname { get; set; }
 
-		public DateTime UserDateOfBirth
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
-	}
+		public DateTime UserDateOfBirth { get; set; }
+
+		public virtual ICollection<Chat> Chats { get; set; } 
+		}
 	}
