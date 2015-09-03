@@ -6,14 +6,4 @@ using System.Text;
 
 namespace DentalConsultingData
 	{
-
-	public class DataContext : DbContext
-		{
-
-		public DataContext():base("DentalConsulting")
-			{
-			}
-
-		public DbSet<Article> Articles { get; set;}
-	}
 }

@@ -42,7 +42,7 @@ namespace DentalConsultingData
 				}
 			}
 
-		public date UserDateOfBirth
+		public DateTime UserDateOfBirth
 			{
 			get
 				{
