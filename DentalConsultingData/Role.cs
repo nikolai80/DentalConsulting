@@ -8,5 +8,27 @@ namespace DentalConsultingData
 	{
 	public class Role
 		{
-		}
+
+		public int RoleID
+			{
+			get
+				{
+				throw new System.NotImplementedException();
+				}
+			set
+				{
+				}
+			}
+
+		public string RoleTitle
+			{
+			get
+				{
+				throw new System.NotImplementedException();
+				}
+			set
+				{
+				}
+			}
+	}
 	}

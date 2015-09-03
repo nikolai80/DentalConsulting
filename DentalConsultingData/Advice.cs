@@ -8,5 +8,27 @@ namespace DentalConsultingData
 
 	public class Advice
 		{
-		}
+
+		public int AdviceID
+			{
+			get
+				{
+				throw new System.NotImplementedException();
+				}
+			set
+				{
+				}
+			}
+
+		public string AdviceText
+			{
+			get
+				{
+				throw new System.NotImplementedException();
+				}
+			set
+				{
+				}
+			}
+	}
 }

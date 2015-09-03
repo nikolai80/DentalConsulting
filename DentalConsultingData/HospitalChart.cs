@@ -9,5 +9,27 @@ namespace DentalConsultingData
 	// История болезни
 	public class HospitalChart
 		{
-		}
+
+		public int HospitalChartID
+			{
+			get
+				{
+				throw new System.NotImplementedException();
+				}
+			set
+				{
+				}
+			}
+
+		public string HospitalChartContent
+			{
+			get
+				{
+				throw new System.NotImplementedException();
+				}
+			set
+				{
+				}
+			}
+	}
 	}

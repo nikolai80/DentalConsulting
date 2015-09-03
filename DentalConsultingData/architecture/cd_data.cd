@@ -7,45 +7,45 @@
       <FileName>Article.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.ArticleContent" Collapsed="true">
+  <Class Name="DentalConsultingData.ArticleContent">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ArticleContent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.Chat" Collapsed="true">
+  <Class Name="DentalConsultingData.Chat">
     <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAQ=</HashCode>
       <FileName>Chat.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.DentalCard" Collapsed="true">
-    <Position X="2.5" Y="1.75" Width="1.5" />
+  <Class Name="DentalConsultingData.DentalCard">
+    <Position X="2.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAACAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DentalCard.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.HospitalChart" Collapsed="true">
-    <Position X="2.5" Y="2.75" Width="1.5" />
+  <Class Name="DentalConsultingData.HospitalChart">
+    <Position X="2.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HospitalChart.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.Role" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+  <Class Name="DentalConsultingData.Role">
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Role.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DentalConsultingData.TestResults" Collapsed="true">
-    <Position X="2.5" Y="3.5" Width="1.5" />
+  <Class Name="DentalConsultingData.TestResults">
+    <Position X="2.5" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TestResults.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -57,16 +57,16 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DentalConsultingData.Reminder">
-    <Position X="2.5" Y="4.25" Width="1.5" />
+    <Position X="5.75" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
       <FileName>Reminder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DentalConsultingData.Advice">
-    <Position X="0.5" Y="4.25" Width="1.5" />
+    <Position X="0.5" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Advice.cs</FileName>
     </TypeIdentifier>
   </Class>

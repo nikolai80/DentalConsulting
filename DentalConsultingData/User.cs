@@ -20,7 +20,7 @@ namespace DentalConsultingData
 				}
 			}
 
-		public int UserName
+		public string UserName
 			{
 			get
 				{
@@ -31,7 +31,7 @@ namespace DentalConsultingData
 				}
 			}
 
-		public int UserSurname
+		public string UserSurname
 			{
 			get
 				{
@@ -42,7 +42,7 @@ namespace DentalConsultingData
 				}
 			}
 
-		public int UserDateOfBirth
+		public date UserDateOfBirth
 			{
 			get
 				{
