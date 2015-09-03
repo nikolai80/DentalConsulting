@@ -9,10 +9,10 @@ namespace DentalConsultingDAL
 
 	public interface IRole
 		{
-		IEnumerable<Role> GetRoles();
-		Role GetRoleById(string roleId);
-		void InsertRole(Role role);
-		void EditRole(Role role);
+		IEnumerable<s> GetRoles();
+		s GetRoleById(string roleId);
+		void InsertRole(s role);
+		void EditRole(s role);
 		void DeleteRole(int roleId);
 		void Save();
 		}

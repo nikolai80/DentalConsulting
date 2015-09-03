@@ -6,29 +6,21 @@ using System.Threading.Tasks;
 
 namespace DentalConsultingData
 	{
-	public class Role
+	public class s
 		{
 
 		public int RoleID
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public string RoleTitle
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
+
+		public virtual ICollection<User> Users { get; set; }
 	}
 	}

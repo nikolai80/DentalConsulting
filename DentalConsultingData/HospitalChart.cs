@@ -12,24 +12,16 @@ namespace DentalConsultingData
 
 		public int HospitalChartID
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public string HospitalChartContent
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
+
+		public virtual User User { get; set; }
 	}
 	}

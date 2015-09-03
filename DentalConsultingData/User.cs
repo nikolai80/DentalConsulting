@@ -17,6 +17,13 @@ namespace DentalConsultingData
 
 		public DateTime UserDateOfBirth { get; set; }
 
-		public virtual ICollection<Chat> Chats { get; set; } 
+		public virtual ICollection<Chat> Chats { get; set; }
+		public virtual DentalCard DentalCard { get; set; }
+		public virtual ICollection<s> Roles { get; set; }
+		public virtual HospitalChart HospitalChart { get; set; }
+
+		public virtual ICollection<Advice> Advices { get; set; }
+		public virtual ICollection<TestResult> TestResults { get; set; }
+		public virtual ICollection<Reminder> Reminders { get; set; }
 		}
 	}

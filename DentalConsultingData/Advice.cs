@@ -11,24 +11,16 @@ namespace DentalConsultingData
 
 		public int AdviceID
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public string AdviceText
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
+
+		public virtual ICollection<User> Users { get; set; }
 	}
 }

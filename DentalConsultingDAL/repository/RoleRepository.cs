@@ -9,22 +9,22 @@ namespace DentalConsultingDAL
 	public class RoleRepository : IRole, IDisposable
 		{
 		private DentalConsultingContext context;
-		public IEnumerable<DentalConsultingData.Role> GetRoles()
+		public IEnumerable<DentalConsultingData.s> GetRoles()
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.Role GetRoleById(string roleId)
+		public DentalConsultingData.s GetRoleById(string roleId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertRole(DentalConsultingData.Role role)
+		public void InsertRole(DentalConsultingData.s role)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditRole(DentalConsultingData.Role role)
+		public void EditRole(DentalConsultingData.s role)
 			{
 			throw new NotImplementedException();
 			}

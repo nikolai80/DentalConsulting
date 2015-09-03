@@ -12,24 +12,16 @@ namespace DentalConsultingData
 
 		public int DentalCardID
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public string DentalCardContent
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
+
+		public virtual User User { get; set; }
 	}
 	}

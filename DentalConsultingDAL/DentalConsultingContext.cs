@@ -57,7 +57,7 @@ namespace DentalConsultingDAL
 				}
 			}
 
-		public DbSet<Role> Roles
+		public DbSet<s> Roles
 			{
 			get
 				{

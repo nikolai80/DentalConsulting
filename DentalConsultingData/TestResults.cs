@@ -12,24 +12,16 @@ namespace DentalConsultingData
 
 		public int TestResultID
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public string TestResultText
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
+
+		public virtual User User { get; set; }
 	}
 	}
