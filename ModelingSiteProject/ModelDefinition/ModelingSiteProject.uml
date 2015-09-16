@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2232,6 +2232,123 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="6d5d6014-eeec-445b-a1a2-80c64696f329"
+        name="ActivityManagementUsers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fc4dd26d-27db-4f45-8b2f-c9e26dff863d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d5713016-ea2d-4a59-8926-4106c1dca225"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15b20af4-0864-427b-a334-51a286ec06a4"
+                  LastKnownName="Авторизация"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="9c9d9e0d-45cd-4753-ac87-6e2affbe2a3e"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="15b20af4-0864-427b-a334-51a286ec06a4"
+            name="Авторизация"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f0b5b271-0683-44e1-bc06-0b0719032af7"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ff5f7eb6-f4bf-49e3-999c-b0fc41263288"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ff5f7eb6-f4bf-49e3-999c-b0fc41263288"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1260a242-7ad0-4be8-bbf4-6b4995d3d244"
+                guard="Администратор"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6c5e2a36-64f9-4b69-958b-785c14c5b181"
+                  LastKnownName="Отображение списка пользователей"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4f4a530b-0b45-4525-8ba6-040504a4023e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15b20af4-0864-427b-a334-51a286ec06a4"
+                  LastKnownName="Авторизация"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="6c5e2a36-64f9-4b69-958b-785c14c5b181"
+            name="Отображение списка пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4b03e926-0361-4114-b3a3-f91f7f441d93"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dc327540-9dd6-4d50-b21f-e5f57296ea48"
+                  LastKnownName="Выбор пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dc327540-9dd6-4d50-b21f-e5f57296ea48"
+            name="Выбор пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5635b03-0397-4781-9304-250d258d817a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6cffe9e5-33e0-4fee-99ba-7e87b7916155"
+                  LastKnownName="Действие над пользователем"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6cffe9e5-33e0-4fee-99ba-7e87b7916155"
+            name="Действие над пользователем"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2d100f6f-bf74-495d-bc35-857de9503ea9"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9c9d9e0d-45cd-4753-ac87-6e2affbe2a3e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
