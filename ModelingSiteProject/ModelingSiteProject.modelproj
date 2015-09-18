@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLActivityDiagramArticles.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="UMLActivityDiagramManagementUsers.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLActivityDiagramManagementUsers.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLActivityDiagramManagementUsers.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="UMLActivityDiagramPersonalArea.activitydiagram">
       <SubType>Content</SubType>
     </Content>

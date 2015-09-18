@@ -3,6 +3,28 @@
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="e3cdcd0d-01b7-4114-8b6a-737376706f3d">
+      <body>Зарегистрированный пользователь имеющий роль "Врач"</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="700fc79c-37e6-47b2-8a26-2f7baff5b48c"
+          LastKnownName="Врач"
+          LastKnownLocation="ModelingSiteProject.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="bd7ecf5e-bb16-4943-802a-90d054bbf983">
+      <body>Зарегистрированный пользователь имеющий роль "Пациент"</body>
+      <annotatedElements>
+        <actorMoniker
+          Id="590eabb0-a46d-4411-bbed-ac1eb0f8896e"
+          LastKnownName="Пациент"
+          LastKnownLocation="ModelingSiteProject.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -15,6 +37,12 @@
       <profileInstance
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="526ddcb7-ccbf-4e39-898e-71dc6cb9413c">
+      <profileInstance
+        Id="9139089a-689b-460d-b588-da4ce34d2553"
+        name="CSharpProfile" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -94,46 +122,7 @@
         isLeaf="false">
         <targetEnds>
           <association
-            Id="e1ac072d-e80e-43da-8bb9-744f43103789"
-            isDerived="false"
-            sourceEndRoleName="Пользовать сайта"
-            targetEndRoleName="Просмотр статей"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
-              LastKnownName="Просмотр статей"
-              LastKnownLocation="ModelingSiteProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4698027f-4a20-4a26-8058-9ec82073fae1"
-                  name="Пользовать сайта"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="05094d16-ba9a-4719-b10c-883569b69bbc"
-                  name="Просмотр статей"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="dce8e7ca-9512-41ea-b1ae-8d712a8ca94e"
+            Id="1e899762-4294-4472-a952-6748d3f47603"
             isDerived="false"
             sourceEndRoleName="Пользовать сайта"
             targetEndRoleName="Регистрация на сайте"
@@ -146,7 +135,7 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="b8e7c3ed-6fa8-4a40-9b1a-8d7d24da06c2"
+                  Id="f25a4cf8-976c-4773-ab73-1f0c34f9b148"
                   name="Пользовать сайта"
                   isLeaf="false"
                   isStatic="false"
@@ -159,8 +148,47 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="5b208136-5e23-47b0-a989-a2f2d0438c3f"
+                  Id="1a1338ff-384e-4027-bade-586b9b7c6660"
                   name="Регистрация на сайте"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d650c266-9abe-481e-8e17-616976c834da"
+            isDerived="false"
+            sourceEndRoleName="Пациент"
+            targetEndRoleName="Просмотр статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
+              LastKnownName="Просмотр статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85b62938-3e63-4877-b720-f9e9caed4b5c"
+                  name="Пациент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bd52559a-66c0-42e0-87f1-06e48f959633"
+                  name="Просмотр статей"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -208,9 +236,19 @@
     <packageHasNamedElement>
       <actor
         Id="700fc79c-37e6-47b2-8a26-2f7baff5b48c"
-        name="Зарегистрированный пользователь"
+        name="Врач"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="82422c17-37de-4749-b2e7-b6611a2c163d"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="83d114c6-504d-418f-8ac4-802edd3e2fc1"
+              LastKnownName="Пользовать сайта"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="801f983f-e50a-4db1-ae9f-352e2097b6a6"
@@ -260,7 +298,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4"
-              LastKnownName="Размещение статей"
+              LastKnownName="Создание статей"
               LastKnownLocation="ModelingSiteProject.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -290,6 +328,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="3f3c4f48-90e0-4c7c-982a-c5727e2227bc"
+            isDerived="false"
+            sourceEndRoleName="Врач"
+            targetEndRoleName="Просмотр статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
+              LastKnownName="Просмотр статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="188ad14b-4075-4366-a994-642ec7ca9edb"
+                  name="Врач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5f458d9-0bfc-47b0-b54f-b91abe80edde"
+                  name="Просмотр статей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="98438037-136b-445c-a4ff-a3078722433c"
+            isDerived="false"
+            sourceEndRoleName="Врач"
+            targetEndRoleName="Редактирование статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0"
+              LastKnownName="Редактирование статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b39c5a7-771e-4269-a66e-fa4a8861947e"
+                  name="Врач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8239bf18-69d1-4f17-96b2-199777f2e0dc"
+                  name="Редактирование статей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -303,7 +419,7 @@
     <packageHasNamedElement>
       <useCase
         Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4"
-        name="Размещение статей"
+        name="Создание статей"
         isAbstract="false"
         isLeaf="false">
         <additions>
@@ -323,46 +439,17 @@
         name="Администратор"
         isAbstract="false"
         isLeaf="false">
-        <targetEnds>
-          <association
-            Id="3b2f543e-25ea-4edb-85a4-b1875df8a3ac"
-            isDerived="false"
-            sourceEndRoleName="Администратор"
-            targetEndRoleName="Размещение статей"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4"
-              LastKnownName="Размещение статей"
+        <generalsInternal>
+          <generalization
+            Id="e0b21956-bf90-4579-bbc1-3c6b350fe478"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="83d114c6-504d-418f-8ac4-802edd3e2fc1"
+              LastKnownName="Пользовать сайта"
               LastKnownLocation="ModelingSiteProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1d511c9d-7683-41cf-80c4-03578711888a"
-                  name="Администратор"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="197d9a67-a602-4452-b67a-5af3fee7b0f5"
-                  name="Размещение статей"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
           <association
             Id="6638f648-df01-404c-a771-7c3fa2e4406b"
             isDerived="false"
@@ -392,6 +479,201 @@
                 <memberEnd
                   Id="2455ae00-e085-4671-bec2-2cb11d9c9fac"
                   name="Управление пользователями"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8cf63d1c-a2ea-46fd-9dd5-2c859991cc06"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Просмотр статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
+              LastKnownName="Просмотр статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2a668010-3b04-45d9-9254-27fd9c089f60"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d63c1a64-765f-479c-93bd-85131c1166ca"
+                  name="Просмотр статей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4a806b8d-f813-48fc-bc43-fc874eb5a0e6"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Уудаление статьи"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="51c84893-18f3-4cf2-884f-ff99e5ca0a60"
+              LastKnownName="Уудаление статьи"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7045564-a31d-42d7-87d8-92591f066dd6"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d1a8e61-2a0f-41c4-bec4-7769cfb4bce2"
+                  name="Уудаление статьи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d11f1fb5-799a-4d0c-a813-08f3eb3e3a78"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Удаление пользователя"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f993a07f-c11a-4fc9-9c8c-0c5819b751b0"
+              LastKnownName="Удаление пользователя"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53b21a44-c36c-45f1-9b3e-d53db4cbf9d7"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b415fea2-4b40-4099-922f-ef3b8aeedb8a"
+                  name="Удаление пользователя"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9baa89d3-6e52-4812-b421-322fb30d69db"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Создание пользователя"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a573eaca-3148-411b-8a58-71297652b5d3"
+              LastKnownName="Создание пользователя"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="940531fd-8d9b-4f18-863e-f9256bce1831"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04b7ebc3-178a-4c82-afcf-fa6823338137"
+                  name="Создание пользователя"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e5996d9f-bfdc-4f0d-a596-4168ecbe5acc"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Редактирование статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0"
+              LastKnownName="Редактирование статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8957038-920c-41be-a645-bbe05ca2ef05"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be56670e-c04d-46bc-96f2-1278644b5876"
+                  name="Редактирование статей"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -958,6 +1240,1113 @@
             Id="5394b67f-b2a7-4692-aadc-ef2c00797cee"
             name="ActivityFinal1"
             isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="466ec7c8-23fc-49f2-a3b5-c1e2ffe6e21a"
+        name="Article"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4d53660a-6336-4056-8b2f-ffc29127eca2"
+            isDerived="false"
+            sourceEndRoleName="Article"
+            targetEndRoleName="ArticleContent"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3eac06c1-8876-4306-be2c-ef96b528b0ef"
+              LastKnownName="ArticleContent"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b354019-2422-49bf-97e4-390bfe0e2c49"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a578d980-3916-4951-901a-86a9eea38383"
+                  name="ArticleContent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1b3cdd34-280e-46e4-b133-34368329c63c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="380e2688-4e36-428c-ad96-c68ec76cff6b"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b50046fc-cab1-4e03-b458-6664c5c4fbf9"
+            name="ArticleId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7c55c205-c07a-4f63-bf56-fa53be472ce9"
+            name="ArticleTitle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="adc270a5-026e-426c-ba85-543008dd611b"
+            name="ArticleContent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="3eac06c1-8876-4306-be2c-ef96b528b0ef"
+                LastKnownName="ArticleContent"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3eac06c1-8876-4306-be2c-ef96b528b0ef"
+        name="ArticleContent"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d43be73b-2b0b-44a9-82f4-64e4ec25bc29"
+            name="ArticleContentId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6b98f4ab-0bec-4e74-9a3a-f5dbdc3419a5"
+            name="ArticleText"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="117bd3d1-676b-4200-a767-36502a96e966"
+            name="Article"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="466ec7c8-23fc-49f2-a3b5-c1e2ffe6e21a"
+                LastKnownName="Article"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="520942df-8509-4ae0-8f14-27043edf5839"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="efbba626-e159-4290-9385-ebb157a7311f"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="HospitalChart"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="96f99619-9ddb-4dd4-b3d4-1c95f73b80ec"
+              LastKnownName="HospitalChart"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="add359dc-4685-4491-a1ec-933f01e82bbb"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="749fb205-b3f5-4856-b0a2-7be81934c060"
+                  name="HospitalChart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cee5336c-ddf2-435f-b397-303e6d13180d"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="TestResults"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8fe4eca2-8e67-4996-b4eb-06fd7ce47a6a"
+              LastKnownName="TestResults"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e32464fc-45a2-4521-8122-9d9a7a205253"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5dcaec5-9d10-48a1-ac83-622255cd5aa9"
+                  name="TestResults"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ac04f7bc-39f4-4366-8187-38f35fe44f94"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f645109a-e17e-450a-a974-f594000d20bd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fcb666a1-e5d8-426b-aaad-e19090622fe4"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Role"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="026c7891-a653-4f24-a1ea-fbe62fc4a965"
+              LastKnownName="Role"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43829a00-14a8-4e91-b55c-d616c2cdedfc"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f631f15-9d61-4624-be98-e73ad90efc28"
+                  name="Role"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0b2b1bc2-2dc8-473e-9399-ce66f714e20d"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7ad57744-15b3-4b64-9a04-37e661407dfd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f41b9714-c23d-4582-961f-109f11a2fad2"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="DentalCard"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="fadd275d-2cf4-43e4-9455-0db527213622"
+              LastKnownName="DentalCard"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f5ff6df-3af9-4ae2-9f21-2406ffd39bfb"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b4d1b582-91ae-4941-a533-9edc87fb5610"
+                  name="DentalCard"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1f6429ab-b510-4447-94e9-39a6fca006a0"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Chat"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6fd3c58b-9f5e-45a6-87fa-5fae18a1560c"
+              LastKnownName="Chat"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39506120-11c8-434f-b44e-4617605a0274"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2450576c-15c2-47db-9eeb-aeb30a3aaa2e"
+                  name="Chat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d1c9ede7-de2e-46ff-a75f-b3edb3fa9b9f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a3b049a3-141c-4592-bec5-0f1209275066"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9c52e528-c902-4a41-9b9e-89e5209d7f5e"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Article"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="466ec7c8-23fc-49f2-a3b5-c1e2ffe6e21a"
+              LastKnownName="Article"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a7330ef-d6ad-4897-9d06-afa46837d1f1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a66c45c8-c719-4e28-9f95-5e6c1cc1f74f"
+                  name="Article"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c06d0b6a-8514-45bc-ab93-18864fdf2e3f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8b59005b-4189-45f9-82d9-d4601d8bb136"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f11d6ba6-7e8e-491c-8c55-ed2fecb53636"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Reminder"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c935ed09-18ff-468d-b028-0f027f285e40"
+              LastKnownName="Reminder"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a83ac110-59e3-4037-9d78-d7125265bd47"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06b1b6c3-2eeb-4b3b-bafd-edcbefe32863"
+                  name="Reminder"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e6c9b516-2cf9-42ad-b7d0-046a3d969177"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="232928cf-e422-4bcf-b76d-c025f5a21459"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c36a6f97-af7f-4085-b713-715cfd30c8f5"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Advice"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c9564996-bf27-4e38-b697-298f3b8ed9b8"
+              LastKnownName="Advice"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0108c46a-809e-4de9-8f0a-399042f20efe"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b36b53a-b3b9-4233-8cd5-4a0905acb9d7"
+                  name="Advice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a5d4ff89-7249-4f36-be37-3fc2a370e799"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="de42faff-9ba1-49f4-b134-01f7420396aa"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0dcd63a1-6869-478f-82dd-afa32bdf18fa"
+            name="UserId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="03278012-7768-498c-9a41-af454543094c"
+            name="UserName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9dfe787a-c244-410c-af23-e32f3e73c9bb"
+            name="UserSurname"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8de27b1c-e17a-4400-98cb-ef7d56cd8b1b"
+            name="UserDateOfBirth"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="96f99619-9ddb-4dd4-b3d4-1c95f73b80ec"
+        name="HospitalChart"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e6a26faa-b92f-42d9-aeb5-30e42c1ead21"
+            name="HospitalChartId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b1573c7e-29bb-4a8a-941e-af2a6e94a958"
+            name="HospitalChartContent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="026c7891-a653-4f24-a1ea-fbe62fc4a965"
+        name="Role"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1414e632-48bb-4ed7-a4ec-7e06b2a6e17c"
+            name="RoleId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0bc827de-f873-472c-bc73-a50e4b6d6959"
+            name="RoleTitle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8fe4eca2-8e67-4996-b4eb-06fd7ce47a6a"
+        name="TestResults"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="45402675-e496-47c9-ab1c-73967e0229bb"
+            name="TestResultId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2b05e525-2921-422e-b46e-abe6f570c5e5"
+            name="TestResultText"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fadd275d-2cf4-43e4-9455-0db527213622"
+        name="DentalCard"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="42334740-0353-4dc9-968f-344ae055397f"
+            name="DentalCardId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="864301e4-ef7f-4b6d-b927-920bbc3baae4"
+            name="DentalCardContent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6fd3c58b-9f5e-45a6-87fa-5fae18a1560c"
+        name="Chat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c7ae415c-d149-4231-8b12-704395ce7830"
+            name="ChatId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2008fe46-060d-4d37-ac80-929bb1530e09"
+            name="Visitor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="520942df-8509-4ae0-8f14-27043edf5839"
+                LastKnownName="User"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f7df5fe2-c547-4409-b88f-e61c14f4c4c5"
+            name="Doctor"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="520942df-8509-4ae0-8f14-27043edf5839"
+                LastKnownName="User"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="590eabb0-a46d-4411-bbed-ac1eb0f8896e"
+        name="Пациент"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="46448bba-dbe4-42c8-bdc1-b3ac024c2299"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="83d114c6-504d-418f-8ac4-802edd3e2fc1"
+              LastKnownName="Пользовать сайта"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a573eaca-3148-411b-8a58-71297652b5d3"
+        name="Создание пользователя"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="451aecd4-7002-432c-acd7-496ebce6ed46">
+            <useCaseMoniker
+              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
+              LastKnownName="Аутентификация"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f993a07f-c11a-4fc9-9c8c-0c5819b751b0"
+        name="Удаление пользователя"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="969980e3-5a02-45f6-a528-78de393eb2ea">
+            <useCaseMoniker
+              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
+              LastKnownName="Аутентификация"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="51c84893-18f3-4cf2-884f-ff99e5ca0a60"
+        name="Уудаление статьи"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="358975e7-b1c5-4174-be99-afb17e143e3a">
+            <useCaseMoniker
+              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
+              LastKnownName="Аутентификация"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0"
+        name="Редактирование статей"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b1396a3f-f48c-4ef7-8100-d337613aa24d">
+            <useCaseMoniker
+              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
+              LastKnownName="Аутентификация"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="45664035-b29f-4ecf-9d25-f5c6f8897ab0"
+        name="Article"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c935ed09-18ff-468d-b028-0f027f285e40"
+        name="Reminder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="920466a8-3260-4ef4-94b6-76ef9465d66b"
+            name="DateReminder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="619a23c7-a44d-4dca-a25d-3b2c210f689e"
+            name="ReminderText"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c9564996-bf27-4e38-b697-298f3b8ed9b8"
+        name="Advice"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="a070decb-f1f0-4eb9-8d09-bff0f0212c81"
+            name="AdviceText"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="6d5d6014-eeec-445b-a1a2-80c64696f329"
+        name="ActivityManagementUsers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fc4dd26d-27db-4f45-8b2f-c9e26dff863d"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d5713016-ea2d-4a59-8926-4106c1dca225"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15b20af4-0864-427b-a334-51a286ec06a4"
+                  LastKnownName="Авторизация"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="9c9d9e0d-45cd-4753-ac87-6e2affbe2a3e"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="15b20af4-0864-427b-a334-51a286ec06a4"
+            name="Авторизация"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f0b5b271-0683-44e1-bc06-0b0719032af7"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="ff5f7eb6-f4bf-49e3-999c-b0fc41263288"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="ff5f7eb6-f4bf-49e3-999c-b0fc41263288"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1260a242-7ad0-4be8-bbf4-6b4995d3d244"
+                guard="Администратор"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6c5e2a36-64f9-4b69-958b-785c14c5b181"
+                  LastKnownName="Отображение списка пользователей"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4f4a530b-0b45-4525-8ba6-040504a4023e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="15b20af4-0864-427b-a334-51a286ec06a4"
+                  LastKnownName="Авторизация"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="6c5e2a36-64f9-4b69-958b-785c14c5b181"
+            name="Отображение списка пользователей"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4b03e926-0361-4114-b3a3-f91f7f441d93"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dc327540-9dd6-4d50-b21f-e5f57296ea48"
+                  LastKnownName="Выбор пользователя"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="dc327540-9dd6-4d50-b21f-e5f57296ea48"
+            name="Выбор пользователя"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f5635b03-0397-4781-9304-250d258d817a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6cffe9e5-33e0-4fee-99ba-7e87b7916155"
+                  LastKnownName="Действие над пользователем"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6cffe9e5-33e0-4fee-99ba-7e87b7916155"
+            name="Действие над пользователем"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2d100f6f-bf74-495d-bc35-857de9503ea9"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9c9d9e0d-45cd-4753-ac87-6e2affbe2a3e"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="ModelingSiteProject.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
