@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DentalConsultingData.ArticleRepository">
+  <Class Name="DentalConsultingDAL.ArticleRepository">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAICAIAAACAAAABAAAAAAAAAEAAAAAABAAAAAIAAAAA=</HashCode>

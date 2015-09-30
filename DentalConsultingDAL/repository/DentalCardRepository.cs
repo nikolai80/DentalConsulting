@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -9,17 +10,17 @@ namespace DentalConsultingDAL
 	public class DentalCardRepository : IDentalCard, IDisposable
 		{
 		private DentalConsultingContext context;
-		public DentalConsultingData.DentalCard GetDentalCardById(string dentalCardId)
+		public DentalCard GetDentalCardById(string dentalCardId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertDentalCard(DentalConsultingData.DentalCard dentalCard)
+		public void InsertDentalCard(DentalCard dentalCard)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditDentalCard(DentalConsultingData.DentalCard dentalCard)
+		public void EditDentalCard(DentalCard dentalCard)
 			{
 			throw new NotImplementedException();
 			}

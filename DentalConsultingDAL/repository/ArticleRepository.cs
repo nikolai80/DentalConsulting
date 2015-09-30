@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DentalConsultingDAL;
+using DentalConsultingData;
 
-namespace DentalConsultingData
+namespace DentalConsultingDAL
 	{
 
 	public class ArticleRepository : IArticleRepository, IDisposable

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -9,22 +10,22 @@ namespace DentalConsultingDAL
 	public class ReminderRepository : IReminder, IDisposable
 		{
 		private DentalConsultingContext context;
-		public IEnumerable<DentalConsultingData.Reminder> GetReminders()
+		public IEnumerable<Reminder> GetReminders()
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.Reminder GetReminderById(string reminderId)
+		public Reminder GetReminderById(string reminderId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertReminder(DentalConsultingData.Reminder reminder)
+		public void InsertReminder(Reminder reminder)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditReminder(DentalConsultingData.Reminder reminder)
+		public void EditReminder(Reminder reminder)
 			{
 			throw new NotImplementedException();
 			}

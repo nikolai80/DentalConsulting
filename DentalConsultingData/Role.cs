@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DentalConsultingData
 	{
-	public class s
+	public class Role
 		{
 
 		public int RoleID

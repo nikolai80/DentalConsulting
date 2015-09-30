@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -9,22 +10,22 @@ namespace DentalConsultingDAL
 	public class ChatRepository : IChat, IDisposable
 		{
 		private DentalConsultingContext context;
-		public IEnumerable<DentalConsultingData.Chat> GetChats()
+		public IEnumerable<Chat> GetChats()
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.Chat GetChatById(string chatId)
+		public Chat GetChatById(string chatId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertChat(DentalConsultingData.Chat chat)
+		public void InsertChat(Chat chat)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditChat(DentalConsultingData.Chat chat)
+		public void EditChat(Chat chat)
 			{
 			throw new NotImplementedException();
 			}

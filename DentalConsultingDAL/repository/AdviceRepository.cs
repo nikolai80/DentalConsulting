@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -9,22 +10,22 @@ namespace DentalConsultingDAL
 	public class AdviceRepository : IAdvice, IDisposable
 		{
 		private DentalConsultingContext context;
-		public IEnumerable<DentalConsultingData.Advice> GetAllAdvice()
+		public IEnumerable<Advice> GetAllAdvice()
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.Advice GetAdviceById(string adviceId)
+		public Advice GetAdviceById(string adviceId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertAdvice(DentalConsultingData.Advice advice)
+		public void InsertAdvice(Advice advice)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditAdvice(DentalConsultingData.Advice advice)
+		public void EditAdvice(Advice advice)
 			{
 			throw new NotImplementedException();
 			}

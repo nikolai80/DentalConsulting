@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -9,22 +10,22 @@ namespace DentalConsultingDAL
 	public class RoleRepository : IRole, IDisposable
 		{
 		private DentalConsultingContext context;
-		public IEnumerable<DentalConsultingData.s> GetRoles()
+		public IEnumerable<Role> GetRoles()
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.s GetRoleById(string roleId)
+		public Role GetRoleById(string roleId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertRole(DentalConsultingData.s role)
+		public void InsertRole(Role role)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditRole(DentalConsultingData.s role)
+		public void EditRole(Role role)
 			{
 			throw new NotImplementedException();
 			}

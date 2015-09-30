@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -9,22 +10,22 @@ namespace DentalConsultingDAL
 	public class HospitalChartRepository : IHospitalChart, IDisposable
 		{
 		private DentalConsultingContext context;
-		public IEnumerable<DentalConsultingData.HospitalChart> GetHospitalCharts()
+		public IEnumerable<HospitalChart> GetHospitalCharts()
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.HospitalChart GetHospitalChartById(string hospitalChartId)
+		public HospitalChart GetHospitalChartById(string hospitalChartId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertHospitalChart(DentalConsultingData.HospitalChart hospitalChart)
+		public void InsertHospitalChart(HospitalChart hospitalChart)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void EditHospitalChart(DentalConsultingData.HospitalChart hospitalChart)
+		public void EditHospitalChart(HospitalChart hospitalChart)
 			{
 			throw new NotImplementedException();
 			}

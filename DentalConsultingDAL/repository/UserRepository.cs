@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
@@ -19,22 +20,22 @@ namespace DentalConsultingDAL
 			throw new NotImplementedException();
 			}
 
-		public void EditUser(DentalConsultingData.User user)
+		public void EditUser(User user)
 			{
 			throw new NotImplementedException();
 			}
 
-		public void InsertUser(DentalConsultingData.User user)
+		public void InsertUser(User user)
 			{
 			throw new NotImplementedException();
 			}
 
-		public DentalConsultingData.User GetUserById(string userId)
+		public User GetUserById(string userId)
 			{
 			throw new NotImplementedException();
 			}
 
-		public IEnumerable<DentalConsultingData.User> GetUsers()
+		public IEnumerable<User> GetUsers()
 			{
 			throw new NotImplementedException();
 			}

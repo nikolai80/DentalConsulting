@@ -19,7 +19,7 @@ namespace DentalConsultingData
 
 		public virtual ICollection<Chat> Chats { get; set; }
 		public virtual DentalCard DentalCard { get; set; }
-		public virtual ICollection<s> Roles { get; set; }
+		public virtual ICollection<Role> Roles { get; set; }
 		public virtual HospitalChart HospitalChart { get; set; }
 
 		public virtual ICollection<Advice> Advices { get; set; }
