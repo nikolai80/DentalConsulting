@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="d908af7a-30f1-4c74-add3-a37ad6b7a243">
       <elementDefinition Id="e3cdcd0d-01b7-4114-8b6a-737376706f3d" />
@@ -16,14 +16,6 @@
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="ae00550b-c8e0-453f-ba3b-16f04c04609c">
-      <profileInstance Id="4259209c-5f3e-4fc6-b652-a10de282781d" name="CSharpProfile">
-        <elementDefinition Id="9139089a-689b-460d-b588-da4ce34d2553" />
-      </profileInstance>
-      <elementDefinition Id="526ddcb7-ccbf-4e39-898e-71dc6cb9413c" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="a243d961-3783-4286-b74e-b468a3977552" name="Пользовать сайта" isAbstract="false" isLeaf="false">
@@ -326,6 +318,17 @@
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9377108f-3059-467e-9f79-99be3518ba3c" name="Персональная информация" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="114c4517-837e-44c2-b6f3-5414c25b2209" />
+        <extendedCases>
+          <extend Id="929c6caf-7b34-4a3e-89a4-44e6f8310464">
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет" />
+            <elementDefinition Id="93f7f40b-2696-4c0f-a031-1d28757c796e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" name="ModelingSiteProject">
     <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
@@ -341,6 +344,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ae00550b-c8e0-453f-ba3b-16f04c04609c">
+        <profileInstance Id="4259209c-5f3e-4fc6-b652-a10de282781d" name="CSharpProfile">
+          <elementDefinition Id="9139089a-689b-460d-b588-da4ce34d2553" />
+        </profileInstance>
+        <elementDefinition Id="526ddcb7-ccbf-4e39-898e-71dc6cb9413c" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

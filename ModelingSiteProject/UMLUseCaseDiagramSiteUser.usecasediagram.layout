@@ -251,5 +251,20 @@
         <actorShapeMoniker Id="1df0d8fa-de05-47dc-b5f1-881d95d354c2" />
       </nodes>
     </commentConnector>
+    <useCaseShape Id="68bf12f9-a64c-4f3f-8bd4-296f13c223a3" absoluteBounds="7.5, 2, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="9377108f-3059-467e-9f79-99be3518ba3c" LastKnownName="Персональная информация" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(7.53275613253552 : 2.508498247847); (6.75858341950421 : 2.72969045157023)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
+      <extendMoniker Id="929c6caf-7b34-4a3e-89a4-44e6f8310464" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="6.625, 2.375, 0.89583333333333393, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <useCaseShapeMoniker Id="68bf12f9-a64c-4f3f-8bd4-296f13c223a3" />
+        <useCaseShapeMoniker Id="2640325f-7b64-412e-bb7f-2fd9d1de9178" />
+      </nodes>
+    </extendConnector>
   </nestedChildShapes>
 </useCaseDiagram>
