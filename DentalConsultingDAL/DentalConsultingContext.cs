@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
@@ -11,117 +12,53 @@ namespace DentalConsultingDAL
 
 	public class DentalConsultingContext : DbContext
 		{
-		public DentalConsultingContext() : base("DentalConsultingContext") { }
+		public DentalConsultingContext() : base(ConfigurationManager.ConnectionStrings["DentalConsulting"].ToString()) { }
 
 		public DbSet<Article> Articles
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public DbSet<ArticleContent> ArticleContents
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public DbSet<User> Users
 			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
+			get;
+			set;
 			}
 
 		public DbSet<TestResult> TestResults
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		public DbSet<Role> Roles
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		public DbSet<Reminder> Reminders
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		public DbSet<Advice> Advices
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		public DbSet<HospitalChart> HospitalCharts
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		public DbSet<DentalCard> DentalCards
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		public DbSet<Chat> Chats
-			{
-			get
-				{
-				throw new System.NotImplementedException();
-				}
-			set
-				{
-				}
-			}
+		{
+			get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 			{

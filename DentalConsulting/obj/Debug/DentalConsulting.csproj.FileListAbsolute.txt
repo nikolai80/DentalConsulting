@@ -3,6 +3,8 @@ D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsultin
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsulting.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsulting.pdb
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\Antlr3.Runtime.dll
+D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsultingDAL.dll
+D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsultingData.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\EntityFramework.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\EntityFramework.SqlServer.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\Microsoft.AspNet.Identity.Core.dll
@@ -28,6 +30,8 @@ D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\System.Web.WebP
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\System.Web.WebPages.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\System.Web.WebPages.Razor.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\WebGrease.dll
+D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsultingDAL.pdb
+D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\DentalConsultingData.pdb
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\System.Web.Helpers.xml
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\System.Web.Mvc.xml
 D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\System.Web.Optimization.xml

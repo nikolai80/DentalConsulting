@@ -164,6 +164,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -236,6 +237,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DentalConsultingDAL\DentalConsultingDAL.csproj">
+      <Project>{9462930d-46c8-4e5a-a932-5f1e330fb438}</Project>
+      <Name>DentalConsultingDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DentalConsultingData\DentalConsultingData.csproj">
+      <Project>{8edc206d-21b1-4702-8675-e3490e57c314}</Project>
+      <Name>DentalConsultingData</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

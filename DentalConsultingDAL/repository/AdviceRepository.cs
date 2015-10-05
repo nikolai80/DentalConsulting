@@ -10,6 +10,11 @@ namespace DentalConsultingDAL
 	public class AdviceRepository : IAdvice, IDisposable
 		{
 		private DentalConsultingContext context;
+
+		public AdviceRepository(DentalConsultingContext context)
+		{
+			this.context = context;
+		}
 		public IEnumerable<Advice> GetAllAdvice()
 			{
 			throw new NotImplementedException();
