@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DentalConsultingContext.cs" />
+    <Compile Include="DentalConsultingInitializer.cs" />
     <Compile Include="repository\AdviceRepository.cs" />
     <Compile Include="repository\ArticleContentRepository.cs" />
     <Compile Include="repository\ArticleRepository.cs" />

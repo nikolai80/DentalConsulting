@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using DentalConsultingData;
 
@@ -11,6 +13,10 @@ namespace DentalConsultingDAL
 	{
 		private DentalConsultingContext context;
 
+		public ArticleRepository(DentalConsultingContext context)
+		{
+			this.context = context;
+		}
 
 		bool disposed = false;
 		protected virtual void Dispose(bool disposing)
@@ -31,9 +37,10 @@ namespace DentalConsultingDAL
 		}
 
 		public IEnumerable<Article> GetArticles()
-			{
-			throw new NotImplementedException();
-			}
+		{
+			var articles = context.Articles.Include(a=>a.ArticleContent); 
+			return articles.ToList();
+		}
 
 		public Article GetArticleById(int articleId)
 			{
