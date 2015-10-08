@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <ul>
+            <li>@Html.ActionLink("Личные данные", "Index", "OwnDoctorPage")</li>
+            <li>@Html.ActionLink("Чат", "Index", "OwnDoctorPage")</li>
+            <li>@Html.ActionLink("Напоминания", "Index", "OwnDoctorPage")</li>
+            <li>@Html.ActionLink("Статьи", "Index", "OwnDoctorPage")</li>
+        </ul>
+    </div>
+
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-3">
+                <img alt="Личное фото" class="personalPhoto" src="../../img/doctor.jpg" />
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">Фамилия</div>
+                    <div class="col-md-6">Имя</div>
+                    <div class="col-md-6">Отчество</div>
+                    <div class="col-md-6">Специальность</div>
+                    <div class="col-md-6">Стаж</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">Активные напоминания</div>
+        <div class="col-md-12">
+            <ul class="nomarkers">
+                <li><a href="#">Сходить к врачу</a></li>
+                <li><a href="#">Закрыть фисуры</a></li>
+            </ul>
+        </div>
+        <div class="col-md-12">Активные чаты</div>
+        <div class="col-md-12">
+            <ul class="nomarkers">
+                <li><a href="#">Доктор Звягинцев</a></li>
+                <li><a href="#">Доктор Решетников</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+

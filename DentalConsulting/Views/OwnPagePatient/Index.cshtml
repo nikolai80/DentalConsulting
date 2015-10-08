@@ -1,22 +1,51 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="row">
     <div class="col-md-3">
-        <ul><li>@Html.ActionLink("Личные данные", "Index", "OwnPagePatient")</li>
+        <ul>
+            <li>@Html.ActionLink("Личные данные", "Index", "OwnPagePatient")</li>
             <li>@Html.ActionLink("Амбулаторная карта", "Index", "OwnPagePatient")</li>
             <li>@Html.ActionLink("Стоматологическая карта", "Index", "OwnPagePatient")</li>
             <li>@Html.ActionLink("Чат", "Index", "OwnPagePatient")</li>
             <li>@Html.ActionLink("Рекомендации", "Index", "OwnPagePatient")</li>
             <li>@Html.ActionLink("Напоминания", "Index", "OwnPagePatient")</li>
-            <li>@Html.ActionLink("Календарь развития ребенка", "Index", "OwnPagePatient")</li></ul>
+            <li>@Html.ActionLink("Календарь развития ребенка", "Index", "OwnPagePatient")</li>
+        </ul>
     </div>
-    <div class="col-md-9 col-md-offset-3">
-        <div class="row"><div class="col-md-3"><img alt="Личное фото" class="personalPhoto" /></div></div>
+
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-3">
+                <img alt="Личное фото" class="personalPhoto" src="../../img/smile.jpg" />
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">Фамилия</div>
+                    <div class="col-md-6">Имя</div>
+                    <div class="col-md-6">Отчество</div>
+                    <div class="col-md-6">Пол</div>
+                    <div class="col-md-6">@DateTime.Today.ToString("d")</div>
+                </div>
+            </div>
+        </div>
+            <div class="col-md-12">Активные напоминания</div>
+            <div class="col-md-12">
+                <ul class="nomarkers">
+                    <li><a href="#">Сходить к врачу</a></li>
+                    <li><a href="#">Закрыть фисуры</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12">Активные чаты</div>
+            <div class="col-md-12"><ul class="nomarkers">
+                    <li><a href="#">Доктор Звягинцев</a></li>
+                <li><a href="#">Доктор Решетников</a></li>
+            </ul>
+            </div>
        
+
     </div>
 </div>
 

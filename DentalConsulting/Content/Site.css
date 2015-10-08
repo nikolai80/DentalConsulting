@@ -28,6 +28,9 @@ textarea {
 	height: 150px;
 }
 .personalPhoto {
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
+}
+.nomarkers {
+	list-style-type: none;
 }
