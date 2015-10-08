@@ -9,3 +9,4 @@ D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\ru\En
 D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
 D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
+D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache
