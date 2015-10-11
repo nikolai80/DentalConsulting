@@ -9,6 +9,9 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using DentalConsulting.Models;
+using DentalConsultingData;
+using DentalConsultingDAL;
+using IUser = Microsoft.AspNet.Identity.IUser;
 
 namespace DentalConsulting.Controllers
 {
@@ -17,7 +20,7 @@ namespace DentalConsulting.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-
+	    private DentalConsultingDAL.IUser userRepository;
         public AccountController()
         {
         }
@@ -153,10 +156,18 @@ namespace DentalConsulting.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+				
                 if (result.Succeeded)
                 {
-                    await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+	                await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+						//Создаем пользователя личного кабинета
+	                User loggedUser=new User();
+	                loggedUser.LoggedUserId = user.Id;
+					loggedUser.UserDateOfBirth=DateTime.Now.Date;
+					userRepository = new UserRepository(new DentalConsultingContext());
+					userRepository.InsertUser(loggedUser);
+					userRepository.Save();
+
                     // Дополнительные сведения о том, как включить подтверждение учетной записи и сброс пароля, см. по адресу: http://go.microsoft.com/fwlink/?LinkID=320771
                     // Отправка сообщения электронной почты с этой ссылкой
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);

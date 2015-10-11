@@ -14,5 +14,7 @@ namespace DentalConsultingData
 		public int ArticleID { get; set; }
 		public string ArticleTitle { get; set; }
 		public virtual ArticleContent ArticleContent { get; set; }
+		public int UserUserID { get; set; }
+		public virtual User User { get; set; }
 		}
 	}

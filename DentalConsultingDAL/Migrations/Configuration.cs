@@ -1,21 +1,19 @@
-using DentalConsulting.Models;
-
-namespace DentalConsulting.Migrations
+namespace DentalConsultingDAL.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-	internal sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DentalConsultingDAL.DentalConsultingContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-		//protected void Seed(DentalConsultingDAL.DentalConsultingContext context)
-        //{
+        protected override void Seed(DentalConsultingDAL.DentalConsultingContext context)
+        {
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
@@ -28,6 +26,6 @@ namespace DentalConsulting.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-       // }
+        }
     }
 }

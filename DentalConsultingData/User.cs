@@ -12,6 +12,8 @@ namespace DentalConsultingData
 		[Key]
 		public int UserID { get; set; }
 
+		public string LoggedUserId { get; set; }
+
 		public string UserName { get; set; }
 
 		public string UserSurname { get; set; }
@@ -27,5 +29,6 @@ namespace DentalConsultingData
 		public virtual ICollection<Advice> Advices { get; set; }
 		public virtual ICollection<TestResult> TestResults { get; set; }
 		public virtual ICollection<Reminder> Reminders { get; set; }
+		public virtual ICollection<Article> Articles { get; set; } 
 		}
 	}

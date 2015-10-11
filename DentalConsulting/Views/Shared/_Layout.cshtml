@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using System.ServiceModel
+@using DentalConsulting.Models
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.Owin
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,8 +26,30 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                   @{ IList<string> roles=new List<string>();
+                                            ApplicationUserManager userManager=HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                                             ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
+                       string firstRole="";
+                       if (user != null)
+                       {
+                           roles = userManager.GetRoles(user.Id);
+                          firstRole = roles.FirstOrDefault();
+                       }
+                   }
                     <li>@Html.ActionLink("Главная страница", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Личный кабинет", "Index", "OwnPagePatient")</li>
+                    <li>@if (!String.IsNullOrEmpty(firstRole)&&firstRole=="patient")
+                        {
+                            @Html.ActionLink("Личный кабинет", "Index", "OwnPagePatient")
+                        }
+                        else if(!String.IsNullOrEmpty(firstRole) && firstRole == "doctor")
+                            {
+                            @Html.ActionLink("Личный кабинет", "Index", "OwnDoctorPage")
+                            }
+                        else
+                        {
+                            <a style="pointer-events: none">Личный кабинет</a>}
+                        
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

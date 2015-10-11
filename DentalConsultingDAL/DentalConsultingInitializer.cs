@@ -7,7 +7,7 @@ using DentalConsultingData;
 
 namespace DentalConsultingDAL
 	{
-	public class DentalConsultingInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<DentalConsultingContext>
+	public class DentalConsultingInitializer : System.Data.Entity.DropCreateDatabaseAlways<DentalConsultingContext>
 		{
 		protected override void Seed(DentalConsultingContext context)
 			{

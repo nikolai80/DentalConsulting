@@ -51,6 +51,15 @@
   <ItemGroup>
     <Compile Include="DentalConsultingContext.cs" />
     <Compile Include="DentalConsultingInitializer.cs" />
+    <Compile Include="Migrations\201510102008293_First.cs" />
+    <Compile Include="Migrations\201510102008293_First.Designer.cs">
+      <DependentUpon>201510102008293_First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510112014555_Second.cs" />
+    <Compile Include="Migrations\201510112014555_Second.Designer.cs">
+      <DependentUpon>201510112014555_Second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="repository\AdviceRepository.cs" />
     <Compile Include="repository\ArticleContentRepository.cs" />
     <Compile Include="repository\ArticleRepository.cs" />
@@ -84,7 +93,14 @@
       <Name>DentalConsultingData</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510102008293_First.resx">
+      <DependentUpon>201510102008293_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510112014555_Second.resx">
+      <DependentUpon>201510112014555_Second.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

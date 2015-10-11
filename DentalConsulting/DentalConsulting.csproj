@@ -167,6 +167,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510111844495_First.cs" />
+    <Compile Include="Migrations\201510111844495_First.Designer.cs">
+      <DependentUpon>201510111844495_First.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -234,6 +238,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\OwnPagePatient\Index.cshtml" />
     <Content Include="Views\OwnDoctorPage\Index.cshtml" />
+    <Content Include="Views\OwnDoctorPage\GetArticles.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -254,6 +259,11 @@
       <Project>{8edc206d-21b1-4702-8675-e3490e57c314}</Project>
       <Name>DentalConsultingData</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510111844495_First.resx">
+      <DependentUpon>201510111844495_First.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -42,6 +42,11 @@ namespace DentalConsultingDAL
 			return articles.ToList();
 		}
 
+		public IEnumerable<Article> GetArticlesByUserId(int userId)
+			{
+			var articles = context.Articles.Include(a => a.ArticleContent).Where(a=>a.UserUserID==userId);
+			return articles.ToList();
+			}
 		public Article GetArticleById(int articleId)
 			{
 			throw new NotImplementedException();

@@ -77,3 +77,5 @@ D:\programming\webProgects\DentalConsulting\DentalConsulting\bin\ru\Microsoft.Ow
 D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.csprojResolveAssemblyReference.cache
 D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.pdb
+D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.Migrations.First.resources
+D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.csproj.GenerateResource.Cache
