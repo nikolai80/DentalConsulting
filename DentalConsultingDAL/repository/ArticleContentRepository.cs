@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using DentalConsultingData;
@@ -10,10 +11,15 @@ namespace DentalConsultingDAL
 	public class ArticleContentRepository : IArticleContent, IDisposable
 		{ 
 		private DentalConsultingContext context;
+
+		public ArticleContentRepository(DentalConsultingContext context)
+		{
+			this.context = context;
+		}
 		public void Save()
-			{
-			throw new NotImplementedException();
-			}
+		{
+			context.SaveChanges();
+		}
 
 		public void DeleteArticleContent(int articleContentId)
 			{
@@ -22,7 +28,7 @@ namespace DentalConsultingDAL
 
 		public void EditArticleContent(ArticleContent articleContent)
 			{
-			throw new NotImplementedException();
+			context.Entry(articleContent).State = EntityState.Modified;
 			}
 
 		public void InsertArticleContent(ArticleContent articleContent)

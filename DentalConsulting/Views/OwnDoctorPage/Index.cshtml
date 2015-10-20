@@ -1,4 +1,5 @@
-﻿@{
+﻿@model DentalConsultingData.User
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -9,7 +10,7 @@
             <li>@Html.ActionLink("Личные данные", "Index", "OwnDoctorPage")</li>
             <li>@Html.ActionLink("Чат", "Index", "OwnDoctorPage")</li>
             <li>@Html.ActionLink("Напоминания", "Index", "OwnDoctorPage")</li>
-            <li>@Html.ActionLink("Статьи", "Index", "OwnDoctorPage")</li>
+            <li>@Html.ActionLink("Статьи", "GetArticles", "OwnDoctorPage", new { id = Model.UserID },null)</li>
         </ul>
     </div>
 

@@ -42,34 +42,36 @@ namespace DentalConsultingDAL
 			return articles.ToList();
 		}
 
-		public IEnumerable<Article> GetArticlesByUserId(int userId)
-			{
-			var articles = context.Articles.Include(a => a.ArticleContent).Where(a=>a.UserUserID==userId);
-			return articles.ToList();
-			}
+		//public IEnumerable<Article> GetArticlesByUserId(int userId)
+		//	{
+		//	var articles = context.Articles.Include(a => a.ArticleContent).Where(a=>a.UserUserID==userId);
+		//	return articles.ToList();
+		//	}
 		public Article GetArticleById(int articleId)
 			{
-			throw new NotImplementedException();
+			var article = context.Articles.Find(articleId);
+			return article;
 			}
 
 		public void EditArticle(Article article)
-			{
-			throw new NotImplementedException();
+		{
+			context.Entry(article).State=EntityState.Modified;
 			}
 
 		public void InsertArticle(Article article)
 			{
-			throw new NotImplementedException();
+			context.Articles.Add(article);
 			}
 
 		public void DeleteArticle(int articleId)
 			{
-			throw new NotImplementedException();
+			Article article=context.Articles.Find(articleId);
+			context.Articles.Remove(article);
 			}
 
 		public void Save()
-			{
-			throw new NotImplementedException();
-			}
+		{
+			context.SaveChanges();
+		}
 	}
 }

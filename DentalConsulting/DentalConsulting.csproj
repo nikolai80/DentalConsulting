@@ -239,6 +239,7 @@
     <Content Include="Views\OwnPagePatient\Index.cshtml" />
     <Content Include="Views\OwnDoctorPage\Index.cshtml" />
     <Content Include="Views\OwnDoctorPage\GetArticles.cshtml" />
+    <Content Include="Views\OwnDoctorPage\EditArticle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

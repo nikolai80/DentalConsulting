@@ -1,22 +1,22 @@
 ﻿@model IEnumerable<DentalConsultingData.Article>
 
 @{
-    ViewBag.Title = "GetArticles";
+    ViewBag.Title = "Список статей";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>GetArticles</h2>
+<h2>Список статей</h2>
 
 <p>
-    @*@Html.ActionLink("Create New", "Create")*@
+    @*@Html.ActionLink("Добавить статью", "CreateArticle")*@
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ArticleContent.ArticleText)
+            @Html.DisplayNameFor(model => model.ArticleTitle)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ArticleTitle)
+            @Html.DisplayNameFor(model => model.ArticleContent.ArticleText)
         </th>
         <th></th>
     </tr>
@@ -24,15 +24,15 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ArticleContent.ArticleText)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.ArticleTitle)
         </td>
         <td>
-            @*@Html.ActionLink("Edit", "Edit", new { id=item.ArticleID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ArticleID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ArticleID })*@
+            @Html.DisplayFor(modelItem => item.ArticleContent.ArticleText)
+        </td>
+        <td>
+            @Html.ActionLink("Редактировать", "EditArticle", new { id=item.ArticleID }) |
+            @*@Html.ActionLink("Подробно", "DetailsArticle", new { id=item.ArticleID }) |
+    @Html.ActionLink("Удалить", "DeleteArticle", new { id=item.ArticleID })*@
         </td>
     </tr>
 }

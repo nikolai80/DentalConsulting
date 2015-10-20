@@ -43,7 +43,7 @@
                         }
                         else if(!String.IsNullOrEmpty(firstRole) && firstRole == "doctor")
                             {
-                            @Html.ActionLink("Личный кабинет", "Index", "OwnDoctorPage")
+                            @Html.ActionLink("Личный кабинет", "Index", "OwnDoctorPage",new{userId=user.Id},null)
                             }
                         else
                         {
