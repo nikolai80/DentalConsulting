@@ -305,15 +305,28 @@
         <ownedAttributesInternal>
           <property Id="283015be-84f2-40b5-9e04-2c6578dad455" name="UserId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0dcd63a1-6869-478f-82dd-afa32bdf18fa" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="47077794-e0e5-4e17-9742-b9d7c7c2a348" LastKnownName="Integer" />
+            </type_NamedElement>
           </property>
           <property Id="56099d06-2b56-4643-a24e-5204122688c2" name="UserName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="03278012-7768-498c-9a41-af454543094c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="aa820036-0946-443c-bf04-d91d4d67342c" LastKnownName="String" />
+            </type_NamedElement>
           </property>
           <property Id="53279f6e-a121-491e-bdd6-76737c880126" name="UserSurname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9dfe787a-c244-410c-af23-e32f3e73c9bb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d285a8d-dded-4a70-9f6d-b6b4f16d2f06" LastKnownName="String" />
+            </type_NamedElement>
           </property>
           <property Id="35878808-15f2-4542-8151-c424659b5bbc" name="UserDateOfBirth" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <description>Дата рождения</description>
             <elementDefinition Id="8de27b1c-e17a-4400-98cb-ef7d56cd8b1b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="da5fb93e-5b91-4716-9a80-9399f893d527" LastKnownName="String" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -324,9 +337,15 @@
         <ownedAttributesInternal>
           <property Id="620d0320-2949-4d25-81bf-0f26a8dd82dd" name="HospitalChartId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e6a26faa-b92f-42d9-aeb5-30e42c1ead21" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="287201ce-a1e0-4bfb-937a-ba21b1c35655" LastKnownName="Integer" />
+            </type_NamedElement>
           </property>
           <property Id="2b84bb2c-33f1-4411-816b-b99e86df2a1e" name="HospitalChartContent" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b1573c7e-29bb-4a8a-941e-af2a6e94a958" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="106cde6b-0543-485f-87c2-a1bdfdc65dd8" LastKnownName="String" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -337,9 +356,15 @@
         <ownedAttributesInternal>
           <property Id="70ae0450-6cb7-4f67-adae-8f87f0860d0f" name="RoleId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1414e632-48bb-4ed7-a4ec-7e06b2a6e17c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3aa49cb9-8f07-4259-bfac-7d4bae1e3046" LastKnownName="Integer" />
+            </type_NamedElement>
           </property>
           <property Id="15afb537-2340-4839-86b3-45ba0add10a4" name="RoleTitle" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0bc827de-f873-472c-bc73-a50e4b6d6959" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="761f4cf7-f39c-477a-9412-bf55b8d9d30d" LastKnownName="String" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -363,9 +388,15 @@
         <ownedAttributesInternal>
           <property Id="57cd840a-f172-4996-8447-5c89bb7231c1" name="DentalCardId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="42334740-0353-4dc9-968f-344ae055397f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d581a61d-1a3c-442a-b013-71aba5c9a32a" LastKnownName="Integer" />
+            </type_NamedElement>
           </property>
           <property Id="f16c8b5d-b0d3-4b1b-9ee0-f6c234555aae" name="DentalCardContent" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="864301e4-ef7f-4b6d-b927-920bbc3baae4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3afaa481-8fb7-44d8-962b-542c5cbdbce6" LastKnownName="String" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -435,6 +466,15 @@
         <ownedAttributesInternal>
           <property Id="2432872e-b5f5-49c2-8045-f73d898a7270" name="AdviceText" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="a070decb-f1f0-4eb9-8d09-bff0f0212c81" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="04373919-a382-4c93-a50b-9855d2207e79" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="7f104bd3-71cd-41a9-88aa-5753b50f842a" name="AdviceID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e06dac3f-2196-4818-a6c3-dbbbd28eab18" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="312a7fd2-8ad3-43c6-b374-a7860930a32e" LastKnownName="Integer" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
@@ -447,6 +487,66 @@
     <packageHasNamedElement>
       <referencedType Id="80b1ee01-dac5-4e83-9f66-06347865457f" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
         <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="04373919-a382-4c93-a50b-9855d2207e79" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3aa49cb9-8f07-4259-bfac-7d4bae1e3046" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="761f4cf7-f39c-477a-9412-bf55b8d9d30d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="106cde6b-0543-485f-87c2-a1bdfdc65dd8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="287201ce-a1e0-4bfb-937a-ba21b1c35655" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="da5fb93e-5b91-4716-9a80-9399f893d527" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="47077794-e0e5-4e17-9742-b9d7c7c2a348" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aa820036-0946-443c-bf04-d91d4d67342c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2d285a8d-dded-4a70-9f6d-b6b4f16d2f06" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3afaa481-8fb7-44d8-962b-542c5cbdbce6" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d581a61d-1a3c-442a-b013-71aba5c9a32a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="312a7fd2-8ad3-43c6-b374-a7860930a32e" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

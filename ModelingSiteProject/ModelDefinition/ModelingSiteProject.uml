@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -219,7 +219,7 @@
     <packageHasNamedElement>
       <useCase
         Id="513aac19-238e-4289-bb0d-2e6c4d358db1"
-        name="Вход в личный кабинет"
+        name="Вход в личный кабинет врача"
         isAbstract="false"
         isLeaf="false">
         <additions>
@@ -259,7 +259,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="513aac19-238e-4289-bb0d-2e6c4d358db1"
-              LastKnownName="Вход в личный кабинет"
+              LastKnownName="Вход в личный кабинет врача"
               LastKnownLocation="ModelingSiteProject.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -279,45 +279,6 @@
                 <memberEnd
                   Id="a3607e10-347a-411b-9e5e-bbacca86b823"
                   name="Вход в личный кабинет"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="a7d18dad-60ab-4ce3-ac34-f4d2fd32485e"
-            isDerived="false"
-            sourceEndRoleName="Зарегистрированный пользователь"
-            targetEndRoleName="Размещение статей"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4"
-              LastKnownName="Создание статей"
-              LastKnownLocation="ModelingSiteProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="206c7a40-3236-4ca5-93d3-e3e0bbada740"
-                  name="Зарегистрированный пользователь"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="73113245-ab66-451d-a5af-1686e0913edf"
-                  name="Размещение статей"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -367,45 +328,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="98438037-136b-445c-a4ff-a3078722433c"
-            isDerived="false"
-            sourceEndRoleName="Врач"
-            targetEndRoleName="Редактирование статей"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0"
-              LastKnownName="Редактирование статей"
-              LastKnownLocation="ModelingSiteProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0b39c5a7-771e-4269-a66e-fa4a8861947e"
-                  name="Врач"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8239bf18-69d1-4f17-96b2-199777f2e0dc"
-                  name="Редактирование статей"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -422,15 +344,15 @@
         name="Создание статей"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="c21d2842-c209-4182-8fc6-ba426e863308">
+        <extendedCases>
+          <extend
+            Id="01be6af5-0ae4-4470-ac26-3bb222d6c213">
             <useCaseMoniker
-              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
-              LastKnownName="Аутентификация"
+              Id="513aac19-238e-4289-bb0d-2e6c4d358db1"
+              LastKnownName="Вход в личный кабинет врача"
               LastKnownLocation="ModelingSiteProject.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -635,45 +557,6 @@
                 <memberEnd
                   Id="04b7ebc3-178a-4c82-afcf-fa6823338137"
                   name="Создание пользователя"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="e5996d9f-bfdc-4f0d-a596-4168ecbe5acc"
-            isDerived="false"
-            sourceEndRoleName="Администратор"
-            targetEndRoleName="Редактирование статей"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0"
-              LastKnownName="Редактирование статей"
-              LastKnownLocation="ModelingSiteProject.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a8957038-920c-41be-a645-bbe05ca2ef05"
-                  name="Администратор"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="be56670e-c04d-46bc-96f2-1278644b5876"
-                  name="Редактирование статей"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1836,7 +1719,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="03278012-7768-498c-9a41-af454543094c"
             name="UserName"
@@ -1847,7 +1737,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="9dfe787a-c244-410c-af23-e32f3e73c9bb"
             name="UserSurname"
@@ -1858,7 +1755,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="8de27b1c-e17a-4400-98cb-ef7d56cd8b1b"
             name="UserDateOfBirth"
@@ -1869,7 +1773,15 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <description>Дата рождения</description>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1891,7 +1803,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="b1573c7e-29bb-4a8a-941e-af2a6e94a958"
             name="HospitalChartContent"
@@ -1902,7 +1821,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1924,7 +1850,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="0bc827de-f873-472c-bc73-a50e4b6d6959"
             name="RoleTitle"
@@ -1935,7 +1868,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -1990,7 +1930,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="864301e4-ef7f-4b6d-b927-920bbc3baae4"
             name="DentalCardContent"
@@ -2001,7 +1948,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -2086,6 +2040,86 @@
               LastKnownLocation="ModelingSiteProject.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="6dc98f93-3450-4cfd-abe3-c42ed625b792"
+            isDerived="false"
+            sourceEndRoleName="Пациент"
+            targetEndRoleName="Просмотр статей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="87ebaf52-2b9c-4192-b8ee-53ba9759e75c"
+              LastKnownName="Просмотр статей"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a365a383-f107-4694-a397-c7d27bf87e4f"
+                  name="Пациент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0bfcd76-b5ed-4c91-8de8-3b67cecbffda"
+                  name="Просмотр статей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dc5ec515-7424-456b-8edd-2fe63d4ae77e"
+            isDerived="false"
+            sourceEndRoleName="Пациент"
+            targetEndRoleName="Вход в личный кабинет пациента"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b8aaade-6497-423c-95f2-c25b060cae84"
+                  name="Пациент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8e8b177b-88d8-4981-baa0-57d0b781a694"
+                  name="Вход в личный кабинет пациента"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2145,15 +2179,15 @@
         name="Редактирование статей"
         isAbstract="false"
         isLeaf="false">
-        <additions>
-          <include
-            Id="b1396a3f-f48c-4ef7-8100-d337613aa24d">
+        <extendedCases>
+          <extend
+            Id="2a6dde36-574f-440b-be10-b0bebf600e95">
             <useCaseMoniker
-              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
-              LastKnownName="Аутентификация"
+              Id="513aac19-238e-4289-bb0d-2e6c4d358db1"
+              LastKnownName="Вход в личный кабинет врача"
               LastKnownLocation="ModelingSiteProject.uml" />
-          </include>
-        </additions>
+          </extend>
+        </extendedCases>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2229,7 +2263,32 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e06dac3f-2196-4818-a6c3-dbbbd28eab18"
+            name="AdviceID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingSiteProject.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -2361,11 +2420,144 @@
             Id="93f7f40b-2696-4c0f-a031-1d28757c796e">
             <useCaseMoniker
               Id="513aac19-238e-4289-bb0d-2e6c4d358db1"
-              LastKnownName="Вход в личный кабинет"
+              LastKnownName="Вход в личный кабинет врача"
               LastKnownLocation="ModelingSiteProject.uml" />
           </extend>
         </extendedCases>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="28287b6a-ebf2-494f-b227-be660e6f3e99"
+        name="Амбулаторная карта"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="18cb26f0-50e2-47cf-993a-76b60cb53d0b">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9b9d9e9e-85a2-4140-9516-d39c891c0f94"
+        name="Стоматологическая амбулаторная карта"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b878b5d6-8441-4990-8056-7d449c9ad42a">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c298706-d130-46a6-80bd-a42588e834cc"
+        name="Напоминания"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8d9ef34c-9556-49bb-8046-40d99c8cdd93">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4fed9371-08d1-4991-a4f3-959c034aca25"
+        name="Рекомендации"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2d6bc4f6-294a-4eac-a19d-34b463183b0e">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="464f5bd0-7706-4ebd-a12b-73d93576804e"
+        name="Результаты анализов"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7dd561e0-4499-49b1-a72f-8f14183ece8c">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ec85eb38-0a0d-45a0-8acb-99c7c77b9494"
+        name="Чат"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7b089e91-d83b-46d9-b6e0-b5879128edd9">
+            <useCaseMoniker
+              Id="367013c6-7fd2-4691-82da-8af344d742cf"
+              LastKnownName="Вход в личный кабинет пациента"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+          <extend
+            Id="be1b9912-de29-4939-8c01-32a1a59d5613">
+            <useCaseMoniker
+              Id="513aac19-238e-4289-bb0d-2e6c4d358db1"
+              LastKnownName="Вход в личный кабинет врача"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="367013c6-7fd2-4691-82da-8af344d742cf"
+        name="Вход в личный кабинет пациента"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="c256cc53-8797-4014-9649-8399bae4b3db">
+            <useCaseMoniker
+              Id="fcea4c99-fbc7-477f-9c13-25feaf32a457"
+              LastKnownName="Аутентификация"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90cd2007-b8ce-4f01-a3fe-94f855d88895"
+        name="Чат1"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

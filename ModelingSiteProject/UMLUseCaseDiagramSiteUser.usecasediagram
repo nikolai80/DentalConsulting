@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="d908af7a-30f1-4c74-add3-a37ad6b7a243">
       <elementDefinition Id="e3cdcd0d-01b7-4114-8b6a-737376706f3d" />
@@ -67,7 +67,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e76d4c21-a40a-40ab-8905-953f48765319" name="Вход в личный кабинет" isAbstract="false" isLeaf="false">
+      <useCase Id="e76d4c21-a40a-40ab-8905-953f48765319" name="Вход в личный кабинет врача" isAbstract="false" isLeaf="false">
         <elementDefinition Id="513aac19-238e-4289-bb0d-2e6c4d358db1" />
         <additions>
           <include Id="3223e7b2-15a2-4deb-8d64-3683a73ab6cb">
@@ -88,7 +88,7 @@
         </generalsInternal>
         <targetEnds>
           <association Id="3aa95a05-f2fa-4c30-bb5b-ca1908a84c4d" isDerived="false" sourceEndRoleName="Зарегистрированный пользователь" targetEndRoleName="Вход в личный кабинет" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет" />
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет врача" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="7a870a61-d8fc-4c3d-b77e-20c1eff412d9" name="Зарегистрированный пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -102,22 +102,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="801f983f-e50a-4db1-ae9f-352e2097b6a6" />
-          </association>
-          <association Id="c9efc39e-988c-47dd-90a2-f5249eed0baa" isDerived="false" sourceEndRoleName="Зарегистрированный пользователь" targetEndRoleName="Размещение статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" LastKnownName="Создание статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="adafa82d-ba92-4c17-b200-6c1c9fb10f35" name="Зарегистрированный пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="206c7a40-3236-4ca5-93d3-e3e0bbada740" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="990a6379-4818-4a57-a3c7-0d188c22deec" name="Размещение статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="73113245-ab66-451d-a5af-1686e0913edf" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a7d18dad-60ab-4ce3-ac34-f4d2fd32485e" />
           </association>
           <association Id="85cb7b80-117e-4b44-9a71-3effec462f3e" isDerived="false" sourceEndRoleName="Врач" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
@@ -135,22 +119,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="3f3c4f48-90e0-4c7c-982a-c5727e2227bc" />
           </association>
-          <association Id="715f7961-5444-4eb8-97a1-258eddf9f0a9" isDerived="false" sourceEndRoleName="Врач" targetEndRoleName="Редактирование статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="3b6b9333-af9c-426b-8761-de7722c820cf" LastKnownName="Редактирование статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a42aeb2f-e1a0-4f83-9b19-b8a3c42563fb" name="Врач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="0b39c5a7-771e-4269-a66e-fa4a8861947e" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="508361d8-3653-4d50-a01e-a492ae007e03" name="Редактирование статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8239bf18-69d1-4f17-96b2-199777f2e0dc" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="98438037-136b-445c-a4ff-a3078722433c" />
-          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -162,12 +130,12 @@
     <useCaseModelRootHasTypes>
       <useCase Id="347f1cd2-4792-4cba-b4e5-f7402e84f71a" name="Создание статей" isAbstract="false" isLeaf="false">
         <elementDefinition Id="dd5c7f64-8a30-400d-a11d-5e434abf6ff4" />
-        <additions>
-          <include Id="bf780608-a0bd-4e98-90cd-c221cf7bcccf">
-            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
-            <elementDefinition Id="c21d2842-c209-4182-8fc6-ba426e863308" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="8103c47a-93fb-4ba4-9ac0-88a0755cd2c5">
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет врача" />
+            <elementDefinition Id="01be6af5-0ae4-4470-ac26-3bb222d6c213" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -244,22 +212,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="9baa89d3-6e52-4812-b421-322fb30d69db" />
           </association>
-          <association Id="6ff54f5b-f4d8-423a-9a1e-937141c8c6a4" isDerived="false" sourceEndRoleName="Администратор" targetEndRoleName="Редактирование статей" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="3b6b9333-af9c-426b-8761-de7722c820cf" LastKnownName="Редактирование статей" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="28b32a75-68a7-4a2b-b2b5-5843e84c33e0" name="Администратор" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a8957038-920c-41be-a645-bbe05ca2ef05" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="106a83b9-720b-4682-8fe1-6ba360632bf6" name="Редактирование статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="be56670e-c04d-46bc-96f2-1278644b5876" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="e5996d9f-bfdc-4f0d-a596-4168ecbe5acc" />
-          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -272,6 +224,40 @@
             <elementDefinition Id="46448bba-dbe4-42c8-bdc1-b3ac024c2299" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="62d22db1-bb77-453c-bc77-139aca533f70" isDerived="false" sourceEndRoleName="Пациент" targetEndRoleName="Просмотр статей" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c4fc0df8-d7f1-4da8-8a4a-319b6168dffb" LastKnownName="Просмотр статей" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33a60050-1511-4da0-b969-1c5cbcf0a909" name="Пациент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a365a383-f107-4694-a397-c7d27bf87e4f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="713d2611-fcd5-4a7a-aa66-6fa7db7f3007" name="Просмотр статей" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b0bfcd76-b5ed-4c91-8de8-3b67cecbffda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6dc98f93-3450-4cfd-abe3-c42ed625b792" />
+          </association>
+          <association Id="027170fc-8cbd-48bb-93d7-3f366f4d90d6" isDerived="false" sourceEndRoleName="Пациент" targetEndRoleName="Вход в личный кабинет пациента" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec3fd1b6-09f7-469f-9cff-513e3e47c193" name="Пациент" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b8aaade-6497-423c-95f2-c25b060cae84" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bb89500a-814f-432f-8235-01ea809b75ef" name="Вход в личный кабинет пациента" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e8b177b-88d8-4981-baa0-57d0b781a694" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc5ec515-7424-456b-8edd-2fe63d4ae77e" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -310,12 +296,12 @@
     <useCaseModelRootHasTypes>
       <useCase Id="3b6b9333-af9c-426b-8761-de7722c820cf" name="Редактирование статей" isAbstract="false" isLeaf="false">
         <elementDefinition Id="003c6f6a-1bce-45d0-95e3-1a461e4eade0" />
-        <additions>
-          <include Id="d140b133-9392-4395-8099-6b885327b576">
-            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
-            <elementDefinition Id="b1396a3f-f48c-4ef7-8100-d337613aa24d" />
-          </include>
-        </additions>
+        <extendedCases>
+          <extend Id="05aae4b3-6273-4107-ab98-75e1e5d127dd">
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет врача" />
+            <elementDefinition Id="2a6dde36-574f-440b-be10-b0bebf600e95" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -323,10 +309,91 @@
         <elementDefinition Id="114c4517-837e-44c2-b6f3-5414c25b2209" />
         <extendedCases>
           <extend Id="929c6caf-7b34-4a3e-89a4-44e6f8310464">
-            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет" />
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет врача" />
             <elementDefinition Id="93f7f40b-2696-4c0f-a031-1d28757c796e" />
           </extend>
         </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="308e897f-98b3-4792-884d-d33637b83e0a" name="Амбулаторная карта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="28287b6a-ebf2-494f-b227-be660e6f3e99" />
+        <extendedCases>
+          <extend Id="d60e189b-3855-4b09-8eab-f966629a1a3f">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <elementDefinition Id="18cb26f0-50e2-47cf-993a-76b60cb53d0b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0ecccaaf-80f1-4ef5-a068-e9013d607236" name="Стоматологическая амбулаторная карта" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9b9d9e9e-85a2-4140-9516-d39c891c0f94" />
+        <extendedCases>
+          <extend Id="64d3a03a-ed53-4408-8739-30c4cdc55b9f">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <elementDefinition Id="b878b5d6-8441-4990-8056-7d449c9ad42a" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bf1a2e9f-c134-43fb-9d51-fce63172e0f3" name="Напоминания" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c298706-d130-46a6-80bd-a42588e834cc" />
+        <extendedCases>
+          <extend Id="09d1ce8c-6bd6-40be-8d51-a09a580a97b1">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <elementDefinition Id="8d9ef34c-9556-49bb-8046-40d99c8cdd93" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6afbf3a5-8af5-49bb-b33f-def043423a7b" name="Рекомендации" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4fed9371-08d1-4991-a4f3-959c034aca25" />
+        <extendedCases>
+          <extend Id="d6ff44c9-17ae-4e25-8535-0b2d10e16cb6">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <elementDefinition Id="2d6bc4f6-294a-4eac-a19d-34b463183b0e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="203aa4ba-a055-4060-8f9b-62ce29374fa1" name="Результаты анализов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="464f5bd0-7706-4ebd-a12b-73d93576804e" />
+        <extendedCases>
+          <extend Id="0e2a851b-9109-4a92-b568-379712477bd6">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <elementDefinition Id="7dd561e0-4499-49b1-a72f-8f14183ece8c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c95abad7-9a2b-41b5-8195-4f40460d4f2f" name="Чат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec85eb38-0a0d-45a0-8acb-99c7c77b9494" />
+        <extendedCases>
+          <extend Id="0eaa5725-51c3-4d8c-882c-c02cd71c3190">
+            <useCaseMoniker Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" LastKnownName="Вход в личный кабинет пациента" />
+            <elementDefinition Id="7b089e91-d83b-46d9-b6e0-b5879128edd9" />
+          </extend>
+          <extend Id="bf81e004-9c91-4d91-a92f-c3adc0774cfa">
+            <useCaseMoniker Id="e76d4c21-a40a-40ab-8905-953f48765319" LastKnownName="Вход в личный кабинет врача" />
+            <elementDefinition Id="be1b9912-de29-4939-8c01-32a1a59d5613" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b3ca9eec-7c75-4249-afff-6884dad0f40b" name="Вход в личный кабинет пациента" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="367013c6-7fd2-4691-82da-8af344d742cf" />
+        <additions>
+          <include Id="81ac8260-48ee-40dd-8db8-a90aea81e5d7">
+            <useCaseMoniker Id="2efb1dc9-2b6d-492b-8339-7f1f4988c991" LastKnownName="Аутентификация" />
+            <elementDefinition Id="c256cc53-8797-4014-9649-8399bae4b3db" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
