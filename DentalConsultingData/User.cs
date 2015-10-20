@@ -28,7 +28,6 @@ namespace DentalConsultingData
 
 		public virtual ICollection<Advice> Advices { get; set; }
 		public virtual ICollection<TestResult> TestResults { get; set; }
-		public virtual ICollection<Reminder> Reminders { get; set; }
 		public virtual ICollection<Article> Articles { get; set; } 
 		}
 	}
