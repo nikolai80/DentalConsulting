@@ -10,13 +10,13 @@ namespace DentalConsultingDAL
 	{
 
 	public class ArticleRepository : IArticleRepository, IDisposable
-	{
+		{
 		private DentalConsultingContext context;
 
 		public ArticleRepository(DentalConsultingContext context)
-		{
+			{
 			this.context = context;
-		}
+			}
 
 		bool disposed = false;
 		protected virtual void Dispose(bool disposing)
@@ -31,16 +31,16 @@ namespace DentalConsultingDAL
 			this.disposed = true;
 			}
 		public void Dispose()
-		{
-		Dispose(true);
-		GC.SuppressFinalize(this);
-		}
+			{
+			Dispose(true);
+			GC.SuppressFinalize(this);
+			}
 
 		public IEnumerable<Article> GetArticles()
-		{
-			var articles = context.Articles.Include(a=>a.ArticleContent); 
+			{
+			var articles = context.Articles.Include(a => a.ArticleContent);
 			return articles.ToList();
-		}
+			}
 
 		//public IEnumerable<Article> GetArticlesByUserId(int userId)
 		//	{
@@ -54,8 +54,8 @@ namespace DentalConsultingDAL
 			}
 
 		public void EditArticle(Article article)
-		{
-			context.Entry(article).State=EntityState.Modified;
+			{
+			context.Entry(article).State = EntityState.Modified;
 			}
 
 		public void InsertArticle(Article article)
@@ -65,13 +65,13 @@ namespace DentalConsultingDAL
 
 		public void DeleteArticle(int articleId)
 			{
-			Article article=context.Articles.Find(articleId);
+			Article article = context.Articles.Find(articleId);
 			context.Articles.Remove(article);
 			}
 
 		public void Save()
-		{
+			{
 			context.SaveChanges();
+			}
 		}
 	}
-}

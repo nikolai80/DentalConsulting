@@ -38,7 +38,8 @@ namespace DentalConsultingDAL
 
 		public ArticleContent GetArticleContent(int articleContentId)
 			{
-			throw new NotImplementedException();
+			var articleContent = context.ArticleContents.FirstOrDefault(ac=>ac.ArticleID==articleContentId);
+			return articleContent;
 			}
 
 		

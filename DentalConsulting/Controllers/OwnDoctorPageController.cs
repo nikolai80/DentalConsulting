@@ -69,11 +69,11 @@ namespace DentalConsulting.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult EditArticle(Article article)
 		{
-			ArticleContent articleContent = article.ArticleContent;
+			//ArticleContent articleContent = articleContentRepository.GetArticleContent(article.ArticleID);
 			articleRepository.EditArticle(article);
-			articleContentRepository.EditArticleContent(articleContent);
+			//articleContentRepository.EditArticleContent(articleContent);
 			articleRepository.Save();
-			articleContentRepository.Save();
+			//articleContentRepository.Save();
 		//if(id == null)
 		//	{
 		//	return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
