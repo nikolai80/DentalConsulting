@@ -18,21 +18,18 @@ namespace DentalConsulting.Controllers
     public class OwnDoctorPageController : Controller
     {
 		private IArticleRepository articleRepository;
-		private IArticleContent articleContentRepository;
 	    private DentalConsultingDAL.IUser userRepository;
 
 	    public OwnDoctorPageController()
 	    {
 		    this.userRepository = new UserRepository(new DentalConsultingContext());
 		    this.articleRepository=new ArticleRepository(new DentalConsultingContext());
-			this.articleContentRepository = new ArticleContentRepository(new DentalConsultingContext());
 	    }
 
 	    public OwnDoctorPageController(DentalConsultingDAL.IUser userRepository,IArticleRepository articleRepository,IArticleContent articleContentRepository)
 	    {
 		    this.userRepository = userRepository;
 		    this.articleRepository = articleRepository;
-			this.articleContentRepository = articleContentRepository;
 	    }
 
 	    // GET: OwnDoctorPage
@@ -50,12 +47,12 @@ namespace DentalConsulting.Controllers
         }
 
 		//GET: DoctorArticles
-	    public ActionResult GetArticles( int id)
+	    public ActionResult GetArticles()
 		{
-			//ApplicationUserManager userManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-			//ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
-			//User appUser = userRepository.GetUsers().First(u => u.LoggedUserId == user.Id);
-		var articles = articleRepository.GetArticles().Where(a=>a.UserUserID==id).ToList();	
+		ApplicationUserManager userManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+		ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
+		User appUser = userRepository.GetUsers().First(u => u.LoggedUserId == user.Id);
+		var articles = articleRepository.GetArticles().Where(a=>a.UserUserID==appUser.UserID).ToList();	
 		    return View(articles);
 	    }
 		 //GET:DoctorArticle/2
@@ -67,34 +64,15 @@ namespace DentalConsulting.Controllers
 
 		[HttpPost, ActionName("EditArticle")]
 		[ValidateAntiForgeryToken]
-		public ActionResult EditArticle(Article article)
+		public ActionResult EditArticle(int id,FormCollection formCollection)
 		{
-			//ArticleContent articleContent = articleContentRepository.GetArticleContent(article.ArticleID);
-			articleRepository.EditArticle(article);
-			//articleContentRepository.EditArticleContent(articleContent);
+		var articleToUpdate = articleRepository.GetArticleById(id);
+			if (TryUpdateModel(articleToUpdate))
+			{
+				articleRepository.EditArticle(articleToUpdate);
+			}
 			articleRepository.Save();
-			//articleContentRepository.Save();
-		//if(id == null)
-		//	{
-		//	return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-		//	}
-		//var articleToUpdate = articleRepository.GetArticleById(id);
-		//if(TryUpdateModel(articleToUpdate, "",
-		//   new string[] { "ArticleTitle", "ArticleText" }))
-		//	{
-		//	try
-		//		{
-		//		articleRepository.Save();
-
-		//		return RedirectToAction("Index");
-		//		}
-		//	catch(DataException /* dex */)
-		//		{
-		//		//Log the error (uncomment dex variable name and add a line here to write a log.
-		//		ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-		//		}
-		//	}
-		return View(article);
+		return RedirectToAction("GetArticles");
 		}
 		public ActionResult CreateArticle()
 		{

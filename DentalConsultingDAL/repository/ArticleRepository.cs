@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -42,20 +43,25 @@ namespace DentalConsultingDAL
 			return articles.ToList();
 			}
 
-		//public IEnumerable<Article> GetArticlesByUserId(int userId)
-		//	{
-		//	var articles = context.Articles.Include(a => a.ArticleContent).Where(a=>a.UserUserID==userId);
-		//	return articles.ToList();
-		//	}
 		public Article GetArticleById(int articleId)
 			{
-			var article = context.Articles.Find(articleId);
+			var article = context.Articles.Include(a=>a.ArticleContent).Single(a => a.ArticleID==articleId);
 			return article;
 			}
 
 		public void EditArticle(Article article)
-			{
-			context.Entry(article).State = EntityState.Modified;
+		{
+			
+			try
+				{
+				context.Entry(article).State = EntityState.Modified;
+				context.SaveChanges();
+				}
+			catch(DataException ex)
+				{
+				//Log the error (add a variable name after DataException) 
+				//ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
+				}
 			}
 
 		public void InsertArticle(Article article)
