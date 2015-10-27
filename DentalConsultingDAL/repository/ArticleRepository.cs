@@ -55,7 +55,7 @@ namespace DentalConsultingDAL
 			try
 				{
 				context.Entry(article).State = EntityState.Modified;
-				context.SaveChanges();
+				Save();
 				}
 			catch(DataException ex)
 				{
@@ -69,7 +69,7 @@ namespace DentalConsultingDAL
 			try
 			{
 				context.Articles.Add(article);
-				context.SaveChanges();
+				Save();
 			}
 			catch (DataException)
 			{
@@ -79,8 +79,9 @@ namespace DentalConsultingDAL
 
 		public void DeleteArticle(int articleId)
 			{
-			Article article = context.Articles.Find(articleId);
+			Article article = context.Articles.Include(a=>a.ArticleContent).Single(a=>a.ArticleID==articleId);
 			context.Articles.Remove(article);
+			Save();
 			}
 
 		public void Save()

@@ -48,11 +48,9 @@ namespace DentalConsulting.Controllers
 
 		//GET: DoctorArticles
 	    public ActionResult GetArticles()
-		{
-		ApplicationUserManager userManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-		ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
-		User appUser = userRepository.GetUsers().First(u => u.LoggedUserId == user.Id);
-		var articles = articleRepository.GetArticles().Where(a=>a.UserUserID==appUser.UserID).ToList();	
+	    {
+		    var user = GetLoggedUser();
+		var articles = articleRepository.GetArticles().Where(a=>a.UserUserID==user.UserID).ToList();	
 		    return View(articles);
 	    }
 		 //GET:DoctorArticle/2
@@ -81,6 +79,29 @@ namespace DentalConsulting.Controllers
 			return View();
 		}
 
+		//POST:CreateArticle
+		[HttpPost]
+		public ActionResult CreateArticle(Article article)
+		{
+			article.UserUserID = GetLoggedUser().UserID;
+		  articleRepository.InsertArticle(article);
+		return RedirectToAction("GetArticles");	
+		}
+
+		public ActionResult DeleteArticle(int id)
+		{
+			articleRepository.DeleteArticle(id);
+		return RedirectToAction("GetArticles");	
+		}
+
+		private User GetLoggedUser()
+		{
+			User loggedUser = null;
+			ApplicationUserManager userManager = HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+			ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
+			loggedUser = userRepository.GetUsers().First(u => u.LoggedUserId == user.Id);
+			return loggedUser;
+		}
 		protected override void Dispose(bool disposing)
 			{
 			articleRepository.Dispose();
