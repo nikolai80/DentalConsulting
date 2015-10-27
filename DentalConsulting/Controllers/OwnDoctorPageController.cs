@@ -74,9 +74,11 @@ namespace DentalConsulting.Controllers
 			articleRepository.Save();
 		return RedirectToAction("GetArticles");
 		}
+
+		//GET:CreateArticle
 		public ActionResult CreateArticle()
 		{
-			return Redirect("OwnDoctorPage/GetArticles");
+			return View();
 		}
 
 		protected override void Dispose(bool disposing)

@@ -240,6 +240,7 @@
     <Content Include="Views\OwnDoctorPage\Index.cshtml" />
     <Content Include="Views\OwnDoctorPage\GetArticles.cshtml" />
     <Content Include="Views\OwnDoctorPage\EditArticle.cshtml" />
+    <Content Include="Views\OwnDoctorPage\CreateArticle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

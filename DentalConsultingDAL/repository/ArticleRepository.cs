@@ -66,7 +66,15 @@ namespace DentalConsultingDAL
 
 		public void InsertArticle(Article article)
 			{
-			context.Articles.Add(article);
+			try
+			{
+				context.Articles.Add(article);
+				context.SaveChanges();
+			}
+			catch (DataException)
+			{
+				
+			}
 			}
 
 		public void DeleteArticle(int articleId)
