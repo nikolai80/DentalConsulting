@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fe6434ed-e3db-4da1-8c61-8a2c6bcde52e" name="UMLUseCaseDiagramSiteUser" linkedPackageId="eae7452a-d3b5-4bed-a7ce-f21d9cb4a065" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="d908af7a-30f1-4c74-add3-a37ad6b7a243">
       <elementDefinition Id="e3cdcd0d-01b7-4114-8b6a-737376706f3d" />
@@ -305,7 +305,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="9377108f-3059-467e-9f79-99be3518ba3c" name="Персональная информация" isAbstract="false" isLeaf="false">
+      <useCase Id="9377108f-3059-467e-9f79-99be3518ba3c" name="Загрузка персональной информации" isAbstract="false" isLeaf="false">
         <elementDefinition Id="114c4517-837e-44c2-b6f3-5414c25b2209" />
         <extendedCases>
           <extend Id="929c6caf-7b34-4a3e-89a4-44e6f8310464">
@@ -316,7 +316,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="308e897f-98b3-4792-884d-d33637b83e0a" name="Амбулаторная карта" isAbstract="false" isLeaf="false">
+      <useCase Id="308e897f-98b3-4792-884d-d33637b83e0a" name="Загрузка амбулаторной карты" isAbstract="false" isLeaf="false">
         <elementDefinition Id="28287b6a-ebf2-494f-b227-be660e6f3e99" />
         <extendedCases>
           <extend Id="d60e189b-3855-4b09-8eab-f966629a1a3f">
@@ -327,7 +327,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="0ecccaaf-80f1-4ef5-a068-e9013d607236" name="Стоматологическая амбулаторная карта" isAbstract="false" isLeaf="false">
+      <useCase Id="0ecccaaf-80f1-4ef5-a068-e9013d607236" name="Загрузка стоматологической амбулаторной карты" isAbstract="false" isLeaf="false">
         <elementDefinition Id="9b9d9e9e-85a2-4140-9516-d39c891c0f94" />
         <extendedCases>
           <extend Id="64d3a03a-ed53-4408-8739-30c4cdc55b9f">
@@ -338,7 +338,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="bf1a2e9f-c134-43fb-9d51-fce63172e0f3" name="Напоминания" isAbstract="false" isLeaf="false">
+      <useCase Id="bf1a2e9f-c134-43fb-9d51-fce63172e0f3" name="Загрузка напоминаний" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8c298706-d130-46a6-80bd-a42588e834cc" />
         <extendedCases>
           <extend Id="09d1ce8c-6bd6-40be-8d51-a09a580a97b1">
@@ -349,7 +349,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="6afbf3a5-8af5-49bb-b33f-def043423a7b" name="Рекомендации" isAbstract="false" isLeaf="false">
+      <useCase Id="6afbf3a5-8af5-49bb-b33f-def043423a7b" name="Загрузка списка рекомендаций" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4fed9371-08d1-4991-a4f3-959c034aca25" />
         <extendedCases>
           <extend Id="d6ff44c9-17ae-4e25-8535-0b2d10e16cb6">
@@ -360,7 +360,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="203aa4ba-a055-4060-8f9b-62ce29374fa1" name="Результаты анализов" isAbstract="false" isLeaf="false">
+      <useCase Id="203aa4ba-a055-4060-8f9b-62ce29374fa1" name="Загрузка результатов анализов" isAbstract="false" isLeaf="false">
         <elementDefinition Id="464f5bd0-7706-4ebd-a12b-73d93576804e" />
         <extendedCases>
           <extend Id="0e2a851b-9109-4a92-b568-379712477bd6">
@@ -371,7 +371,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="c95abad7-9a2b-41b5-8195-4f40460d4f2f" name="Чат" isAbstract="false" isLeaf="false">
+      <useCase Id="c95abad7-9a2b-41b5-8195-4f40460d4f2f" name="Загрузка списка чатов" isAbstract="false" isLeaf="false">
         <elementDefinition Id="ec85eb38-0a0d-45a0-8acb-99c7c77b9494" />
         <extendedCases>
           <extend Id="0eaa5725-51c3-4d8c-882c-c02cd71c3190">

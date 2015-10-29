@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2412,7 +2412,7 @@
     <packageHasNamedElement>
       <useCase
         Id="114c4517-837e-44c2-b6f3-5414c25b2209"
-        name="Персональная информация"
+        name="Загрузка персональной информации"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -2429,7 +2429,7 @@
     <packageHasNamedElement>
       <useCase
         Id="28287b6a-ebf2-494f-b227-be660e6f3e99"
-        name="Амбулаторная карта"
+        name="Загрузка амбулаторной карты"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -2446,7 +2446,7 @@
     <packageHasNamedElement>
       <useCase
         Id="9b9d9e9e-85a2-4140-9516-d39c891c0f94"
-        name="Стоматологическая амбулаторная карта"
+        name="Загрузка стоматологической амбулаторной карты"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -2463,7 +2463,7 @@
     <packageHasNamedElement>
       <useCase
         Id="8c298706-d130-46a6-80bd-a42588e834cc"
-        name="Напоминания"
+        name="Загрузка напоминаний"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -2480,7 +2480,7 @@
     <packageHasNamedElement>
       <useCase
         Id="4fed9371-08d1-4991-a4f3-959c034aca25"
-        name="Рекомендации"
+        name="Загрузка списка рекомендаций"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -2497,7 +2497,7 @@
     <packageHasNamedElement>
       <useCase
         Id="464f5bd0-7706-4ebd-a12b-73d93576804e"
-        name="Результаты анализов"
+        name="Загрузка результатов анализов"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -2514,7 +2514,7 @@
     <packageHasNamedElement>
       <useCase
         Id="ec85eb38-0a0d-45a0-8acb-99c7c77b9494"
-        name="Чат"
+        name="Загрузка списка чатов"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
