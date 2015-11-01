@@ -1,0 +1,10 @@
+﻿@model DentalConsultingData.Article
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ActionLink("К списку статей", "Index")
+<h2>@Model.ArticleTitle</h2>
+<div>@Model.ArticleContent.ArticleText</div>
+@Html.ActionLink("К списку статей","Index")

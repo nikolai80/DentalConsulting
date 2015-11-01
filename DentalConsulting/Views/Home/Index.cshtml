@@ -8,10 +8,22 @@
 
 <div class="row">
     <div class="col-md-10 col-md-offset-1">
-        @foreach (var item in Model)
-        {
+        @foreach(var item in Model)
+            {
             <h2>@item.ArticleTitle</h2>
-            <div>@item.ArticleContent.ArticleText</div>}
+
+                if (item.ArticleContent.ArticleText.Length <= 200)
+                {
+                    <div>
+                        @item.ArticleContent.ArticleText
+                    </div>
+                }
+                else
+                {
+                    <div> @item.ArticleContent.ArticleText.Substring(0, 201) </div>
+                    @Html.ActionLink("Подробнее>>","Detail",new{id=item.ArticleID})
+                }
+            }
     </div>
-    
+
 </div>

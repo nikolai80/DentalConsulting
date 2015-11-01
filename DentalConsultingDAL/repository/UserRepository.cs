@@ -37,7 +37,7 @@ namespace DentalConsultingDAL
 			context.Users.Add(user);
 			}
 
-		public User GetUserById(string userId)
+		public User GetUserById(int userId)
 			{
 			return context.Users.Find(userId);
 			}

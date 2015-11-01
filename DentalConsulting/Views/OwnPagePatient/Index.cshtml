@@ -1,4 +1,5 @@
-﻿@{
+﻿@model DentalConsultingData.User
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -22,12 +23,13 @@
                 <img alt="Личное фото" class="personalPhoto" src="../../img/smile.jpg" />
             </div>
             <div class="col-md-9">
+                @Html.ActionLink("Редактировать","EditUser",new{id=Model.UserID})
                 <div class="row">
-                    <div class="col-md-12">Фамилия</div>
-                    <div class="col-md-6">Имя</div>
+                    <div class="col-md-12">@Model.UserSurname</div>
+                    <div class="col-md-6">@Model.UserName</div>
                     <div class="col-md-6">Отчество</div>
                     <div class="col-md-6">Пол</div>
-                    <div class="col-md-6">@DateTime.Today.ToString("d")</div>
+                    <div class="col-md-6">@Model.UserDateOfBirth</div>
                 </div>
             </div>
         </div>

@@ -38,6 +38,12 @@ namespace DentalConsulting.Controllers
 			return View();
 			}
 
+		public ActionResult Detail(int id)
+		{
+			var article = articleRepository.GetArticleById(id);
+			return View(article);
+		}
+
 
 		}
 	}

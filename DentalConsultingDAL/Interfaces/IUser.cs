@@ -18,7 +18,7 @@ namespace DentalConsultingDAL
 
 		void InsertUser(User user);
 
-		User GetUserById(string userId);
+		User GetUserById(int userId);
 
 		IEnumerable<User> GetUsers();
 	}

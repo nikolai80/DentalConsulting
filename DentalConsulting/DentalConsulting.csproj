@@ -241,6 +241,8 @@
     <Content Include="Views\OwnDoctorPage\GetArticles.cshtml" />
     <Content Include="Views\OwnDoctorPage\EditArticle.cshtml" />
     <Content Include="Views\OwnDoctorPage\CreateArticle.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\OwnPagePatient\EditUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
