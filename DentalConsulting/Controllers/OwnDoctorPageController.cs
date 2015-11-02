@@ -69,7 +69,6 @@ namespace DentalConsulting.Controllers
 			{
 				articleRepository.EditArticle(articleToUpdate);
 			}
-			articleRepository.Save();
 		return RedirectToAction("GetArticles");
 		}
 

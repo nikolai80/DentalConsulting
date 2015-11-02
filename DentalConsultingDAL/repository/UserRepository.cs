@@ -25,16 +25,19 @@ namespace DentalConsultingDAL
 		{
 			User user = context.Users.Find(userId);
 			context.Users.Remove(user);
+			Save();
 		}
 
 		public void EditUser(User user)
 			{
 			context.Entry(user).State = EntityState.Modified;
+			Save();
 			}
 
 		public void InsertUser(User user)
 			{
 			context.Users.Add(user);
+			Save();
 			}
 
 		public User GetUserById(int userId)

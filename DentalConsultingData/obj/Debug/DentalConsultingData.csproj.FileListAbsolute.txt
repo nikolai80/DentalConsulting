@@ -21,3 +21,4 @@ D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\ru\EntityF
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
 D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
+D:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache

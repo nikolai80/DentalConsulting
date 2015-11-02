@@ -39,7 +39,7 @@
                     <li>@Html.ActionLink("Главная страница", "Index", "Home")</li>
                     <li>@if (!String.IsNullOrEmpty(firstRole)&&firstRole=="patient")
                         {
-                            @Html.ActionLink("Личный кабинет", "Index", "OwnPagePatient")
+                            @Html.ActionLink("Личный кабинет", "Index", "OwnPagePatient",new{userId=user.Id},null)
                         }
                         else if(!String.IsNullOrEmpty(firstRole) && firstRole == "doctor")
                             {
