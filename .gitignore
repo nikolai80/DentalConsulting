@@ -1,3 +1,4 @@
-DentalConsultingDAL/obj/
-DentalConsultingData/obj/
-DentalConsulting/obj/
+DentalConsultingDAL/obj/*
+DentalConsultingData/obj/*
+DentalConsulting/obj/*
+DentalConsulting/DentalConsulting/Web.config
