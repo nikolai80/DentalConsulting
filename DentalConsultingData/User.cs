@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DentalConsultingData
 	{
+	public enum Sex { Мужчина,Женщина}
 	public class User
 		{
 		[Key]
@@ -16,7 +17,11 @@ namespace DentalConsultingData
 
 		public string UserName { get; set; }
 
+		public string UserSecondName { get; set; }
+
 		public string UserSurname { get; set; }
+
+		public Sex UserSex { get; set; }
 
 		public DateTime UserDateOfBirth { get; set; }
 

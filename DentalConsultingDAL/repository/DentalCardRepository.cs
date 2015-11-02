@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using DentalConsultingData;
@@ -10,19 +11,27 @@ namespace DentalConsultingDAL
 	public class DentalCardRepository : IDentalCard, IDisposable
 		{
 		private DentalConsultingContext context;
-		public DentalCard GetDentalCardById(string dentalCardId)
-			{
-			throw new NotImplementedException();
-			}
+
+		public DentalCardRepository(DentalConsultingContext context)
+		{
+			this.context = context;
+		}
+		public DentalCard GetDentalCardById(int dentalCardId)
+		{
+			DentalCard dentalCard = context.DentalCards.Find(dentalCardId);
+			return dentalCard;
+		}
 
 		public void InsertDentalCard(DentalCard dentalCard)
 			{
-			throw new NotImplementedException();
+			context.DentalCards.Add(dentalCard);
+			Save();
 			}
 
 		public void EditDentalCard(DentalCard dentalCard)
 			{
-			throw new NotImplementedException();
+			context.Entry(dentalCard).State=EntityState.Modified;
+			Save();
 			}
 
 		public void DeleteDentalCard(int dentalCardId)
@@ -32,7 +41,7 @@ namespace DentalConsultingDAL
 
 		public void Save()
 			{
-			throw new NotImplementedException();
+			context.SaveChanges();
 			}
 
 		bool disposed = false;

@@ -9,7 +9,7 @@ namespace DentalConsultingDAL
 
 	public interface IDentalCard
 		{
-		DentalCard GetDentalCardById(string dentalCardId);
+		DentalCard GetDentalCardById(int dentalCardId);
 		void InsertDentalCard(DentalCard dentalCard);
 		void EditDentalCard(DentalCard dentalCard);
 		void DeleteDentalCard(int dentalCardId);

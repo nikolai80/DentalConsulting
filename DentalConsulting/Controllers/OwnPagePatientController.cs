@@ -52,7 +52,7 @@ namespace DentalConsulting.Controllers
 				{
 				userRepository.EditUser(userToUpdate);
 				}
-			return RedirectToAction("Index");
+			return RedirectToAction("Index","OwnPagePatient");
 			}
 		}
 	}
