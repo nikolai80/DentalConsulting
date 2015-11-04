@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DentalConsultingData;
 using DentalConsultingDAL;
 
 namespace DentalConsulting.Controllers
@@ -28,12 +29,7 @@ namespace DentalConsulting.Controllers
             return View(dentalCard);
         }
 
-        // GET: DentalCard/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
+        
         // GET: DentalCard/Create
         public ActionResult Create()
         {
@@ -42,12 +38,12 @@ namespace DentalConsulting.Controllers
 
         // POST: DentalCard/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(DentalCard card,int id, FormCollection collection)
         {
             try
             {
-                // TODO: Add insert logic here
-
+	            card.UserID = id;
+				cardRepository.InsertDentalCard(card);
                 return RedirectToAction("Index");
             }
             catch
@@ -79,9 +75,9 @@ namespace DentalConsulting.Controllers
         }
 
         // GET: DentalCard/Delete/5
-        public ActionResult Delete(int id)
+        public void	 Delete(int id)
         {
-            return View();
+           
         }
 
         // POST: DentalCard/Delete/5
@@ -96,7 +92,7 @@ namespace DentalConsulting.Controllers
             }
             catch
             {
-                return View();
+			return RedirectToAction("Index");
             }
         }
     }

@@ -244,10 +244,12 @@
     <Content Include="Views\OwnDoctorPage\CreateArticle.cshtml" />
     <Content Include="Views\Home\Detail.cshtml" />
     <Content Include="Views\OwnPagePatient\EditUser.cshtml" />
+    <Content Include="Views\DentalCard\Index.cshtml" />
+    <Content Include="Views\DentalCard\Create.cshtml" />
+    <Content Include="Views\DentalCard\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\DentalCard\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

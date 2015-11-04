@@ -42,7 +42,7 @@ namespace DentalConsultingDAL
 
 		public User GetUserById(int userId)
 			{
-			return context.Users.Find(userId);
+			return context.Users.Include(c=>c.DentalCard).Single(u=>u.UserID==userId);
 			}
 
 		public IEnumerable<User> GetUsers()

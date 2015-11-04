@@ -10,50 +10,53 @@
             <li>@Html.ActionLink("Личные данные", "Index", "OwnPagePatient")</li>
             <li>@Html.ActionLink("Амбулаторная карта", "Index", "OwnPagePatient")</li>
             <li>
-                @if(Model.DentalCard.DentalCardID > 0)
+                @if(Model.DentalCard != null)
                     {
                     Html.ActionLink("Стоматологическая карта", "Index", "DentalCard", new { id = Model.DentalCard.DentalCardID }, null);
                     }
-                else { Html.ActionLink("Стоматологическая карта", "Create", "DentalCard"); }
-        </li>
-        <li>@Html.ActionLink("Чат", "Index", "OwnPagePatient")</li>
-        <li>@Html.ActionLink("Рекомендации", "Index", "OwnPagePatient")</li>
-        <li>@Html.ActionLink("Напоминания", "Index", "OwnPagePatient")</li>
-        <li>@Html.ActionLink("Календарь развития ребенка", "Index", "OwnPagePatient")</li>
-    </ul>
-</div>
+                else
+                    {
+                    Html.ActionLink("Стоматологическая карта", "Create", "DentalCard", new { id = Model.UserID }, null);
+                    }
+            </li>
+            <li>@Html.ActionLink("Чат", "Index", "OwnPagePatient")</li>
+            <li>@Html.ActionLink("Рекомендации", "Index", "OwnPagePatient")</li>
+            <li>@Html.ActionLink("Напоминания", "Index", "OwnPagePatient")</li>
+            <li>@Html.ActionLink("Календарь развития ребенка", "Index", "OwnPagePatient")</li>
+        </ul>
+    </div>
 
-<div class="col-md-9">
-    <div class="row">
-        <div class="col-md-3">
-            <img alt="Личное фото" class="personalPhoto" src="../../img/smile.jpg" />
-        </div>
-        <div class="col-md-9">
-            @Html.ActionLink("Редактировать", "EditUser", new { id = Model.UserID })
-            <div class="row">
-                <div class="col-md-12">@Model.UserSurname</div>
-                <div class="col-md-6">@Model.UserName</div>
-                <div class="col-md-6">@Model.UserSecondName</div>
-                <div class="col-md-6">@Model.UserSex</div>
-                <div class="col-md-6">@Model.UserDateOfBirth.Date.ToShortDateString()</div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-3">
+                <img alt="Личное фото" class="personalPhoto" src="../../img/smile.jpg" />
+            </div>
+            <div class="col-md-9">
+                @Html.ActionLink("Редактировать", "EditUser", new { id = Model.UserID })
+                <div class="row">
+                    <div class="col-md-12">@Model.UserSurname</div>
+                    <div class="col-md-6">@Model.UserName</div>
+                    <div class="col-md-6">@Model.UserSecondName</div>
+                    <div class="col-md-6">@Model.UserSex</div>
+                    <div class="col-md-6">@Model.UserDateOfBirth.Date.ToShortDateString()</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-12">Активные напоминания</div>
-    <div class="col-md-12">
-        <ul class="nomarkers">
-            <li><a href="#">Сходить к врачу</a></li>
-            <li><a href="#">Закрыть фисуры</a></li>
-        </ul>
-    </div>
-    <div class="col-md-12">Активные чаты</div>
-    <div class="col-md-12">
-        <ul class="nomarkers">
-            <li><a href="#">Доктор Звягинцев</a></li>
-            <li><a href="#">Доктор Решетников</a></li>
-        </ul>
-    </div>
+        <div class="col-md-12">Активные напоминания</div>
+        <div class="col-md-12">
+            <ul class="nomarkers">
+                <li><a href="#">Сходить к врачу</a></li>
+                <li><a href="#">Закрыть фисуры</a></li>
+            </ul>
+        </div>
+        <div class="col-md-12">Активные чаты</div>
+        <div class="col-md-12">
+            <ul class="nomarkers">
+                <li><a href="#">Доктор Звягинцев</a></li>
+                <li><a href="#">Доктор Решетников</a></li>
+            </ul>
+        </div>
 
 
-</div>
+    </div>
 </div>
