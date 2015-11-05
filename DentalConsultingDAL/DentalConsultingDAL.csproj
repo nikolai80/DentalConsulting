@@ -67,6 +67,10 @@
     <Compile Include="Migrations\201511021813163_Foth.Designer.cs">
       <DependentUpon>201511021813163_Foth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511052221084_Fifth.cs" />
+    <Compile Include="Migrations\201511052221084_Fifth.Designer.cs">
+      <DependentUpon>201511052221084_Fifth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="repository\AdviceRepository.cs" />
     <Compile Include="repository\ArticleContentRepository.cs" />
@@ -113,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511021813163_Foth.resx">
       <DependentUpon>201511021813163_Foth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511052221084_Fifth.resx">
+      <DependentUpon>201511052221084_Fifth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

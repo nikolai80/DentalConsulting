@@ -12,7 +12,8 @@ namespace DentalConsultingData
 	public class DentalCard
 		{
 		 [Key]
-		public int DentalCardID
+		[ForeignKey("User")]
+		public int UserID
 			{
 			get;
 			set;
@@ -23,8 +24,6 @@ namespace DentalConsultingData
 			get;
 			set;
 			}
-		public int UserID { get; set; }
-		[Required]
 		public virtual User User { get; set; }
 	}
 	}
