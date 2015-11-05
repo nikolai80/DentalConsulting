@@ -12,11 +12,11 @@
             <li>
                 @if(Model.DentalCard != null)
                     {
-                    Html.ActionLink("Стоматологическая карта", "Index", "DentalCard", new { id = Model.DentalCard.DentalCardID }, null);
+                    @Html.ActionLink("Стоматологическая карта", "Index", "DentalCard", new { id = Model.DentalCard.DentalCardID }, null);
                     }
                 else
                     {
-                    Html.ActionLink("Стоматологическая карта", "Create", "DentalCard", new { id = Model.UserID }, null);
+                    @Html.ActionLink("Стоматологическая карта", "Create", "DentalCard", new { id = Model.UserID }, null);
                     }
             </li>
             <li>@Html.ActionLink("Чат", "Index", "OwnPagePatient")</li>

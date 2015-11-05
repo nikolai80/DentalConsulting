@@ -43,6 +43,7 @@ namespace DentalConsulting.Controllers
             try
             {
 	            card.UserID = id;
+				
 				cardRepository.InsertDentalCard(card);
                 return RedirectToAction("Index");
             }
