@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DentalConsultingData
 	{
-	public enum Sex { Мужчина,Женщина}
+	public enum Sex { Мужчина, Женщина }
 	public class User
 		{
 		[Key]
@@ -26,13 +26,18 @@ namespace DentalConsultingData
 		public DateTime UserDateOfBirth { get; set; }
 
 		public virtual ICollection<Chat> Chats { get; set; }
-		
+
 		public virtual DentalCard DentalCard { get; set; }
 		public virtual Role Role { get; set; }
 		public virtual HospitalChart HospitalChart { get; set; }
 
 		public virtual ICollection<Advice> Advices { get; set; }
 		public virtual ICollection<TestResult> TestResults { get; set; }
-		public virtual ICollection<Article> Articles { get; set; } 
+		public virtual ICollection<Article> Articles { get; set; }
+
+		public string FullName()
+			{
+			return UserName + UserSecondName + UserSurname;
+			}
 		}
 	}

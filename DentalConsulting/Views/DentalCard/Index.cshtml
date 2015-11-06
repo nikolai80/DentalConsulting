@@ -5,9 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Стоматологическая амбулаторная карта</h2>
+<h2>Стоматологическая амбулаторная карта @Model.User.FullName()</h2>
 <div>@Model.DentalCardContent</div>
-@Html.ActionLink("Редактировать","Edit","DentalCard",new{id=Model.UserID})
+@Html.ActionLink("Редактировать","Edit","DentalCard",new{id=Model.UserID},null)
 
 
 

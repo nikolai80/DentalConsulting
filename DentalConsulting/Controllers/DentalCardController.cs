@@ -19,7 +19,7 @@ namespace DentalConsulting.Controllers
 			userRepository = new UserRepository(new DentalConsultingContext());
 			}
 
-		public DentalCardController(DentalConsultingDAL.IDentalCard cardRepository,IUser userRepository)
+		public DentalCardController(DentalConsultingDAL.IDentalCard cardRepository, IUser userRepository)
 			{
 			this.cardRepository = cardRepository;
 			this.userRepository = userRepository;
@@ -47,7 +47,7 @@ namespace DentalConsulting.Controllers
 				{
 				card.UserID = id;
 				cardRepository.InsertDentalCard(card);
-				return RedirectToAction("Index");
+				return RedirectToAction("Index", id);
 				}
 			catch
 				{
@@ -58,18 +58,22 @@ namespace DentalConsulting.Controllers
 		// GET: DentalCard/Edit/5
 		public ActionResult Edit(int id)
 			{
-			return View();
+			var cardToEdit = cardRepository.GetDentalCardById(id);
+			return View(cardToEdit);
 			}
 
 		// POST: DentalCard/Edit/5
 		[HttpPost]
-		public ActionResult Edit(int id, FormCollection collection)
+		public ActionResult Edit(DentalCard card, FormCollection collection)
 			{
+			var cardToUpdate = card;
 			try
 				{
-				// TODO: Add update logic here
-
-				return RedirectToAction("Index");
+				if(TryValidateModel(cardToUpdate))
+					{
+					cardRepository.EditDentalCard(card);
+					}
+				return RedirectToAction("Index",new{id= card.UserID});
 				}
 			catch
 				{
