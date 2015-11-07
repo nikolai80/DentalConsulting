@@ -37,7 +37,7 @@ namespace DentalConsultingData
 
 		public string FullName()
 			{
-			return UserName + UserSecondName + UserSurname;
+			return UserName+" " + UserSecondName+" " + UserSurname;
 			}
 		}
 	}

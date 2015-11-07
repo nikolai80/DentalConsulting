@@ -34,3 +34,13 @@ textarea {
 .nomarkers {
 	list-style-type: none;
 }
+
+.cardGroup {
+	margin: 0 0 15px 0;
+}
+.rowUnderLine {
+	border-bottom: 1px black solid;
+}
+.cardCellHeight {
+	height: 55px;
+}

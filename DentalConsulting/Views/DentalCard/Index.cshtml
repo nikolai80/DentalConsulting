@@ -6,8 +6,56 @@
 }
 
 <h2>Стоматологическая амбулаторная карта @Model.User.FullName()</h2>
-<div>@Model.DentalCardContent</div>
-@Html.ActionLink("Редактировать","Edit","DentalCard",new{id=Model.UserID},null)
+<div class="row">
+    @Html.Label("Причина обращения, жалобы", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+    <div class="col-md-10 rowUnderLine cardCellHeight">
+        @Html.DisplayFor(model => model.Reason, Model.Reason)
+    </div>
+</div>
+<div class="row">
+    @Html.Label("Общее состояние здоровья", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+    <div class="col-md-10 rowUnderLine cardCellHeight">
+        @Html.DisplayFor(model => model.GeneralStateOfHealth, Model.GeneralStateOfHealth)
+    </div>
+</div>
+
+<div class="cardGroup">
+    <div class="col-md-12">Внешний осмотр:</div><div class="row">
+        @Html.Label("конфигурация лица", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+        <div class="col-md-10 rowUnderLine cardCellHeight">
+            @Html.DisplayFor(model => model.ConfigurationFace, Model.ConfigurationFace)
+        </div>
+    </div>
+</div>
+
+<div class="cardGroup">
+    <div class="col-md-12">Состояние:</div>
+    <div class="row">
+        @Html.Label("кожных покровов, красной каймы", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+        <div class="col-md-10 rowUnderLine cardCellHeight">
+            @Html.DisplayFor(model => model.SkinCovering, Model.SkinCovering)
+        </div>
+    </div>
+    <div class="row">
+        @Html.Label("регионарных лимфатических узлов", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+        <div class="col-md-10 rowUnderLine cardCellHeight">
+            @Html.DisplayFor(model => model.LymphNodes, Model.LymphNodes)
+        </div>
+    </div>
+    <div class="row">
+        @Html.Label("височно-нижнечелюстного сустава", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+        <div class="col-md-10 rowUnderLine cardCellHeight">
+            @Html.DisplayFor(model => model.TemporalJoint, Model.TemporalJoint)
+        </div>
+    </div>
+</div>
+<div class="row">
+    @Html.Label("Прикус", htmlAttributes: new { @class = "col-md-2 cardCellHeight" })
+    <div class="col-md-10 rowUnderLine cardCellHeight">
+        @Html.DisplayFor(model => model.Bite, Model.Bite)
+    </div>
+</div>
+@Html.ActionLink("Редактировать", "Edit", "DentalCard", new { id = Model.UserID }, null)
 
 
 
