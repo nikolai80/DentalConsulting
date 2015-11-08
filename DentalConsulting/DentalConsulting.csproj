@@ -187,6 +187,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\doctor.jpg" />
+    <Content Include="img\mainLogo3.jpg" />
     <Content Include="img\smile.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

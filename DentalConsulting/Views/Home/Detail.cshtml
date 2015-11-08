@@ -5,6 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @Html.ActionLink("К списку статей", "Index")
-<h2>@Model.ArticleTitle</h2>
-<div>@Model.ArticleContent.ArticleText</div>
+<h3>@Model.ArticleTitle</h3>
+<p class="text-left">@Model.ArticleContent.ArticleText</p>
+<p class="text-right">@Model.User.FullName()</p>
 @Html.ActionLink("К списку статей","Index")
