@@ -159,6 +159,7 @@ namespace DentalConsulting.Controllers
 				
                 if (result.Succeeded)
                 {
+	                await UserManager.AddToRolesAsync(user.Id, "candidate");
 	                await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
 						//Создаем пользователя личного кабинета
 	                User loggedUser=new User();
