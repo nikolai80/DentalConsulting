@@ -251,6 +251,7 @@
     <Content Include="Views\DentalCard\Edit.cshtml" />
     <Content Include="Views\Shared\_LayoutAdminPage.cshtml" />
     <Content Include="Views\AdminPanel\Index.cshtml" />
+    <Content Include="Views\AdminPanel\Insert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

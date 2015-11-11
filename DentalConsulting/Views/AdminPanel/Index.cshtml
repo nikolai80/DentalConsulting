@@ -1,6 +1,12 @@
-﻿@{
+﻿@model IQueryable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
 }
-
-
+<div>@Html.ActionLink("Добавить роль","Insert")</div>
+<ul>
+    @foreach(var role in Model)
+        {
+        <li>@role.Name</li>
+        }
+</ul>
