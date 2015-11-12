@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using DentalConsulting.Models;
@@ -15,7 +16,7 @@ namespace DentalConsulting.Controllers
 		// GET: AdminPanel
 		public ActionResult Index()
 			{
-			var roleManager = new RoleManager<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
 			return View(roleManager.Roles);
 			}
 
@@ -24,10 +25,26 @@ namespace DentalConsulting.Controllers
 			return View();
 		}
 
-		[HttpPost,ActionName("Insert")]
-		public ActionResult InsertRole()
+		[HttpPost]
+		public async Task<ActionResult> Insert(IdentityRole role)
 		{
-			return View("Index");
+		var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			await roleManager.CreateAsync(role);
+			return RedirectToAction("Index");
+		}
+		public async Task<ActionResult> Delete(string Id)
+			{
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			var roleToDelete = roleManager.FindById(Id);
+			await roleManager.DeleteAsync(roleToDelete);
+			return RedirectToAction("Index");
+			}
+
+		public ActionResult Edit(string id)
+		{
+		var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+		var roleToEdit = roleManager.FindById(id);
+		return RedirectToAction("Index");
 		}
 		}
 	}

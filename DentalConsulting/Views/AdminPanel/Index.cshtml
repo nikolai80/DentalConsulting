@@ -3,10 +3,16 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
 }
-<div>@Html.ActionLink("Добавить роль","Insert")</div>
+<div>@Html.ActionLink("Добавить роль", "Insert")</div>
 <ul>
     @foreach(var role in Model)
         {
-        <li>@role.Name</li>
+        <li class="row">
+            @role.Name
+        <span onclick="return confirm('Точно удалить?')">
+            <a href="/AdminPanel/Delete?Id=@role.Id" class="col-md-2" style="color: red;">Удалить</a>|
+        </span>
+        @Html.ActionLink("Edit", "Edit", new { id = @role.Id }, new { htmlAttribute = new { @class = "col-md-2" } })
+    </li>
         }
 </ul>
