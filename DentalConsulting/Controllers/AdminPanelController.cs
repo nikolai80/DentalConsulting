@@ -21,17 +21,17 @@ namespace DentalConsulting.Controllers
 			}
 
 		public ActionResult Insert()
-		{
+			{
 			return View();
-		}
+			}
 
 		[HttpPost]
 		public async Task<ActionResult> Insert(IdentityRole role)
-		{
-		var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			{
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
 			await roleManager.CreateAsync(role);
 			return RedirectToAction("Index");
-		}
+			}
 		public async Task<ActionResult> Delete(string Id)
 			{
 			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
@@ -41,10 +41,25 @@ namespace DentalConsulting.Controllers
 			}
 
 		public ActionResult Edit(string id)
+			{
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			var roleToEdit = roleManager.FindById(id);
+			return View(roleToEdit);
+			}
+
+		[HttpPost]
+		public async Task<ActionResult> Edit(IdentityRole role, FormCollection collection)
+			{
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			await roleManager.UpdateAsync(role);
+			return RedirectToAction("Index");
+			}
+
+		public ActionResult UsersList()
 		{
-		var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
-		var roleToEdit = roleManager.FindById(id);
-		return RedirectToAction("Index");
+			var usersManager=new UserManager<IdentityUser>(new UserStore<IdentityUser>(new ApplicationDbContext()));
+			
+			return View(usersManager.Users);
 		}
 		}
 	}

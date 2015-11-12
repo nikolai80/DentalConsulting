@@ -4,15 +4,15 @@
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
 }
 <div>@Html.ActionLink("Добавить роль", "Insert")</div>
-<ul>
+<ul class="list-unstyled">
     @foreach(var role in Model)
         {
         <li class="row">
-            @role.Name
+           <span class="col-md-2">@role.Name</span> 
         <span onclick="return confirm('Точно удалить?')">
-            <a href="/AdminPanel/Delete?Id=@role.Id" class="col-md-2" style="color: red;">Удалить</a>|
+            <a href="/AdminPanel/Delete?Id=@role.Id" class="col-md-1" style="color: red;">Удалить</a>|
         </span>
-        @Html.ActionLink("Edit", "Edit", new { id = @role.Id }, new { htmlAttribute = new { @class = "col-md-2" } })
+        @Html.ActionLink("Edit", "Edit", new { id = @role.Id }, new { htmlAttribute = new { @class = "col-md-1" } })
     </li>
         }
 </ul>

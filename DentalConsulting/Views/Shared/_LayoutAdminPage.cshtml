@@ -15,8 +15,8 @@
 </div>
 <div class="row">
     <div class="col-md-3"><ul class="nav nav-pills nav-stacked">
-    <li role="presentation" class="active"><a href="#">Управление ролями</a></li>
-    <li role="presentation"><a href="#">Пользователи</a></li>
+    <li role="presentation" class="active">@Html.ActionLink("Управление ролями","Index","AdminPanel")</li>
+    <li role="presentation">@Html.ActionLink("Управление пользователями", "UsersList", "AdminPanel")</li>
 </ul></div>
     <div class="col-md-9">
         @RenderBody()

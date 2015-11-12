@@ -252,6 +252,8 @@
     <Content Include="Views\Shared\_LayoutAdminPage.cshtml" />
     <Content Include="Views\AdminPanel\Index.cshtml" />
     <Content Include="Views\AdminPanel\Insert.cshtml" />
+    <Content Include="Views\AdminPanel\Edit.cshtml" />
+    <Content Include="Views\AdminPanel\UsersList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
