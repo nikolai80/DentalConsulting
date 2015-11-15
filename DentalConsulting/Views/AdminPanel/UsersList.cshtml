@@ -1,8 +1,34 @@
-﻿@model Microsoft.AspNet.Identity.EntityFramework.IdentityUser
+﻿@using DentalConsulting.Models
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.EntityFramework
+@model IQueryable<Microsoft.AspNet.Identity.EntityFramework.IdentityUser>
 @{
     ViewBag.Title = "UsersList";
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
 }
 
 <h2>Список пользователей</h2>
-
+<table class="table">
+    <tr>
+        <th>Имя</th>
+        <th>Email</th>
+    </tr>
+    @foreach(var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @{
+                        var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+                        var identityUserRole = user.Roles.FirstOrDefault();
+                        if (identityUserRole != null)
+                        {
+                            var userRole = roleManager.FindById(identityUserRole.RoleId);
+                            @userRole.Name;
+                        }
+                    }
+                </td>
+            </tr>
+        }
+</table>

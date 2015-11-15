@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using DentalConsulting.Models;
 using DentalConsultingData;
+using DentalConsultingDAL;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -57,9 +59,20 @@ namespace DentalConsulting.Controllers
 
 		public ActionResult UsersList()
 		{
-			var usersManager=new UserManager<IdentityUser>(new UserStore<IdentityUser>(new ApplicationDbContext()));
-			
-			return View(usersManager.Users);
+		var usersManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+			var users = usersManager.Users;
+			DentalConsultingDAL.IUser userRepository =new UserRepository(new DentalConsultingContext());
+			List<object> usersList = null;
+			foreach (var user in users)
+			{
+				usersList.Add(new
+				{
+					UserName=userRepository.GetUsers().Select(u=>u.LoggedUserId==user.Id).FirstOrDefault(),
+					UserEmail=user.Email
+				});
+			}
+			ViewBag.UsersList = usersList;
+			return View(users);
 		}
 		}
 	}
