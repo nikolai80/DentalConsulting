@@ -10,6 +10,7 @@ using DentalConsultingData;
 using DentalConsultingDAL;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using IUser = Microsoft.AspNet.Identity.IUser;
 
 namespace DentalConsulting.Controllers
 	{  //[Authorize(Roles="administrator")]
@@ -58,21 +59,24 @@ namespace DentalConsulting.Controllers
 			}
 
 		public ActionResult UsersList()
-		{
-		var usersManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
-			var users = usersManager.Users;
-			DentalConsultingDAL.IUser userRepository =new UserRepository(new DentalConsultingContext());
-			List<object> usersList = null;
-			foreach (var user in users)
 			{
-				usersList.Add(new
-				{
-					UserName=userRepository.GetUsers().Select(u=>u.LoggedUserId==user.Id).FirstOrDefault(),
-					UserEmail=user.Email
-				});
+			var usersManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			DentalConsultingDAL.IUser userRepository = new UserRepository(new DentalConsultingContext());
+			var appUsers = userRepository.GetUsers();//получили всех пользователей
+			//костыль для подгрузки данных из identity к нашим пользователям
+			List<IUser> identityUsers = null;//список пользователей	в identity
+			List<IdentityRole> identityRoles = null; //список ролей пользователей в identity
+			foreach (var appUser in appUsers)
+			{
+				var identityUser = usersManager.FindById(appUser.LoggedUserId);
+				identityUsers.Add(identityUser);
+				var userRole = roleManager.FindById(identityUser.Roles.FirstOrDefault().RoleId);
+				identityRoles.Add(userRole);
 			}
-			ViewBag.UsersList = usersList;
-			return View(users);
-		}
+			ViewBag.IdentityUsers = identityUsers;
+			ViewBag.IdentityRoles = identityRoles;
+			return View(appUsers);
+			}
 		}
 	}

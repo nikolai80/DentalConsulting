@@ -1,7 +1,7 @@
 ﻿@using DentalConsulting.Models
 @using Microsoft.AspNet.Identity
 @using Microsoft.AspNet.Identity.EntityFramework
-@model IQueryable<Microsoft.AspNet.Identity.EntityFramework.IdentityUser>
+@model IEnumerable<DentalConsultingData.User>
 @{
     ViewBag.Title = "UsersList";
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
@@ -13,22 +13,36 @@
         <th>Имя</th>
         <th>Email</th>
     </tr>
-    @foreach(var user in Model)
-        {
-            <tr>
-                <td>@user.UserName</td>
-                <td>@user.Email</td>
-                <td>
-                    @{
-                        var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
-                        var identityUserRole = user.Roles.FirstOrDefault();
-                        if (identityUserRole != null)
-                        {
-                            var userRole = roleManager.FindById(identityUserRole.RoleId);
-                            @userRole.Name;
-                        }
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            @if(ViewBag.IdentityUsers!=null){
+ViewBag.IdentityUsers
+            <td>@user.Email</td>}
+            <td>
+
+
+
+
+                @*@{
+                    var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+                    var identityUserRole = user.Roles.FirstOrDefault();
+                    if (identityUserRole != null)
+                    {
+                        var userRole = roleManager.FindById(identityUserRole.RoleId);
+                        @userRole.Name
+                        ;
                     }
-                </td>
-            </tr>
-        }
+                }*@
+            </td>
+        </tr>
+    }
 </table>
+@if (ViewBag.UsersList != null)
+{
+    foreach (var user in ViewBag.UsersList)
+    {
+        <p>@user</p>
+    }
+}
