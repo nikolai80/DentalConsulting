@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="DentalConsultingData.Article">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
@@ -7,8 +7,8 @@
       <FileName>Article.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="User" />
       <Property Name="ArticleContent" />
+      <Property Name="User" />
     </ShowAsAssociation>
   </Class>
   <Class Name="DentalConsultingData.ArticleContent">
@@ -29,9 +29,9 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="DentalConsultingData.DentalCard">
-    <Position X="5" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAACAACAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABQAAgAAAgAAoAAAAAAAgEAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>DentalCard.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -58,13 +58,13 @@
   <Class Name="DentalConsultingData.User">
     <Position X="0.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAABEAAABIgABCAAQAAAQQAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAIAAAAAIABEAAIBIgABCAAQAAAQQAAAQAgAAA=</HashCode>
       <FileName>User.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Advices" />
-      <Property Name="DentalCard" />
       <Property Name="Chats" />
+      <Property Name="DentalCard" />
+      <Property Name="Advices" />
     </ShowAsAssociation>
   </Class>
   <Class Name="DentalConsultingData.Reminder">
