@@ -60,23 +60,10 @@ namespace DentalConsulting.Controllers
 
 		public ActionResult UsersList()
 			{
-			var usersManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
-			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
-			DentalConsultingDAL.IUser userRepository = new UserRepository(new DentalConsultingContext());
-			var appUsers = userRepository.GetUsers();//получили всех пользователей
-			//костыль для подгрузки данных из identity к нашим пользователям
-			List<IUser> identityUsers = null;//список пользователей	в identity
-			List<IdentityRole> identityRoles = null; //список ролей пользователей в identity
-			foreach (var appUser in appUsers)
-			{
-				var identityUser = usersManager.FindById(appUser.LoggedUserId);
-				identityUsers.Add(identityUser);
-				var userRole = roleManager.FindById(identityUser.Roles.FirstOrDefault().RoleId);
-				identityRoles.Add(userRole);
+
+			AppUsers model=new AppUsers();
+			return View(model);
 			}
-			ViewBag.IdentityUsers = identityUsers;
-			ViewBag.IdentityRoles = identityRoles;
-			return View(appUsers);
-			}
+	
 		}
 	}

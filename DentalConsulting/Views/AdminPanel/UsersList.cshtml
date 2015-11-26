@@ -1,7 +1,4 @@
-﻿@using DentalConsulting.Models
-@using Microsoft.AspNet.Identity
-@using Microsoft.AspNet.Identity.EntityFramework
-@model IEnumerable<DentalConsultingData.User>
+﻿@model DentalConsulting.Models.AppUsers
 @{
     ViewBag.Title = "UsersList";
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
@@ -13,29 +10,18 @@
         <th>Имя</th>
         <th>Email</th>
     </tr>
-    @foreach (var user in Model)
+    @foreach (var user in Model.AppUser)
     {
+       var identityUser = Model.IdentityAppUser.Find(u => u.Id == user.LoggedUserId);
+        var roles = identityUser.Roles.Single();
+        var identityRole = Model.AppRoles.Find(r => r.Id == roles.RoleId);
         <tr>
             <td>@user.UserName</td>
-            @if(ViewBag.IdentityUsers!=null){
-ViewBag.IdentityUsers
-            <td>@user.Email</td>}
+            <td>@Model.IdentityAppUser.Find(u=>u.Id==user.LoggedUserId).Email</td>
             <td>
-
-
-
-
-                @*@{
-                    var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
-                    var identityUserRole = user.Roles.FirstOrDefault();
-                    if (identityUserRole != null)
-                    {
-                        var userRole = roleManager.FindById(identityUserRole.RoleId);
-                        @userRole.Name
-                        ;
-                    }
-                }*@
+                @identityRole.Name
             </td>
+            <td>@Html.ActionLink("EditUser","Index","Manage")</td>
         </tr>
     }
 </table>
