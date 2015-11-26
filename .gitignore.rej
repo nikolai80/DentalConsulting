@@ -1,0 +1,6 @@
+diff a/.gitignore b/.gitignore	(rejected hunks)
+@@ -2,3 +2,4 @@
+ DentalConsultingData/obj/*
+ DentalConsulting/obj/*
+ DentalConsulting/DentalConsulting/Web.config
++DentalConsulting/Web.config
