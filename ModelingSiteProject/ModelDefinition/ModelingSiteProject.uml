@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="fe13a066-119b-49a1-87a8-6780d941b42f"
   name="ModelingSiteProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2556,6 +2556,74 @@
       <useCase
         Id="90cd2007-b8ce-4f01-a3fe-94f855d88895"
         name="Чат1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4ba99503-e5fd-4562-ab97-a0b13da287a9"
+        name="Пациент"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b4b520fd-0cdd-463b-b4e2-622aef8ef984"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="0230f05a-2b15-4897-80d5-6d86241602a1"
+              LastKnownName="Зарегистрированный пользователь"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e3345c84-0378-468d-9e5a-a229dc07f9e7"
+        name="Доктор"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="fc618584-0d5d-4abc-84ef-40e15cd02f2a"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="0230f05a-2b15-4897-80d5-6d86241602a1"
+              LastKnownName="Зарегистрированный пользователь"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b3901533-788b-49d2-92a8-faf1b30fddda"
+        name="Кандидат"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="1ef4bf57-665f-4cd0-916f-4d1db8cb7d87"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="0230f05a-2b15-4897-80d5-6d86241602a1"
+              LastKnownName="Зарегистрированный пользователь"
+              LastKnownLocation="ModelingSiteProject.uml" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="89409595-161f-45de-b054-eea325e17a20"
+        name="Actor4"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e730bd00-7a1d-4419-9e56-7e7fc4247a39"
+        name="Actor2"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>

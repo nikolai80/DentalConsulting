@@ -10,7 +10,7 @@
       <actorMoniker Id="c28595bb-f688-4ff9-bc5b-95c9ee16b4b5" LastKnownName="Гость" />
       <relativeChildShapes />
     </actorShape>
-    <useCaseGeneralizationConnector edgePoints="[(2.84375 : 2.125); (3.28125 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <useCaseGeneralizationConnector edgePoints="[(2.84375 : 2.125); (3.28125 : 1.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="590765b5-7f8e-4f1e-af85-1826ca1f790d" />
       <relativeChildShapes />
       <nodes>
@@ -22,7 +22,7 @@
       <actorMoniker Id="fc459fa1-cee1-4925-83c7-1917533010a8" LastKnownName="Зарегистрированный пользователь" />
       <relativeChildShapes />
     </actorShape>
-    <useCaseGeneralizationConnector edgePoints="[(4.25 : 2.125); (3.75 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+    <useCaseGeneralizationConnector edgePoints="[(4.25 : 2.125); (3.75 : 1.625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
       <generalizationMoniker Id="3bd70a04-765c-423b-a741-3093b378ce28" />
       <relativeChildShapes />
       <nodes>
@@ -34,11 +34,47 @@
       <actorMoniker Id="1a94ec6d-7a0b-4115-ac8e-9642c7bc7499" LastKnownName="Администратор" />
       <relativeChildShapes />
     </actorShape>
-    <useCaseGeneralizationConnector edgePoints="[(4.50037700333145 : 3.5); (4.50169651499152 : 2.625)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="113, 111, 110">
+    <useCaseGeneralizationConnector edgePoints="[(4.5 : 3.5); (4.5 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
       <generalizationMoniker Id="7f03b522-1a53-4316-aaca-8366721b67ed" />
       <relativeChildShapes />
       <nodes>
         <actorShapeMoniker Id="e28446bd-9b0f-4eac-8313-bc61d4bf6715" />
+        <actorShapeMoniker Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="03a9947a-29e1-4278-9dd5-479cff1d8e07" absoluteBounds="3.375, 3.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="e99b5f88-840c-4076-bc11-6157f9b06e0d" LastKnownName="Пациент" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(3.77083333333333 : 3.625); (4.35416666666667 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="1950f386-f89c-4b0e-9906-6dbfce6e1eb1" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="03a9947a-29e1-4278-9dd5-479cff1d8e07" />
+        <actorShapeMoniker Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="53078db8-98b0-43ff-b858-d3cf564d3e2b" absoluteBounds="5, 3.375, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="080813c9-8d92-490b-a303-0f306c5de1cf" LastKnownName="Доктор" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(5.1 : 3.375); (4.65 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="cf08d54c-da17-4f90-a307-0cb218a8380c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="53078db8-98b0-43ff-b858-d3cf564d3e2b" />
+        <actorShapeMoniker Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" />
+      </nodes>
+    </useCaseGeneralizationConnector>
+    <actorShape Id="99bd0fe3-d9d4-4b2e-b987-71f31e862c5d" absoluteBounds="2.875, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="f2776487-3308-4ee4-8df3-3b6bbdf27fc8" LastKnownName="Кандидат" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseGeneralizationConnector edgePoints="[(3.375 : 3.09090909090909); (4.25 : 2.53409090909091)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110">
+      <generalizationMoniker Id="1faba1c4-64fd-432e-8057-ab7136d2f1b6" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="99bd0fe3-d9d4-4b2e-b987-71f31e862c5d" />
         <actorShapeMoniker Id="a0eff2e6-35e3-4af2-bdd0-0de4a01119ec" />
       </nodes>
     </useCaseGeneralizationConnector>

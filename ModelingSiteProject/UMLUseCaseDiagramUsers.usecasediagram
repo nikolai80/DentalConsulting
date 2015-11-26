@@ -1,17 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="01d647aa-4bf4-4bae-b836-729e38dca095" name="UMLUseCaseDiagramUsers" linkedPackageId="2411dfc0-b352-4731-9bc3-6bb5f4444fd4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="01d647aa-4bf4-4bae-b836-729e38dca095" name="UMLUseCaseDiagramUsers" linkedPackageId="2411dfc0-b352-4731-9bc3-6bb5f4444fd4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <profileInstances>
-    <packageHasProfileInstances Id="2e0325d5-149d-4154-8685-b6e0524c0930">
-      <profileInstance Id="0213e177-b32d-4b08-8db1-db89207ad308" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+    <packageHasProfileInstances Id="e8bd0daf-9f0a-45fb-bea3-2d8af435e663">
+      <profileInstance Id="fef0e17d-98b2-416a-baa7-00f07280205b" name="CSharpProfile">
+        <elementDefinition Id="9139089a-689b-460d-b588-da4ce34d2553" />
       </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="453f1538-3657-45bb-9a5b-581324888e53">
-      <profileInstance Id="7f96d789-fa54-4540-a6b3-79ab4fa817eb" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      <elementDefinition Id="526ddcb7-ccbf-4e39-898e-71dc6cb9413c" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -53,8 +47,55 @@
         </generalsInternal>
       </actor>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e99b5f88-840c-4076-bc11-6157f9b06e0d" name="Пациент" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4ba99503-e5fd-4562-ab97-a0b13da287a9" />
+        <generalsInternal>
+          <generalization Id="1950f386-f89c-4b0e-9906-6dbfce6e1eb1" isSubstitutable="false">
+            <actorMoniker Id="fc459fa1-cee1-4925-83c7-1917533010a8" LastKnownName="Зарегистрированный пользователь" />
+            <elementDefinition Id="b4b520fd-0cdd-463b-b4e2-622aef8ef984" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="080813c9-8d92-490b-a303-0f306c5de1cf" name="Доктор" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e3345c84-0378-468d-9e5a-a229dc07f9e7" />
+        <generalsInternal>
+          <generalization Id="cf08d54c-da17-4f90-a307-0cb218a8380c" isSubstitutable="false">
+            <actorMoniker Id="fc459fa1-cee1-4925-83c7-1917533010a8" LastKnownName="Зарегистрированный пользователь" />
+            <elementDefinition Id="fc618584-0d5d-4abc-84ef-40e15cd02f2a" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="f2776487-3308-4ee4-8df3-3b6bbdf27fc8" name="Кандидат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b3901533-788b-49d2-92a8-faf1b30fddda" />
+        <generalsInternal>
+          <generalization Id="1faba1c4-64fd-432e-8057-ab7136d2f1b6" isSubstitutable="false">
+            <actorMoniker Id="fc459fa1-cee1-4925-83c7-1917533010a8" LastKnownName="Зарегистрированный пользователь" />
+            <elementDefinition Id="1ef4bf57-665f-4cd0-916f-4d1db8cb7d87" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="2411dfc0-b352-4731-9bc3-6bb5f4444fd4" name="ModelingSiteProject">
     <elementDefinition Id="fe13a066-119b-49a1-87a8-6780d941b42f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2e0325d5-149d-4154-8685-b6e0524c0930">
+        <profileInstance Id="0213e177-b32d-4b08-8db1-db89207ad308" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="453f1538-3657-45bb-9a5b-581324888e53">
+        <profileInstance Id="7f96d789-fa54-4540-a6b3-79ab4fa817eb" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
