@@ -60,7 +60,6 @@ namespace DentalConsulting.Controllers
 
 		public ActionResult UsersList()
 			{
-
 			AppUsers model=new AppUsers();
 			return View(model);
 			}

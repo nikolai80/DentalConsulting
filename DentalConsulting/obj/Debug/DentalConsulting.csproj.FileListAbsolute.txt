@@ -157,3 +157,4 @@ D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalCon
 D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.csproj.GenerateResource.Cache
 D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.dll
 D:\programming\webProgects\DentalConsulting\DentalConsulting\obj\Debug\DentalConsulting.pdb
+D:\rybchenko\programs\DentalConsulting\DentalConsulting\bin\DentalConsulting.dll.config
