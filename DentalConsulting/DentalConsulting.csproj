@@ -255,6 +255,7 @@
     <Content Include="Views\AdminPanel\Insert.cshtml" />
     <Content Include="Views\AdminPanel\Edit.cshtml" />
     <Content Include="Views\AdminPanel\UsersList.cshtml" />
+    <Content Include="Views\AdminPanel\EditUserRole.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

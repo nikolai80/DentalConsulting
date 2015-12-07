@@ -4,8 +4,11 @@ using System.Data.Entity.Core.Mapping;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DentalConsulting.Models;
 using DentalConsultingData;
 using DentalConsultingDAL;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace DentalConsulting.Controllers
 	{
@@ -26,14 +29,15 @@ namespace DentalConsulting.Controllers
 		// GET: OwnPagePatient
 		public ActionResult Index(string userId)
 			{
-			if(!String.IsNullOrEmpty(userId))
+			ApplicationUser userIdentity = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
+			if(userIdentity != null)
 				{
-				User user = userRepository.GetUsers().First(u => u.LoggedUserId == userId);
+				User user = userRepository.GetUsers().First(u => u.LoggedUserId == userIdentity.Id);
 				return View(user);
 				}
 			else
 				{
-				return Redirect("/Home/Index");
+				return RedirectToAction("Index", "Home");
 				}
 			}
 

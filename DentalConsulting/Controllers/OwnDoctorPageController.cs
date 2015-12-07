@@ -19,6 +19,7 @@ namespace DentalConsulting.Controllers
     {
 		private IArticleRepository articleRepository;
 	    private DentalConsultingDAL.IUser userRepository;
+		ApplicationDbContext context=new ApplicationDbContext();
 
 	    public OwnDoctorPageController()
 	    {
@@ -33,16 +34,17 @@ namespace DentalConsulting.Controllers
 	    }
 
 	    // GET: OwnDoctorPage
-        public ActionResult Index(string userId)
+        public ActionResult Index()
         {
-	        if (!String.IsNullOrEmpty(userId))
+			ApplicationUser userIdentity = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
+	        if (userIdentity!=null)
 	        {
-		        User user = userRepository.GetUsers().First(u => u.LoggedUserId == userId);
+		        User user = userRepository.GetUsers().First(u => u.LoggedUserId == userIdentity.Id);
 		        return View(user);
 	        }
 	        else
 	        {
-		      return  Redirect("/Home/Index");
+		      return  RedirectToAction("Index","Home");
 	        }
         }
 
@@ -83,7 +85,11 @@ namespace DentalConsulting.Controllers
 		public ActionResult CreateArticle(Article article)
 		{
 			article.UserUserID = GetLoggedUser().UserID;
-		  articleRepository.InsertArticle(article);
+			ArticleRepository arepo = new ArticleRepository(new DentalConsultingContext());
+			if(!arepo.FindArticleTitle(article.ArticleTitle))
+				{
+				articleRepository.InsertArticle(article); 
+				}
 		return RedirectToAction("GetArticles");	
 		}
 

@@ -29,7 +29,5 @@ namespace DentalConsulting.Models
         {
             return new ApplicationDbContext();
         }
-
-
     }
 }

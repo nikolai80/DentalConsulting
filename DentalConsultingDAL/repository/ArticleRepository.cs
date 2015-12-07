@@ -43,6 +43,12 @@ namespace DentalConsultingDAL
 			return articles.ToList();
 			}
 
+		public bool FindArticleTitle(string articleTitle)
+		{
+			var articleTitles = context.Articles.Where(a=>a.ArticleTitle==articleTitle).Select(a => a.ArticleTitle).Count();
+			return articleTitles > 0;
+		}
+
 		public Article GetArticleById(int articleId)
 			{
 			var article = context.Articles.Include(a=>a.ArticleContent).Single(a => a.ArticleID==articleId);

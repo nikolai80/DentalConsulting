@@ -28,22 +28,23 @@
                 <ul class="nav navbar-nav">
                    @{ IList<string> roles=new List<string>();
                                             ApplicationUserManager userManager=HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
-                                             ApplicationUser user = userManager.FindByEmail(User.Identity.Name);
-                       string firstRole="";
-                       if (user != null)
+                      ApplicationUser user = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(HttpContext.Current.User.Identity.GetUserId());
+                      string firstRole="";
+                       string userId = "";
+                      if (user != null)
                        {
-                           roles = userManager.GetRoles(user.Id);
-                          firstRole = roles.FirstOrDefault();
+                       userId = user.Id;
+                       firstRole = userManager.GetRoles(userId).FirstOrDefault();
                        }
                    }
                     <li>@Html.ActionLink("Главная страница", "Index", "Home")</li>
                     <li>@if (!String.IsNullOrEmpty(firstRole)&&firstRole=="patient")
                         {
-                            @Html.ActionLink("Личный кабинет", "Index", "OwnPagePatient",new{userId=user.Id},null)
+                            @Html.ActionLink("Личный кабинет", "Index", "OwnPagePatient",new{userId=userId},null)
                         }
                         else if(!String.IsNullOrEmpty(firstRole) && firstRole == "doctor")
                             {
-                            @Html.ActionLink("Личный кабинет", "Index", "OwnDoctorPage",new{userId=user.Id},null)
+                            @Html.ActionLink("Личный кабинет", "Index", "OwnDoctorPage",new{userId=userId},null)
                             }
                         else
                         {

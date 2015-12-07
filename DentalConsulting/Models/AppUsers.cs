@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Web.Mvc;
 using DentalConsultingData;
 using DentalConsultingDAL;
 using Microsoft.AspNet.Identity;
@@ -15,32 +15,40 @@ namespace DentalConsulting.Models
 		public List<User> AppUser { get; set; }
 		public List<IdentityRole> AppRoles { get; set; }
 
-
+		ApplicationDbContext context=new ApplicationDbContext();
 
 
 		public AppUsers()
 			{
-			var usersManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
-			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
+			//var usersManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
 			DentalConsultingDAL.IUser userRepository = new UserRepository(new DentalConsultingContext());
-			this.AppUser = userRepository.GetUsers().ToList();//получили всех пользователей
-			this.IdentityAppUser = usersManager.Users.ToList();
-			this.AppRoles = UsersRoles(this.IdentityAppUser);
-			
+			this.AppUser = userRepository.GetUsers().ToList(); //получили всех пользователей
+			this.IdentityAppUser = context.Users.ToList();
+			this.AppRoles = roleManager.Roles.ToList();
+			//UsersRoles(this.IdentityAppUser);
+
 			}
 
 		public List<IdentityRole> UsersRoles(List<ApplicationUser> identityUsers)
 			{
 			var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new ApplicationDbContext()));
 			List<IdentityRole> usersRoles = new List<IdentityRole>();
-			foreach(var identityUser in identityUsers)
+			try
 				{
-				var userRole = identityUser.Roles.Single();
-				if(userRole != null)
+				foreach(var identityUser in identityUsers)
 					{
-					var role = roleManager.FindById(userRole.RoleId);
-					usersRoles.Add(role);
+					var userRole = identityUser.Roles.Single();
+					if(userRole != null)
+						{
+						var role = roleManager.FindById(userRole.RoleId);
+						usersRoles.Add(role);
+						}
+
 					}
+				}
+			catch(NullReferenceException ex)
+				{
 
 				}
 			return usersRoles;

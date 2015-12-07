@@ -75,6 +75,10 @@
     <Compile Include="Migrations\201511061924461_Six.Designer.cs">
       <DependentUpon>201511061924461_Six.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511292204523_updateArticle.cs" />
+    <Compile Include="Migrations\201511292204523_updateArticle.Designer.cs">
+      <DependentUpon>201511292204523_updateArticle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="repository\AdviceRepository.cs" />
     <Compile Include="repository\ArticleContentRepository.cs" />
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511061924461_Six.resx">
       <DependentUpon>201511061924461_Six.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511292204523_updateArticle.resx">
+      <DependentUpon>201511292204523_updateArticle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

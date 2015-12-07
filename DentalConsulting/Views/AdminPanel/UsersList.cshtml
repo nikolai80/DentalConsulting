@@ -1,4 +1,5 @@
-﻿@model DentalConsulting.Models.AppUsers
+﻿@using Microsoft.AspNet.Identity.EntityFramework
+@model DentalConsulting.Models.AppUsers
 @{
     ViewBag.Title = "UsersList";
     Layout = "~/Views/Shared/_LayoutAdminPage.cshtml";
@@ -13,15 +14,31 @@
     @foreach (var user in Model.AppUser)
     {
        var identityUser = Model.IdentityAppUser.Find(u => u.Id == user.LoggedUserId);
+       IdentityRole identityRole =null;
+        try
+        {
         var roles = identityUser.Roles.Single();
-        var identityRole = Model.AppRoles.Find(r => r.Id == roles.RoleId);
+        identityRole = Model.AppRoles.Find(r => r.Id == roles.RoleId);
+        }
+        catch (Exception ex)
+        {
+            var message = ex.Message;
+        }
+        
         <tr>
             <td>@user.UserName</td>
             <td>@Model.IdentityAppUser.Find(u=>u.Id==user.LoggedUserId).Email</td>
-            <td>
-                @identityRole.Name
+            <td>@if(identityRole != null) {  
+                @identityRole.Name}
             </td>
-            <td>@Html.ActionLink("EditUser","Index","Manage")</td>
+            <td>
+               @if (identityRole!=null)
+	{
+		 @Html.ActionLink("Редактировать роль пользователя", "EditUserRole", new {userId = user.LoggedUserId, roleId = identityRole.Id})
+    }
+               else
+                   {  @Html.ActionLink("Редактировать роль пользователя", "EditUserRole", new { userId = user.LoggedUserId, roleId = "" })}
+            </td>
         </tr>
     }
 </table>
