@@ -87,6 +87,13 @@
       <Property Name="Users" />
     </ShowAsAssociation>
   </Class>
+  <Class Name="DentalConsultingData.ChatMessage">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ChatMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;">
     <Position X="2.5" Y="6.75" Width="1.5" />
     <Compartments>
