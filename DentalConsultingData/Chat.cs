@@ -13,9 +13,10 @@ namespace DentalConsultingData
 		 [Key]
 		public int ChatID { get; set; }
 
-		public virtual ICollection<User> Users
+		public virtual ICollection<User> User
 			{
 			get;set;
 			}
+		public virtual ICollection<ChatMessage> ChatMessages { get; set; }
 	}
 	}

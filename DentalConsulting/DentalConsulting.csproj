@@ -173,8 +173,13 @@
     <Compile Include="Migrations\201510111844495_First.Designer.cs">
       <DependentUpon>201510111844495_First.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201602022021028_RoleManager.cs" />
+    <Compile Include="Migrations\201602022021028_RoleManager.Designer.cs">
+      <DependentUpon>201602022021028_RoleManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationRole.cs" />
     <Compile Include="Models\AppUsers.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -280,6 +285,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201510111844495_First.resx">
       <DependentUpon>201510111844495_First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602022021028_RoleManager.resx">
+      <DependentUpon>201602022021028_RoleManager.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
