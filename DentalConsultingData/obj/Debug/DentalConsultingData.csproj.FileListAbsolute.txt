@@ -22,3 +22,13 @@ D:\programming\webProgects\DentalConsulting\DentalConsultingData\bin\Debug\ru\En
 D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
 D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
 D:\programming\webProgects\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll.config
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.dll
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\DentalConsultingData.pdb
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.dll
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.SqlServer.dll
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.xml
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\bin\Debug\EntityFramework.SqlServer.xml
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.csprojResolveAssemblyReference.cache
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.dll
+E:\rybchenko\programs\DentalConsulting\DentalConsultingData\obj\Debug\DentalConsultingData.pdb
